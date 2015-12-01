@@ -1,0 +1,1340 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    width: 970px;
+    padding-top: 50px;
+}
+
+
+#tableinfo {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+table .header-fixed {
+    position: fixed !important;
+    top: 40px !important;
+    z-index: 1020 !important; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-bottom: 1px solid #d5d5d5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+}
+
+.navbar-inner {
+    padding-left: 30px !important;
+}
+
+table {
+    margin: 20px;
+}
+
+form#rating {
+    height: 32px !important;
+    width: 500px !important;
+    line-height: 30px;
+    margin-bottom: 2px;
+    vertical-align: middle !important;
+}
+
+div#descriptiontext,
+textarea#descriptiontext {
+    font-size: 8pt !important;
+    margin: 3px 7px 0px 3px !important;
+    padding: 2px !important;
+    background: rgba(0,0,0,.1) !important;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.1) !important;
+    border-radius: 4px !important;
+}
+
+textarea#descriptiontext {
+    margin-top: -8px !important;
+}
+
+span#avg {
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 6px;
+}
+span.small {
+    font-size: 7pt;
+    margin: 0;
+}
+
+span.forked {
+    margin-left: 5px;
+}
+
+span#avg .small {
+    font-size: 8pt;
+    font-weight:  normal;
+}
+
+p#disclaimer {
+    text-align: center;
+    font-size: 7pt;
+    font-weight: normal;
+}
+
+hr {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+small {
+    font-size: 8pt !important;
+    margin: 0px 3px 3px 3px !important;
+}
+
+#palette p {
+    margin-bottom: 4px !important;
+    font-weight: bold;
+}
+
+body.veggienauts {
+    color: #92af84;
+    background:/* #f4fff6 */ #eeffe5;
+}
+
+body.veggienauts hr {
+    border-top: 1px solid #92af84;
+    border-bottom: 1px solid #f3fbdc;
+}
+
+body.scallywags {
+    color: #cfab85;
+    background: /*#fffaf3*/ #fff4e5;
+}
+
+body.scallywags hr {
+    border-top: 1px solid #cfab85;
+    border-bottom: 1px solid #fdf2dc;
+}
+
+body.feedback {
+    color: #959595;
+    background: /*#fcfcfc*/ #eaeaea;
+}
+
+
+body.list {
+    color: #959595;
+    background: /*#fcfcfc*/ #f6f6f6 !important;
+}
+
+body.feedback hr {
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #ddd;
+}
+
+body.adorables {
+    color: #998bb7;
+    background:/* #f6f1ff*/ #f2ebff;
+}
+
+body.adorables hr {
+    border-top: 1px solid #998bb7;
+    border-bottom: 1px solid #fde2ff;
+}
+
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}
+
+input, textarea {
+    margin-bottom: 3px !important;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -khtml-user-select: auto;
+}
+
+div#palette {
+    float: left;
+    border-top: 6px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    background: #ccc;
+    color: #333;
+
+    width: 242px;
+    height: 760px;
+    margin: 5px 10px 5px 0px;
+    padding-left: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#headline {
+    float:right;
+    height: 70px;
+    width: 704px;
+    padding-top: 10px;
+    margin-bottom:10px;
+}
+
+#headline div#fork {
+    float: right;
+}
+
+#headline div#fork button {
+    display: block;
+    margin: 2px;
+    width: 134px;
+}
+
+p#mapname {
+    font-size: 30px;
+    height: 20px !important;
+}
+
+p small {
+    margin: 0;
+}
+
+div#fork button#theme span {
+    display: block !important;
+    margin: 1px auto;
+}
+
+div#fork button#forkButton span {
+    margin-right: 5px;
+}
+
+
+#authorname {
+    font-weight: normal;
+}
+
+
+#mapwrapper {
+    float:right;
+    width: 704px;
+    margin-top: 9px;
+}
+
+body.veggienauts div#palette {
+    background-color: rgb(223,237,167);
+    background-image: linear-gradient(left , rgb(183,204,122) 7%, rgb(223,237,167) 28%, rgb(223,237,167) 72%, rgb(183,204,122) 93%);
+    background-image: -o-linear-gradient(left , rgb(183,204,122) 7%, rgb(223,237,167) 28%, rgb(223,237,167) 72%, rgb(183,204,122) 93%);
+    background-image: -moz-linear-gradient(left , rgb(183,204,122) 7%, rgb(223,237,167) 28%, rgb(223,237,167) 72%, rgb(183,204,122) 93%);
+    background-image: -webkit-linear-gradient(left , rgb(183,204,122) 7%, rgb(223,237,167) 28%, rgb(223,237,167) 72%, rgb(183,204,122) 93%);
+    background-image: -ms-linear-gradient(left , rgb(183,204,122) 7%, rgb(223,237,167) 28%, rgb(223,237,167) 72%, rgb(183,204,122) 93%);
+    border-color: #92af84;
+}
+
+body.scallywags div#palette {
+    background-color: rgb(255,239,204);
+    background-image: linear-gradient(left , rgb(226,199,142) 7%, rgb(255,239,204) 28%, rgb(255,239,204) 72%, rgb(226,199,142) 93%);
+    background-image: -o-linear-gradient(left , rgb(226,199,142) 7%, rgb(255,239,204) 28%, rgb(255,239,204) 72%, rgb(226,199,142) 93%);
+    background-image: -moz-linear-gradient(left , rgb(226,199,142) 7%, rgb(255,239,204) 28%, rgb(255,239,204) 72%, rgb(226,199,142) 93%);
+    background-image: -webkit-linear-gradient(left , rgb(226,199,142) 7%, rgb(255,239,204) 28%, rgb(255,239,204) 72%, rgb(226,199,142) 93%);
+    background-image: -ms-linear-gradient(left , rgb(226,199,142) 7%, rgb(255,239,204) 28%, rgb(255,239,204) 72%, rgb(226,199,142) 93%);
+    border-color: #cfab85;
+}
+
+body.feedback div#palette {
+    background-color: rgb(224,224,224);
+    background-image: linear-gradient(left , rgb(191,191,191) 7%, rgb(224,224,224) 28%, rgb(224,224,224) 72%, rgb(191,191,191) 93%);
+    background-image: -o-linear-gradient(left , rgb(191,191,191) 7%, rgb(224,224,224) 28%, rgb(224,224,224) 72%, rgb(191,191,191) 93%);
+    background-image: -moz-linear-gradient(left , rgb(191,191,191) 7%, rgb(224,224,224) 28%, rgb(224,224,224) 72%, rgb(191,191,191) 93%);
+    background-image: -webkit-linear-gradient(left , rgb(191,191,191) 7%, rgb(224,224,224) 28%, rgb(224,224,224) 72%, rgb(191,191,191) 93%);
+    background-image: -ms-linear-gradient(left , rgb(191,191,191) 7%, rgb(224,224,224) 28%, rgb(224,224,224) 72%, rgb(191,191,191) 93%);
+    border-color: #959595;
+}
+
+body.adorables div#palette {
+    background-color: rgb(195,175,230);
+    background-image: linear-gradient(left , rgb(195,175,230) 7%, rgb(220,195,234) 28%, rgb(220,195,234) 72%, rgb(195,175,230) 93%);
+    background-image: -o-linear-gradient(left , rgb(195,175,230) 7%, rgb(220,195,234) 28%, rgb(220,195,234) 72%, rgb(195,175,230) 93%);
+    background-image: -moz-linear-gradient(left , rgb(195,175,230) 7%, rgb(220,195,234) 28%, rgb(220,195,234) 72%, rgb(195,175,230) 93%);
+    background-image: -webkit-linear-gradient(left , rgb(195,175,230) 7%, rgb(220,195,234) 28%, rgb(220,195,234) 72%, rgb(195,175,230) 93%);
+    background-image: -ms-linear-gradient(left , rgb(195,175,230) 7%, rgb(220,195,234) 28%, rgb(220,195,234) 72%, rgb(195,175,230) 93%);
+    border-color: #998bb7;
+}
+
+form {
+    position: relative;
+}
+
+div.terrain,
+div.unit,
+div.color {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #222;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 16pt;
+}
+
+.blue div#runner,
+.blue div#soldier,
+.blue div#medic,
+.blue div#sniper,
+.blue div#heavy,
+.blue div#special,
+.blue div#other,
+.blue div#b,
+.blue div#s,
+#blue {
+    background-color: #005995 !important;
+}
+
+.red div#runner,
+.red div#soldier,
+.red div#medic,
+.red div#sniper,
+.red div#heavy,
+.red div#special,
+.red div#other,
+.red div#b,
+.red div#s,
+#red {
+    background-color: #7a1f00 !important;
+}
+
+.green div#runner,
+.green div#soldier,
+.green div#medic,
+.green div#sniper,
+.green div#heavy,
+.green div#special,
+.green div#other,
+.green div#b,
+.green div#s,
+#green {
+    background-color: #207300 !important;
+}
+
+.yellow div#runner,
+.yellow div#soldier,
+.yellow div#medic,
+.yellow div#sniper,
+.yellow div#heavy,
+.yellow div#special,
+.yellow div#other,
+.yellow div#b,
+.yellow div#s,
+#yellow {
+    background-color: #995e00 !important;
+}
+
+body #palette div.unit#rmv {
+    background-color: none !important;
+}
+
+body.scallywags #bonus {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_bonus.png') center center no-repeat;
+}
+
+body.scallywags #rmv {
+    background-size: cover !important;
+    background: url('../units/scallywags_death.png') center center no-repeat;
+}
+
+body.scallywags #t1 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_t1.png') center center no-repeat;
+}
+
+body.scallywags #t2 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_t2.png') center center no-repeat;
+}
+
+body.scallywags #t3 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_t3.png') center center no-repeat;
+}
+
+body.scallywags #t4 {
+    display: none !important;
+    background-size: cover !important;
+    background: url('../tiles/scallywags_t4.png') center center no-repeat;
+}
+
+body.scallywags #o1 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_o1.png') center center no-repeat;
+}
+
+body.scallywags #o2 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_o2.png') center center no-repeat;
+}
+
+body.scallywags #o3 {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_o3.png') center center no-repeat;
+}
+
+body.scallywags .blue #s {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_sblue.png') center center no-repeat;
+}
+
+body.scallywags .blue #b {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_bblue1.png') center center no-repeat;
+}
+
+body.scallywags .blue #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .blue #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .blue #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_medicblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .blue #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_sniperblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .blue #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_heavyblue.png') -15px -5px no-repeat;
+}
+
+body.scallywags .blue #special {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .blue #other {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #s {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_sred.png') center center no-repeat;
+}
+
+body.scallywags .red #b {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_bred1.png') center center no-repeat;
+}
+
+body.scallywags .red #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_runnerred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_soldierred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_medicred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_sniperred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_heavyred.png') -15px -5px no-repeat;
+}
+
+body.scallywags .red #special {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .red #other {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #s {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_sgreen.png') center center no-repeat;
+}
+
+body.scallywags .green #b {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_bgreen1.png') center center no-repeat;
+}
+
+body.scallywags .green #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_runnergreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_soldiergreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_medicgreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_snipergreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_heavygreen.png') -15px -5px no-repeat;
+}
+
+body.scallywags .green #special {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialgreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .green #other {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #s {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_syellow.png') center center no-repeat;
+}
+
+body.scallywags .yellow #b {
+    background-size: cover !important;
+    background: url('../tiles/scallywags_byellow1.png') center center no-repeat;
+}
+
+body.scallywags .yellow #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_runneryellow.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_soldieryellow.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_medicyellow.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_sniperyellow.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_heavyyellow.png') -15px -5px no-repeat;
+}
+
+body.scallywags .yellow #special {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialyellow.png') -5px -5px no-repeat;
+}
+
+body.scallywags .yellow #other {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otheryellow.png') -5px -5px no-repeat;
+}
+
+body.feedback #bonus {
+    background-size: cover !important;
+    background: url('../tiles/feedback_bonus.png') center center no-repeat;
+}
+
+body.feedback #rmv {
+    background-size: cover !important;
+    background: url('../units/feedback_death.png') center center no-repeat;
+}
+
+body.feedback #t1 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_t1.png') center center no-repeat;
+}
+
+body.feedback #t2 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_t2.png') center center no-repeat;
+}
+
+body.feedback #t3 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_t3.png') center center no-repeat;
+}
+
+body.feedback #t4 {
+    display: none !important;
+    background-size: cover !important;
+    background: url('../tiles/feedback_t4.png') center center no-repeat;
+}
+
+body.feedback #o1 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_o1.png') center center no-repeat;
+}
+
+body.feedback #o2 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_o2.png') center center no-repeat;
+}
+
+body.feedback #o3 {
+    background-size: cover !important;
+    background: url('../tiles/feedback_o3.png') center center no-repeat;
+}
+
+body.feedback .blue #s {
+    background-size: cover !important;
+    background: url('../tiles/feedback_sblue.png') center center no-repeat;
+}
+
+body.feedback .blue #b {
+    background-size: cover !important;
+    background: url('../tiles/feedback_bblue1.png') center center no-repeat;
+}
+
+body.feedback .blue #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_runnerblue.png') -5px -10px no-repeat;
+}
+
+body.feedback .blue #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_soldierblue.png') -5px -5px no-repeat;
+}
+
+body.feedback .blue #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_medicblue.png') -5px -5px no-repeat;
+}
+
+body.feedback .blue #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_sniperblue.png') -5px -5px no-repeat;
+}
+
+body.feedback .blue #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_heavyblue.png') -5px -5px no-repeat;
+}
+
+body.feedback .blue #special {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialblue.png') -5px -5px no-repeat;
+}
+
+body.feedback .blue #other {
+    display: none !important;
+}
+
+body.feedback .red #s {
+    background-size: cover !important;
+    background: url('../tiles/feedback_sred.png') center center no-repeat;
+}
+
+body.feedback .red #b {
+    background-size: cover !important;
+    background: url('../tiles/feedback_bred1.png') center center no-repeat;
+}
+
+body.feedback .red #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_runnerred.png') -5px -10px no-repeat;
+}
+
+body.feedback .red #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_soldierred.png') -5px -5px no-repeat;
+}
+
+body.feedback .red #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_medicred.png') -5px -5px no-repeat;
+}
+
+body.feedback .red #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_sniperred.png') -5px -5px no-repeat;
+}
+
+body.feedback .red #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_heavyred.png') -5px -5px no-repeat;
+}
+
+body.feedback .red #special {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialred.png') -5px -5px no-repeat;
+}
+
+body.feedback .red #other {
+    display: none !important;
+}
+
+body.feedback .green #s {
+    background-size: cover !important;
+    background: url('../tiles/feedback_sgreen.png') center center no-repeat;
+}
+
+body.feedback .green #b {
+    background-size: cover !important;
+    background: url('../tiles/feedback_bgreen1.png') center center no-repeat;
+}
+
+body.feedback .green #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_runnergreen.png') -5px -10px no-repeat;
+}
+
+body.feedback .green #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_soldiergreen.png') -5px -5px no-repeat;
+}
+
+body.feedback .green #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_medicgreen.png') -5px -5px no-repeat;
+}
+
+body.feedback .green #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_snipergreen.png') -5px -5px no-repeat;
+}
+
+body.feedback .green #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_heavygreen.png') -5px -5px no-repeat;
+}
+
+body.feedback .green #special {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
+}
+
+body.feedback .green #other {
+    display: none !important;
+}
+
+body.feedback .yellow #s {
+    background-size: cover !important;
+    background: url('../tiles/feedback_syellow.png') center center no-repeat;
+}
+
+body.feedback .yellow #b {
+    background-size: cover !important;
+    background: url('../tiles/feedback_byellow1.png') center center no-repeat;
+}
+
+body.feedback .yellow #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_runneryellow.png') -5px -10px no-repeat;
+}
+
+body.feedback .yellow #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_soldieryellow.png') -5px -5px no-repeat;
+}
+
+body.feedback .yellow #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_medicyellow.png') -5px -5px no-repeat;
+}
+
+body.feedback .yellow #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_sniperyellow.png') -5px -5px no-repeat;
+}
+
+body.feedback .yellow #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_heavyyellow.png') -5px -5px no-repeat;
+}
+
+body.feedback .yellow #special {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialyellow.png') -5px -5px no-repeat;
+}
+
+body.feedback .yellow #other {
+    display: none !important;
+}
+
+body.adorables #bonus {
+    background-size: cover !important;
+    background: url('../tiles/adorables_bonus.png') center center no-repeat;
+}
+
+body.adorables #rmv {
+    background-size: cover !important;
+    background: url('../units/adorables_death.png') center center no-repeat;
+}
+
+body.adorables #t1 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_t1.png') center center no-repeat;
+}
+
+body.adorables #t2 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_t2.png') center center no-repeat;
+}
+
+body.adorables #t3 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_t3.png') center center no-repeat;
+}
+
+body.adorables #t4 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_t4.png') center center no-repeat;
+}
+
+body.adorables #o1 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_o1.png') center center no-repeat;
+}
+
+body.adorables #o2 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_o2.png') center center no-repeat;
+}
+
+body.adorables #o3 {
+    background-size: cover !important;
+    background: url('../tiles/adorables_o3.png') center center no-repeat;
+}
+
+body.adorables .blue #s {
+    background-size: cover !important;
+    background: url('../tiles/adorables_sblue.png') center center no-repeat;
+}
+
+body.adorables .blue #b {
+    background-size: cover !important;
+    background: url('../tiles/adorables_bblue1.png') center center no-repeat;
+}
+
+body.adorables .blue #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_runnerblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_soldierblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_medicblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_sniperblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_heavyblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #special {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
+}
+
+body.adorables .blue #other {
+    display: none !important;
+}
+
+body.adorables .red #s {
+    background-size: cover !important;
+    background: url('../tiles/adorables_sred.png') center center no-repeat;
+}
+
+body.adorables .red #b {
+    background-size: cover !important;
+    background: url('../tiles/adorables_bred1.png') center center no-repeat;
+}
+
+body.adorables .red #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_runnerred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_soldierred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_medicred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_sniperred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_heavyred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #special {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
+}
+
+body.adorables .red #other {
+    display: none !important;
+}
+
+body.adorables .green #s {
+    background-size: cover !important;
+    background: url('../tiles/adorables_sgreen.png') center center no-repeat;
+}
+
+body.adorables .green #b {
+    background-size: cover !important;
+    background: url('../tiles/adorables_bgreen1.png') center center no-repeat;
+}
+
+body.adorables .green #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_runnergreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_soldiergreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_medicgreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_snipergreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_heavygreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #special {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
+}
+
+body.adorables .green #other {
+    display: none !important;
+}
+
+body.adorables .yellow #s {
+    background-size: cover !important;
+    background: url('../tiles/adorables_syellow.png') center center no-repeat;
+}
+
+body.adorables .yellow #b {
+    background-size: cover !important;
+    background: url('../tiles/adorables_byellow1.png') center center no-repeat;
+}
+
+body.adorables .yellow #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_runneryellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_soldieryellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_medicyellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_sniperyellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_heavyyellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #special {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
+}
+
+body.adorables .yellow #other {
+    display: none !important;
+}
+
+body.veggienauts #bonus {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_bonus.png') center center no-repeat;
+}
+
+body.veggienauts #rmv {
+    background-size: cover !important;
+    background: url('../units/veggienauts_death.png') center center no-repeat;
+}
+
+body.veggienauts #t1 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_t1.png') center center no-repeat;
+}
+
+body.veggienauts #t2 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_t2.png') center center no-repeat;
+}
+
+body.veggienauts #t3 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_t3.png') center center no-repeat;
+}
+
+body.veggienauts #t4 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_t4.png') center center no-repeat;
+}
+
+body.veggienauts #o1 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_o1.png') center center no-repeat;
+}
+
+body.veggienauts #o2 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_o2.png') center center no-repeat;
+}
+
+body.veggienauts #o3 {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_o3.png') center center no-repeat;
+}
+
+body.veggienauts .blue #s {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_sblue.png') center center no-repeat;
+}
+
+body.veggienauts .blue #b {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_bblue1.png') center center no-repeat;
+}
+
+body.veggienauts .blue #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_runnerblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_soldierblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_medicblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_sniperblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_heavyblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #special {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .blue #other {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_otherblue.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #s {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_sred.png') center center no-repeat;
+}
+
+body.veggienauts .red #b {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_bred1.png') center center no-repeat;
+}
+
+body.veggienauts .red #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_runnerred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_soldierred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_medicred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_sniperred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_heavyred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #special {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .red #other {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_otherred.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #s {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_sgreen.png') center center no-repeat;
+}
+
+body.veggienauts .green #b {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_bgreen1.png') center center no-repeat;
+}
+
+body.veggienauts .green #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_runnergreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_soldiergreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_medicgreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_snipergreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_heavygreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #special {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialgreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .green #other {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_othergreen.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #s {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_syellow.png') center center no-repeat;
+}
+
+body.veggienauts .yellow #b {
+    background-size: cover !important;
+    background: url('../tiles/veggienauts_byellow1.png') center center no-repeat;
+}
+
+body.veggienauts .yellow #runner {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_runneryellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_soldieryellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #medic {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_medicyellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #sniper {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_sniperyellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #heavy {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_heavyyellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #special {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialyellow.png') -5px -5px no-repeat;
+}
+
+body.veggienauts .yellow #other {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_otheryellow.png') -5px -5px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+div.terrain.selected,
+div.unit.selected,
+div.color.selected {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 3px 3px #fff;
+}
+
+input {
+    width: 180px;
+    margin-left: 5px;
+}
+
+#purify,
+#send {
+    margin-left: 23px !important;
+    margin-right: auto !important;
+    margin-top: 5px;
+    background: #4162A8;
+    border-top: 1px solid #38538C;
+    border-right: 1px solid #1F2D4D;
+    border-bottom: 1px solid #151E33;
+    border-left: 1px solid #1F2D4D;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 10px 1px #5C8BEE, 0px 1px 0 #1D2C4D, 0 6px 0px #1F3053, 0 8px 4px 1px #111;
+    box-shadow: inset 0 1px 10px 1px #5C8BEE, 0px 1px 0 #1D2C4D, 0 6px 0px #1F3053, 0 8px 4px 1px #111;
+    color: white;
+    font: bold 13px/1 "helvetica neue", helvetica, arial, sans-serif;
+    margin-bottom: 20px;
+    padding: 10px 0 12px 0;
+    text-align: center;
+    text-shadow: 0px -1px 1px #1E2D4D;
+    width: 150px;
+    -webkit-background-clip: padding-box;
+}
+
+#purify:active,
+#send:active {
+
+    -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111 !important;
+    box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111 !important;
+    margin-top: 12px !important;
+    margin-bottom: 16px !important;
+}
+
+#purify:hover,
+#send:hover {
+    -webkit-box-shadow: inset 0 0px 20px 1px #87ADFF, 0px 1px 0 #1D2C4D, 0 6px 0px #1F3053, 0 8px 4px 1px #111;
+    box-shadow: inset 0 0px 20px 1px #87ADFF, 0px 1px 0 #1D2C4D, 0 6px 0px #1F3053, 0 8px 4px 1px #111;
+    cursor: pointer;
+}
+
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 10pt;
+    margin: 1px 0 2px 4px;
+    font-weight: bold;
+}
+
+.smalltext {
+    font-size: 7pt;
+    font-weight: normal;
+    margin: 5px;
+    text-align: justify;
+}
+
+.mapname {
+    font-size: 13pt;
+}
+
+.mapname:before,
+.mapname:after {
+    content: '"';
+}
+
+.mapdate {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+#blue.selected {
+    box-shadow: 0px 0px 3px 3px #93d4ff;
+}
+
+#red.selected {
+    box-shadow: 0px 0px 3px 3px #ffb79f;
+}
+
+#green.selected {
+    box-shadow: 0px 0px 3px 3px #bbffa1;
+}
+
+#yellow.selected {
+    box-shadow: 0px 0px 3px 3px #ffd592;
+}
+
+.width60 {
+    font-size: 9pt !important;
+    width: 60px !important;
+}
+
+.spinner {
+}

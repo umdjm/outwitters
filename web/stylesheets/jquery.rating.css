@@ -1,0 +1,30 @@
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel,div.star-rating{width:25px;height:25px;text-indent:-999em;cursor:pointer;display:inline-block;background:transparent;overflow:hidden;margin: 2px 0px;}
+div.rating-cancel,div.rating-cancel a{background:url(../img/delete.gif) no-repeat 0 -24px}
+
+.scallywags div.star-rating,div.star-rating a{background:url(../img/stars.png) no-repeat 0 0px}
+.scallywags div.rating-cancel a,div.star-rating a{display:block;width:25px;height:100%;background-position:0 0px;border:0}
+.scallywags div.star-rating-on a{background-position:0 -24px!important}
+.scallywags div.star-rating-hover a{background-position:0 -48px}
+
+.feedback div.star-rating,div.star-rating a{background:url(../img/stars.png) no-repeat -24px 0px}
+.feedback div.rating-cancel a,div.star-rating a{display:block;width:25px;height:100%;background-position:-24px 0px;border:0}
+.feedback div.star-rating-on a{background-position:-24px -24px!important}
+.feedback div.star-rating-hover a{background-position:-24px -48px}
+
+.adorables div.star-rating,div.star-rating a{background:url(../img/stars.png) no-repeat -48px 0px}
+.adorables div.rating-cancel a,div.star-rating a{display:block;width:25px;height:100%;background-position:-48px 0px;border:0}
+.adorables div.star-rating-on a{background-position:-48px -24px!important}
+.adorables div.star-rating-hover a{background-position:-48px -48px}
+
+.veggienauts div.star-rating,div.star-rating a{background:url(../img/stars.png) no-repeat -72px 0px}
+.veggienauts div.rating-cancel a,div.star-rating a{display:block;width:25px;height:100%;background-position:-72px 0px;border:0}
+.veggienauts div.star-rating-on a{background-position:-72px -24px!important}
+.veggienauts div.star-rating-hover a{background-position:-72px -48px}
+
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END jQuery.Rating Plugin CSS */
+div.rating-cancel{display:none !important;}
