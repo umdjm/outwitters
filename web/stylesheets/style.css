@@ -397,24 +397,30 @@ body.scallywags .blue #runner {
 
 body .red #mobi {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
+    background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
+    background-color: #7a1f00 !important;
 }
 body .blue #mobi {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
+    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
+    background-color: #005995 !important;
 }
 body .yellow #mobi {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_otheryellow.png') -5px -5px no-repeat;
+    background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
+    background-color: #995e00 !important;
+
 }
 body .green #mobi {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
+    background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
+    background-color: #207300 !important;
 }
 
 body.scallywags .blue #soldier {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
+    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
+    background-color: #005995 !important;
 }
 
 body.scallywags .blue #medic {
