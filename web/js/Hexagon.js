@@ -81,7 +81,7 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgUnit.width = 56;
     this.imgUnit.height = 56;
     this.imgUnit.onerror = function() {
-        this.imgUnit.src = 'http://omc.wappdesign.net/units/' + MapEditor.Model.getTheme() + '_other.png';
+        this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
     }
 
     this.imgUG = new Image();
@@ -95,14 +95,14 @@ MapEditor.Hexagon = function(id, x, y) {
 MapEditor.Hexagon.prototype.updateImage = function() {
     if(this.class == "" && this.unitClass == "") return;
 
-    this.imgUG.src = 'http://omc.wappdesign.net/tiles/' + MapEditor.Model.getTheme() + '_ug.png';
+    this.imgUG.src = '../tiles/' + MapEditor.Model.getTheme() + '_ug.png';
 
     if(this.class != "") {
-        this.img.src = 'http://omc.wappdesign.net/tiles/' + MapEditor.Model.getTheme() + '_' + this.class + '.png';
+        this.img.src = '../tiles/' + MapEditor.Model.getTheme() + '_' + this.class + '.png';
 
         if(this.class.match(/b\D+\d/)) {
             // base picture
-            this.img.src = 'http://omc.wappdesign.net/tiles/' + MapEditor.Model.getTheme() + '_' + this.class + '.png';
+            this.img.src = '../tiles/' + MapEditor.Model.getTheme() + '_' + this.class + '.png';
             this.offsetY = -43;
             this.offsetX = -20;
             this.img.width = 88;
@@ -123,11 +123,11 @@ MapEditor.Hexagon.prototype.updateImage = function() {
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
             if(!this.unitClass.match(/^other\D+$/)) {
-                this.imgUnit.src = 'http://omc.wappdesign.net/units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
-                this.imgUnit.src = 'http://omc.wappdesign.net/units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
             } else {
-                this.imgUnit.src = 'http://omc.wappdesign.net/units/' + MapEditor.Model.getTheme() + '_other.png';
+                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
             }
 
 
