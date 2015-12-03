@@ -395,9 +395,21 @@ body.scallywags .blue #runner {
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
 
-#mobi.red {
+body .red #mobi {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
+}
+body .blue #mobi {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
+}
+body .yellow #mobi {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otheryellow.png') -5px -5px no-repeat;
+}
+body .green #mobi {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
 }
 
 body.scallywags .blue #soldier {
