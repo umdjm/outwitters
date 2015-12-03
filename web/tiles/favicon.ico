@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <style>
+            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html */
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+            html { background: #eee; padding: 10px }
+            img { border: 0; }
+            #sf-resetcontent { width:970px; margin:0 auto; }
+                        .sf-reset { font: 11px Verdana, Arial, sans-serif; color: #333 }
+            .sf-reset .clear { clear:both; height:0; font-size:0; line-height:0; }
+            .sf-reset .clear_fix:after { display:block; height:0; clear:both; visibility:hidden; }
+            .sf-reset .clear_fix { display:inline-block; }
+            .sf-reset * html .clear_fix { height:1%; }
+            .sf-reset .clear_fix { display:block; }
+            .sf-reset, .sf-reset .block { margin: auto }
+            .sf-reset abbr { border-bottom: 1px dotted #000; cursor: help; }
+            .sf-reset p { font-size:14px; line-height:20px; color:#868686; padding-bottom:20px }
+            .sf-reset strong { font-weight:bold; }
+            .sf-reset a { color:#6c6159; cursor: default; }
+            .sf-reset a img { border:none; }
+            .sf-reset a:hover { text-decoration:underline; }
+            .sf-reset em { font-style:italic; }
+            .sf-reset h1, .sf-reset h2 { font: 20px Georgia, "Times New Roman", Times, serif }
+            .sf-reset .exception_counter { background-color: #fff; color: #333; padding: 6px; float: left; margin-right: 10px; float: left; display: block; }
+            .sf-reset .exception_title { margin-left: 3em; margin-bottom: 0.7em; display: block; }
+            .sf-reset .exception_message { margin-left: 3em; display: block; }
+            .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
+            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+                -webkit-border-bottom-right-radius: 16px;
+                -webkit-border-bottom-left-radius: 16px;
+                -moz-border-radius-bottomright: 16px;
+                -moz-border-radius-bottomleft: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border-bottom:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+            }
+            .sf-reset .block_exception { background-color:#ddd; color: #333; padding:20px;
+                -webkit-border-top-left-radius: 16px;
+                -webkit-border-top-right-radius: 16px;
+                -moz-border-radius-topleft: 16px;
+                -moz-border-radius-topright: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-top:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .sf-reset a { background:none; color:#868686; text-decoration:none; }
+            .sf-reset a:hover { background:none; color:#313131; text-decoration:underline; }
+            .sf-reset ol { padding: 10px 0; }
+            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+                    <div id="sf-resetcontent" class="sf-reset">
+                <h1>Sorry, the page you are looking for could not be found.</h1>
+                                        <h2 class="block_exception clear_fix">
+                            <span class="exception_counter">2/2</span>
+                            <span class="exception_title"><abbr title="Symfony\Component\HttpKernel\Exception\NotFoundHttpException">NotFoundHttpException</abbr> in <a title="/app/vendor/symfony/http-kernel/EventListener/RouterListener.php line 123" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RouterListener.php line 123</a>:</span>
+                            <span class="exception_message">No route found for &quot;GET /favicon.ico&quot;</span>
+                        </h2>
+                        <div class="block">
+                            <ol class="traces list_exception">
+       <li> in <a title="/app/vendor/symfony/http-kernel/EventListener/RouterListener.php line 123" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RouterListener.php line 123</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>->onKernelRequest(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>))</li>
+       <li>at <abbr title=""></abbr>call_user_func(<em>array</em>(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>)) in <a title="/app/vendor/symfony/event-dispatcher/EventDispatcher.php line 171" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">EventDispatcher.php line 171</a></li>
+       <li>at <abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>->doDispatch(<em>array</em>(<em>array</em>(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\LocaleListener">LocaleListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\LogListener">LogListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\MiddlewareListener">MiddlewareListener</abbr>), 'onKernelRequest')), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)) in <a title="/app/vendor/symfony/event-dispatcher/EventDispatcher.php line 43" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">EventDispatcher.php line 43</a></li>
+       <li>at <abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>->dispatch('kernel.request', <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)) in <a title="/app/vendor/symfony/http-kernel/HttpKernel.php line 120" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">HttpKernel.php line 120</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr>->handleRaw(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), '1') in <a title="/app/vendor/symfony/http-kernel/HttpKernel.php line 62" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">HttpKernel.php line 62</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr>->handle(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), '1', <em>true</em>) in <a title="/app/vendor/silex/silex/src/Silex/Application.php line 586" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">Application.php line 586</a></li>
+       <li>at <abbr title="Silex\Application">Application</abbr>->handle(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)) in <a title="/app/vendor/silex/silex/src/Silex/Application.php line 563" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">Application.php line 563</a></li>
+       <li>at <abbr title="Silex\Application">Application</abbr>->run() in <a title="/app/web/index.php line 25" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">index.php line 25</a></li>
+    </ol>
+</div>
+                        <h2 class="block_exception clear_fix">
+                            <span class="exception_counter">1/2</span>
+                            <span class="exception_title"><abbr title="Symfony\Component\Routing\Exception\ResourceNotFoundException">ResourceNotFoundException</abbr> in <a title="/app/vendor/symfony/routing/Matcher/UrlMatcher.php line 98" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">UrlMatcher.php line 98</a>:</span>
+                            <span class="exception_message">No routes found for &quot;/favicon.ico&quot;.</span>
+                        </h2>
+                        <div class="block">
+                            <ol class="traces list_exception">
+       <li> in <a title="/app/vendor/symfony/routing/Matcher/UrlMatcher.php line 98" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">UrlMatcher.php line 98</a></li>
+       <li>at <abbr title="Symfony\Component\Routing\Matcher\UrlMatcher">UrlMatcher</abbr>->match('/favicon.ico') in <a title="/app/vendor/symfony/routing/Matcher/RedirectableUrlMatcher.php line 28" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RedirectableUrlMatcher.php line 28</a></li>
+       <li>at <abbr title="Symfony\Component\Routing\Matcher\RedirectableUrlMatcher">RedirectableUrlMatcher</abbr>->match('/favicon.ico') in <a title="/app/vendor/silex/silex/src/Silex/LazyUrlMatcher.php line 51" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">LazyUrlMatcher.php line 51</a></li>
+       <li>at <abbr title="Silex\LazyUrlMatcher">LazyUrlMatcher</abbr>->match('/favicon.ico') in <a title="/app/vendor/symfony/http-kernel/EventListener/RouterListener.php line 103" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RouterListener.php line 103</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>->onKernelRequest(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>))</li>
+       <li>at <abbr title=""></abbr>call_user_func(<em>array</em>(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>)) in <a title="/app/vendor/symfony/event-dispatcher/EventDispatcher.php line 171" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">EventDispatcher.php line 171</a></li>
+       <li>at <abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>->doDispatch(<em>array</em>(<em>array</em>(<em>object</em>(<abbr title="Symfony\Component\HttpKernel\EventListener\RouterListener">RouterListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\LocaleListener">LocaleListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\LogListener">LogListener</abbr>), 'onKernelRequest'), <em>array</em>(<em>object</em>(<abbr title="Silex\EventListener\MiddlewareListener">MiddlewareListener</abbr>), 'onKernelRequest')), 'kernel.request', <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)) in <a title="/app/vendor/symfony/event-dispatcher/EventDispatcher.php line 43" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">EventDispatcher.php line 43</a></li>
+       <li>at <abbr title="Symfony\Component\EventDispatcher\EventDispatcher">EventDispatcher</abbr>->dispatch('kernel.request', <em>object</em>(<abbr title="Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>)) in <a title="/app/vendor/symfony/http-kernel/HttpKernel.php line 120" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">HttpKernel.php line 120</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr>->handleRaw(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), '1') in <a title="/app/vendor/symfony/http-kernel/HttpKernel.php line 62" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">HttpKernel.php line 62</a></li>
+       <li>at <abbr title="Symfony\Component\HttpKernel\HttpKernel">HttpKernel</abbr>->handle(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>), '1', <em>true</em>) in <a title="/app/vendor/silex/silex/src/Silex/Application.php line 586" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">Application.php line 586</a></li>
+       <li>at <abbr title="Silex\Application">Application</abbr>->handle(<em>object</em>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>)) in <a title="/app/vendor/silex/silex/src/Silex/Application.php line 563" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">Application.php line 563</a></li>
+       <li>at <abbr title="Silex\Application">Application</abbr>->run() in <a title="/app/web/index.php line 25" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">index.php line 25</a></li>
+    </ol>
+</div>
+
+            </div>
+    </body>
+</html>
