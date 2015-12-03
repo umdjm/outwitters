@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tiles/copytiles.sh" afterPath="$PROJECT_DIR$/web/tiles/copytiles.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="copytiles.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/tiles/copytiles.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91646194" vertical-offset="648" max-vertical-offset="1496">
-              <caret line="82" column="63" selection-start-line="67" selection-start-column="0" selection-end-line="82" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.5614251" vertical-offset="682" max-vertical-offset="1496">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -252,12 +251,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="122000" />
+      <workItem from="1449183888350" duration="420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122000" />
+    <option name="totallyTimeSpent" value="420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -314,8 +313,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/tiles/copytiles.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91646194" vertical-offset="648" max-vertical-offset="1496">
-          <caret line="82" column="63" selection-start-line="67" selection-start-column="0" selection-end-line="82" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.5614251" vertical-offset="682" max-vertical-offset="1496">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
