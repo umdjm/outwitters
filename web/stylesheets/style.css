@@ -395,6 +395,11 @@ body.scallywags .blue #runner {
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
 
+#mobi.red {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
+}
+
 body.scallywags .blue #soldier {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
