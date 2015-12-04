@@ -114,8 +114,6 @@ MapEditor.View = (function() {
 
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
-
-        grid.updateImages(ctx);
     });
 
     $("div.terrain").click(function(e) {
@@ -232,10 +230,13 @@ MapEditor.View = (function() {
             var selectedUnit = model.getUnit();
             if(selectedUnit == "rmv") {
                 hex.unitClass = "";
+                hex.playerNum = -1;
             } else if(hex.unitClass == selectedUnit && eraseOnDrag) {
                 hex.unitClass = "";
+                hex.playerNum = -1;
             } else if(!eraseOnDrag) {
                 hex.unitClass = selectedUnit;
+                hex.playerNum = model.getCurrentPlayerNum();
             }
         } else {
             var selectedClass = model.getClass();

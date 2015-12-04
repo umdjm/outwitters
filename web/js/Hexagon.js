@@ -146,6 +146,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
         }
     } else {
         this.unitClass = "";
+        this.playerNum = -1;
     }
 
 }
