@@ -47,6 +47,7 @@ MapEditor.Model = (function() {
             var playerIndex = playerColors.indexOf(selectedColor);
             return selectedPlayerRaces[playerIndex];
         },
+
         isMoveMode = function(){
             return true;
         },
@@ -129,6 +130,9 @@ MapEditor.Model = (function() {
         getHealth: getHealth,
         setHealth: setHealth,
         getBase: getBase,
+        isMoveMode: isMoveMode,
+        setMoveStartHex: setMoveStartHex,
+        getMoveStartHex: getMoveStartHex
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();

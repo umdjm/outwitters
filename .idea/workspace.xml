@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Grid.js" afterPath="$PROJECT_DIR$/web/js/Grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Hexagon.js" afterPath="$PROJECT_DIR$/web/js/Hexagon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Model.js" afterPath="$PROJECT_DIR$/web/js/Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/View.js" afterPath="$PROJECT_DIR$/web/js/View.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,21 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="View.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/View.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9508772" vertical-offset="8240" max-vertical-offset="9095">
-              <caret line="286" column="20" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3035" max-vertical-offset="9095">
+              <caret line="197" column="56" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/Model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.86733556" vertical-offset="1500" max-vertical-offset="2431">
+              <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -512,12 +508,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="27624000" />
+      <workItem from="1449183888350" duration="27820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27624000" />
+    <option name="totallyTimeSpent" value="27820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -892,18 +888,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/Model.js">
+    <entry file="file://$PROJECT_DIR$/web/js/View.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3035" max-vertical-offset="9095">
+          <caret line="197" column="56" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/View.js">
+    <entry file="file://$PROJECT_DIR$/web/js/Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9508772" vertical-offset="8240" max-vertical-offset="9095">
-          <caret line="286" column="20" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.86733556" vertical-offset="1500" max-vertical-offset="2431">
+          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
           <folding />
         </state>
       </provider>
