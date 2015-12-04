@@ -558,7 +558,7 @@ body .green #scrambler {
     background-color: #207300 !important;
 }
 
-.scallywags .blue #runner {
+#player_race.scallywags .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
@@ -603,7 +603,7 @@ body.scallywags .red #b {
     background: url('../tiles/scallywags_bred1.png') center center no-repeat;
 }
 
-.scallywags .red #runner {
+#player_race.scallywags .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerred.png') -5px -5px no-repeat;
 }
@@ -648,7 +648,7 @@ body.scallywags .green #b {
     background: url('../tiles/scallywags_bgreen1.png') center center no-repeat;
 }
 
-.scallywags .green #runner {
+#player_race.scallywags .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnergreen.png') -5px -5px no-repeat;
 }
@@ -693,7 +693,7 @@ body.scallywags .yellow #b {
     background: url('../tiles/scallywags_byellow1.png') center center no-repeat;
 }
 
-.scallywags .yellow #runner {
+#player_race.scallywags .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runneryellow.png') -5px -5px no-repeat;
 }
@@ -784,7 +784,7 @@ body.feedback .blue #b {
     background: url('../tiles/feedback_bblue1.png') center center no-repeat;
 }
 
-.feedback .blue #runner {
+#player_race.feedback .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerblue.png') -5px -10px no-repeat;
 }
@@ -828,7 +828,7 @@ body.feedback .red #b {
     background: url('../tiles/feedback_bred1.png') center center no-repeat;
 }
 
-.feedback .red #runner {
+#player_race.feedback .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerred.png') -5px -10px no-repeat;
 }
@@ -872,7 +872,7 @@ body.feedback .green #b {
     background: url('../tiles/feedback_bgreen1.png') center center no-repeat;
 }
 
-.feedback .green #runner {
+#player_race.feedback .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnergreen.png') -5px -10px no-repeat;
 }
@@ -916,7 +916,7 @@ body.feedback .yellow #b {
     background: url('../tiles/feedback_byellow1.png') center center no-repeat;
 }
 
-.feedback .yellow #runner {
+#player_race.feedback .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runneryellow.png') -5px -10px no-repeat;
 }
