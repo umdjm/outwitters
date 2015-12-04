@@ -1542,6 +1542,11 @@ p {
  
     /*----- Tab Links -----*/
     /* Clearfix */
+
+    ul.tab-links {
+        margin: 10px 0 -10px -3px;
+    }
+    
     .tab-links:after {
         display:block;
         clear:both;
