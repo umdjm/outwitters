@@ -74,6 +74,7 @@ MapEditor.Hexagon = function(id, x, y) {
 
     this.class = "";
     this.unitClass = "";
+    this.playerClass = "";
 
     this.img = new Image();
 
@@ -125,11 +126,11 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             if(this.unitClass.indexOf("_special") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + this.playerClass + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + this.playerClass + '_' + this.unitClass + '.png';
             } else {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
+                this.imgUnit.src = '../units/' + this.playerClass + '_other.png';
             }
 
 
