@@ -114,6 +114,12 @@ $(document).ready(function() {
 
     loadMapData(1);
 
+        $("body").removeClass(oldClass);
+        $("body").addClass(MapEditor.Model.getTheme(), 300, function() {
+            grid.updateImages(ctx);
+            themeChanging = false;
+        });
+
     preload(
         "tiles/scallywags_t1.png",
         "tiles/scallywags_t2.png",
