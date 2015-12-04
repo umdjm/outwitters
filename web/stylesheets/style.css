@@ -638,11 +638,6 @@ body.scallywags .red #other {
     background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
 }
 
-body.scallywags .red #race_scallywags {
-    background-size: 50px 50px !important;
-    background: url('../units/scallywags_specialred.png') -5px -5px no-repeat;
-}
-
 body.scallywags .green #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_sgreen.png') center center no-repeat;
@@ -688,11 +683,6 @@ body.scallywags .green #other {
     background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
 }
 
-body.scallywags .green #race_scallywags {
-    background-size: 50px 50px !important;
-    background: url('../units/scallywags_specialgreen.png') -5px -5px no-repeat;
-}
-
 body.scallywags .yellow #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_syellow.png') center center no-repeat;
@@ -736,11 +726,6 @@ body.scallywags .yellow #special {
 body.scallywags .yellow #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otheryellow.png') -5px -5px no-repeat;
-}
-
-body.scallywags .yellow #race_scallywags {
-    background-size: 50px 50px !important;
-    background: url('../units/scallywags_specialyellow.png') -5px -5px no-repeat;
 }
 
 body.feedback #bonus {
@@ -833,11 +818,6 @@ body.feedback .blue #other {
     display: none !important;
 }
 
-body.feedback .blue #race_feedback {
-    background-size: 50px 50px !important;
-    background: url('../units/feedback_specialblue.png') -5px -5px no-repeat;
-}
-
 body.feedback .red #s {
     background-size: cover !important;
     background: url('../tiles/feedback_sred.png') center center no-repeat;
@@ -880,11 +860,6 @@ body.feedback .red #special {
 
 body.feedback .red #other {
     display: none !important;
-}
-
-body.feedback .red #race_feedback {
-    background-size: 50px 50px !important;
-    background: url('../units/feedback_specialred.png') -5px -5px no-repeat;
 }
 
 body.feedback .green #s {
@@ -931,11 +906,6 @@ body.feedback .green #other {
     display: none !important;
 }
 
-body.feedback .green #race_feedback {
-    background-size: 50px 50px !important;
-    background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
-}
-
 body.feedback .yellow #s {
     background-size: cover !important;
     background: url('../tiles/feedback_syellow.png') center center no-repeat;
@@ -978,11 +948,6 @@ body.feedback .yellow #special {
 
 body.feedback .yellow #other {
     display: none !important;
-}
-
-body.feedback .yellow #race_feedback {
-    background-size: 50px 50px !important;
-    background: url('../units/feedback_specialyellow.png') -5px -5px no-repeat;
 }
 
 body.adorables #bonus {
@@ -1074,11 +1039,6 @@ body.adorables .blue #other {
     display: none !important;
 }
 
-body.adorables .blue #race_adorables {
-    background-size: 50px 50px !important;
-    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
-}
-
 body.adorables .red #s {
     background-size: cover !important;
     background: url('../tiles/adorables_sred.png') center center no-repeat;
@@ -1121,11 +1081,6 @@ body.adorables .red #special {
 
 body.adorables .red #other {
     display: none !important;
-}
-
-body.adorables .red #race_adorables {
-    background-size: 50px 50px !important;
-    background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
 }
 
 body.adorables .green #s {
@@ -1172,11 +1127,6 @@ body.adorables .green #other {
     display: none !important;
 }
 
-body.adorables .green #race_adorables {
-    background-size: 50px 50px !important;
-    background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
-}
-
 body.adorables .yellow #s {
     background-size: cover !important;
     background: url('../tiles/adorables_syellow.png') center center no-repeat;
@@ -1219,11 +1169,6 @@ body.adorables .yellow #special {
 
 body.adorables .yellow #other {
     display: none !important;
-}
-
-body.adorables .yellow #race_adorables {
-    background-size: 50px 50px !important;
-    background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
 }
 
 body.veggienauts #bonus {
@@ -1316,11 +1261,6 @@ body.veggienauts .blue #other {
     background: url('../units/veggienauts_otherblue.png') -5px -5px no-repeat;
 }
 
-body.veggienauts .blue #race_veggienauts {
-    background-size: 50px 50px !important;
-    background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
-}
-
 body.veggienauts .red #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_sred.png') center center no-repeat;
@@ -1364,11 +1304,6 @@ body.veggienauts .red #special {
 body.veggienauts .red #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_otherred.png') -5px -5px no-repeat;
-}
-
-body.veggienauts .red #race_veggienauts {
-    background-size: 50px 50px !important;
-    background: url('../units/veggienauts_specialred.png') -5px -5px no-repeat;
 }
 
 body.veggienauts .green #s {
@@ -1416,11 +1351,6 @@ body.veggienauts .green #other {
     background: url('../units/veggienauts_othergreen.png') -5px -5px no-repeat;
 }
 
-body.veggienauts .green #race_veggienauts {
-    background-size: 50px 50px !important;
-    background: url('../units/veggienauts_specialgreen.png') -5px -5px no-repeat;
-}
-
 body.veggienauts .yellow #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_syellow.png') center center no-repeat;
@@ -1464,11 +1394,6 @@ body.veggienauts .yellow #special {
 body.veggienauts .yellow #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_otheryellow.png') -5px -5px no-repeat;
-}
-
-body.veggienauts .yellow #race_veggienauts {
-    background-size: 50px 50px !important;
-    background: url('../units/veggienauts_specialyellow.png') -5px -5px no-repeat;
 }
 
 
