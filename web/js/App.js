@@ -77,7 +77,7 @@ var fillMapData = function(mapID, themeID) {
     });
     */
     var json = JSON.parse(CandyCoreMine);
-    
+
     if(json.error) {
         alert(json.errormessage);
         return;
@@ -123,6 +123,16 @@ $(document).ready(function() {
     spinner = new Spinner(opts).spin(target).stop();
     loadspinner = new Spinner(opts).spin(target);
 
+    var json = JSON.parse(CandyCoreMine);
+    
+    if(json.error) {
+        alert(json.errormessage);
+        return;
+    }
+
+    MapEditor.Model.setTheme(parseInt(themeID, 10));
+    grid.setClasses(json, ctx);
+    
     preload(
         "tiles/scallywags_t1.png",
         "tiles/scallywags_t2.png",
