@@ -558,7 +558,7 @@ body .green #scrambler {
     background-color: #207300 !important;
 }
 
-#player_race.scallywags .blue #runner {
+.blue .scallywags #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
@@ -784,7 +784,7 @@ body.feedback .blue #b {
     background: url('../tiles/feedback_bblue1.png') center center no-repeat;
 }
 
-#player_race.feedback .blue #runner {
+.blue .feedback #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerblue.png') -5px -10px no-repeat;
 }
