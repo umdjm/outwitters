@@ -123,6 +123,11 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
+
+            if(this.playerClass == ""){
+                this.playerClass = MapEditor.Model.getTheme();
+            }
+
             if(this.unitClass.indexOf("_special") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {

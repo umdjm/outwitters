@@ -190,6 +190,7 @@ MapEditor.Grid.prototype.getClasses = function() {
         current = {};
         current.class = this.Hexes[h].class;
         current.unitClass = this.Hexes[h].unitClass;
+        current.playerClass = this.Hexes[h].playerClass;
         array.push(current);
     }
 
@@ -201,6 +202,7 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         current = array[h];
         this.Hexes[h].class = current.class;
         this.Hexes[h].unitClass = current.unitClass;
+        this.Hexes[h].playerClass = current.playerClass;
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
     }
