@@ -125,7 +125,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
         if(this.unitClass != "") {
 
             if(!this.playerClass){
-                this.playerClass = MapEditor.Model.getTheme();
+                this.playerClass = "scallywags";
             }
 
             if(this.unitClass.indexOf("_special") > -1) {
