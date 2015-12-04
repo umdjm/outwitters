@@ -122,6 +122,8 @@ MapEditor.View = (function() {
 
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
+
+        grid.updateImages(ctx);
     });
 
     $("div.terrain").click(function(e) {
@@ -203,15 +205,20 @@ MapEditor.View = (function() {
             }
             else if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
+                var selectedPlayerNum = model.getCurrentPlayerNum();
                 if(selectedUnit == "rmv") {
                     hex.unitClass = "";
+                    hex.playerNum = -1;
                     hex.health = "";
                     eraseOnDrag = false;
                 } else if(hex.unitClass == selectedUnit && hex.unitClass != "") {
                     hex.unitClass = "";
+                    hex.playerNum = -1;
+                    hex.health = "";
                     eraseOnDrag = true;
                 } else {
                     hex.unitClass = selectedUnit;
+                    hex.playerNum = selectedPlayerNum;
                     hex.health = MapEditor.Model.getHealth();
                     eraseOnDrag = false;
                 }

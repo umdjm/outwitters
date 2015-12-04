@@ -74,6 +74,7 @@ MapEditor.Hexagon = function(id, x, y) {
 
     this.class = "";
     this.unitClass = "";
+    this.playerNum = 0;
     this.health = "health3";
 
     this.img = new Image();
@@ -90,9 +91,6 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgHealth.height = 20;
     this.imgHealth.src = '../health/health3.png';
     this.imgHealth.style.backgroundColor = "blue";
-    this.imgHealth.onerror = function() {
-        this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
-    }
 
     this.imgUG = new Image();
     this.imgUG.width = 48;
@@ -132,19 +130,26 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
+
+            var playerClass = "";
+            if(this.playerNum >= 0){
+                playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
+            }
+
             if(this.unitClass.indexOf("_special") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else {
-                this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
+                this.imgUnit.src = '../units/' + playerClass + '_other.png';
             }
             this.imgHealth.src = '../health/' + this.health + '.png';
         }
     } else {
         this.unitClass = "";
+        this.playerNum = -1;
     }
 
 }
