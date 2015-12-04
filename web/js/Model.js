@@ -86,6 +86,8 @@ MapEditor.Model = (function() {
         setTheme: setTheme,
         setColor: setColor,
         swapTheme: swapTheme,
+        setCurrentTheme: setCurrentTheme,
+        getCurrentTheme: getCurrentTheme,
         getUnit: getUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,
