@@ -264,7 +264,8 @@ form {
 
 div.terrain,
 div.unit,
-div.color {
+div.color,
+div.race {
     width: 30px;
     height: 30px;
     border: 1px solid #222;
@@ -1318,7 +1319,8 @@ body.veggienauts .yellow #race_veggienauts {
 
 div.terrain.selected,
 div.unit.selected,
-div.color.selected {
+div.color.selected,
+div.race.selected {
     border: 1px solid #fff;
     box-shadow: 0px 0px 3px 3px #fff;
 }
