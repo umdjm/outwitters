@@ -125,11 +125,11 @@ MapEditor.Hexagon.prototype.updateImage = function() {
         if(this.unitClass != "") {
 
             var playerClass = "";
-            if(this.playerNum == -1){
+            if(this.playerNum >= 0){
+                playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
+            }else{
                 //start each player with scallywags race as it is the default race when starting a new map
                 playerClass = "scallywags";
-            }else{
-                playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
             }
 
             if(this.unitClass.indexOf("_special") > -1) {
