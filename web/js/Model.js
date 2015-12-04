@@ -48,8 +48,11 @@ MapEditor.Model = (function() {
             return selectedPlayerRaces[playerIndex];
         },
 
+        setMoveMode = function(input){
+            moveMode = input == true;
+        },
         isMoveMode = function(){
-            return true;
+            return moveMode;
         },
 
         setMoveStartHex = function(hex){
