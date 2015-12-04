@@ -419,8 +419,7 @@ body .green #mobi {
 
 body.scallywags .blue #soldier {
     background-size: 50px 50px !important;
-    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
-    background-color: #005995 !important;
+    background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
 }
 
 body.scallywags .blue #medic {
