@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\repos\outwitters\web\health\number-1.png" afterPath="$PROJECT_DIR$/web/health/health1.png" />
-      <change type="MOVED" beforePath="C:\repos\outwitters\web\health\number-2.png" afterPath="$PROJECT_DIR$/web/health/health2.png" />
-      <change type="MOVED" beforePath="C:\repos\outwitters\web\health\number-3.png" afterPath="$PROJECT_DIR$/web/health/health3.png" />
-      <change type="MOVED" beforePath="C:\repos\outwitters\web\health\number-4.png" afterPath="$PROJECT_DIR$/web/health/health4.png" />
-      <change type="MOVED" beforePath="C:\repos\outwitters\web\health\number-5.png" afterPath="$PROJECT_DIR$/web/health/health5.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Hexagon.js" afterPath="$PROJECT_DIR$/web/js/Hexagon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Model.js" afterPath="$PROJECT_DIR$/web/js/Model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/View.js" afterPath="$PROJECT_DIR$/web/js/View.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/stylesheets/style.css" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,21 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89074695" vertical-offset="0" max-vertical-offset="1989">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
               <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="5661">
-              <caret line="75" column="18" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="18" />
+            <state vertical-scroll-proportion="-1.1947005" vertical-offset="4403" max-vertical-offset="5644">
+              <caret line="198" column="36" selection-start-line="198" selection-start-column="30" selection-end-line="198" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -145,9 +137,9 @@
         <option value="$PROJECT_DIR$/web/js/App.js" />
         <option value="$PROJECT_DIR$/web/views/index.html" />
         <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
         <option value="$PROJECT_DIR$/web/js/View.js" />
         <option value="$PROJECT_DIR$/web/js/Model.js" />
+        <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
       </list>
     </option>
   </component>
@@ -577,12 +569,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="23523000" />
+      <workItem from="1449183888350" duration="23684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23523000" />
+    <option name="totallyTimeSpent" value="23684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -918,14 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="651" max-vertical-offset="5661">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.846153" vertical-offset="475" max-vertical-offset="2193">
@@ -960,8 +944,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89074695" vertical-offset="0" max-vertical-offset="1989">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
           <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1947005" vertical-offset="4403" max-vertical-offset="5644">
+          <caret line="198" column="36" selection-start-line="198" selection-start-column="30" selection-end-line="198" selection-end-column="36" />
           <folding />
         </state>
       </provider>

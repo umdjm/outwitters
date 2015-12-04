@@ -141,8 +141,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             } else {
                 this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
             }
-
-
+            this.imgHealth.src = '../health/' + this.health + '.png';
         }
     } else {
         this.unitClass = "";
