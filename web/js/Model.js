@@ -5,7 +5,8 @@ MapEditor.Model = (function() {
         selectedClass = "t1",
         selectedUnit = "",
         selectedColor = "blue",
-        selectedTheme = "scallywags",
+        selectedPlayerRaces = ["scallywags", "scallywags", "scallywags", "scallywags"],
+        playerColors = ["blue", "red", "green", "yellow"],
         currentBase = 1,
 
 
@@ -35,13 +36,10 @@ MapEditor.Model = (function() {
             if(currentTheme > 3) currentTheme = 0;
         },
 
-        setCurrentTheme = function(id) {
-            selectedTheme = id;
-        },
-
-        getCurrentTheme = function(id) {
-            return selectedTheme;
-        },
+        setSelectedPlayerRace = function(id) {
+            var playerIndex = playerColors.indexOf(selectedColor);
+            selectedPlayerRaces[playerIndex] = id;
+        }
 
         getColor = function() {
             if(selectedUnit == "rmv") {
@@ -86,8 +84,7 @@ MapEditor.Model = (function() {
         setTheme: setTheme,
         setColor: setColor,
         swapTheme: swapTheme,
-        setCurrentTheme: setCurrentTheme,
-        getCurrentTheme: getCurrentTheme,
+        setSelectedPlayerRace: setSelectedPlayerRace,
         getUnit: getUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,

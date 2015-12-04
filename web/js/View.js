@@ -91,12 +91,7 @@ MapEditor.View = (function() {
         e.preventDefault();
         e.stopImmediatePropagation();
 
-        model.setCurrentTheme($(this).attr("title"));
-        var oldClass = $("body").attr("class");
-        $("body").switchClass(oldClass, model.getCurrentTheme(), 300, function() {
-            grid.updateImages(ctx);
-            themeChanging = false;
-        });
+        model.setSelectedPlayerRace($(this).attr("title"));
 
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
