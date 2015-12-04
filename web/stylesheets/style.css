@@ -648,7 +648,7 @@ body.scallywags .green #b {
     background: url('../tiles/scallywags_bgreen1.png') center center no-repeat;
 }
 
-.green scallywags #runner {
+.green .scallywags #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnergreen.png') -5px -5px no-repeat;
 }
