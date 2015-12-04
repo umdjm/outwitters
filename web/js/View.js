@@ -111,6 +111,14 @@ MapEditor.View = (function() {
         $(this).addClass("selected");
     });
 
+    $("div.health").click(function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        model.setHealth($(this).attr("id"));
+        $(".health.selected").removeClass("selected");
+        $(this).addClass("selected");
+    });
+
     $("div.race").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
@@ -193,21 +201,25 @@ MapEditor.View = (function() {
                 var selectedUnit = model.getUnit();
                 if(selectedUnit == "rmv") {
                     hex.unitClass = "";
+                    hex.health = "";
                     eraseOnDrag = false;
                 } else if(hex.unitClass == selectedUnit && hex.unitClass != "") {
                     hex.unitClass = "";
                     eraseOnDrag = true;
                 } else {
                     hex.unitClass = selectedUnit;
+                    hex.health = MapEditor.Model.getHealth();
                     eraseOnDrag = false;
                 }
             } else {
                 var selectedClass = model.getClass();
                 if(hex.class == selectedClass) {
                     hex.class = "";
+                    hex.health = "";
                     eraseOnDrag = true;
                 } else {
                     hex.class = selectedClass;
+                    hex.health = MapEditor.Model.getHealth();
                     eraseOnDrag = false;
                 }
             }

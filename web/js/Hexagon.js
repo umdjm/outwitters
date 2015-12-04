@@ -74,6 +74,7 @@ MapEditor.Hexagon = function(id, x, y) {
 
     this.class = "";
     this.unitClass = "";
+    this.health = "health3";
 
     this.img = new Image();
 
@@ -87,7 +88,7 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgHealth = new Image();
     this.imgHealth.width = 20;
     this.imgHealth.height = 20;
-    this.imgHealth.src = '../health/number-3.png';
+    this.imgHealth.src = '../health/health3.png';
     this.imgHealth.style.backgroundColor = "blue";
     this.imgHealth.onerror = function() {
         this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';

@@ -4,6 +4,7 @@ MapEditor.Model = (function() {
         currentTheme = 0,
         selectedClass = "t1",
         selectedUnit = "",
+        selectedHealth = "health3",
         selectedColor = "blue",
         selectedPlayerRaces = ["scallywags", "scallywags", "scallywags", "scallywags"],
         playerColors = ["blue", "red", "green", "yellow"],
@@ -39,12 +40,12 @@ MapEditor.Model = (function() {
         setSelectedPlayerRace = function(id) {
             var playerIndex = playerColors.indexOf(selectedColor);
             selectedPlayerRaces[playerIndex] = id;
-        }
+        },
 
         getSelectedPlayerRace = function(id) {
             var playerIndex = playerColors.indexOf(selectedColor);
             return selectedPlayerRaces[playerIndex];
-        }
+        },
 
         getColor = function() {
             if(selectedUnit == "rmv") {
@@ -67,9 +68,17 @@ MapEditor.Model = (function() {
             return (selectedUnit == "" ? false : selectedUnit + getColor());
         },
 
+            getHealth = function() {
+            return selectedHealth;
+        },
+
         setUnit = function(newUnit) {
             selectedUnit = newUnit;
             //selectedClass = "";
+        },
+
+        setHealth = function(newHealth) {
+            selectedHealth = newHealth;
         },
 
         rmvUnit = function() {
@@ -95,6 +104,8 @@ MapEditor.Model = (function() {
         getUnit: getUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,
+        getHealth: getHealth,
+        setHealth: setHealth,
         getBase: getBase,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
