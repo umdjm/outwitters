@@ -213,10 +213,17 @@ MapEditor.View = (function() {
 
         } else {
             if(model.isMoveMode()) {
+                var oldHex = model.getMoveStartHex();
                 if(hex.unitClass != ""){
-                    model.setMoveStartHex(hex);
-                } else if(model.getMoveStartHex() != null) {
-                    var oldHex = model.getMoveStartHex();
+                    if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
+                        var unitType = hex.getUnitType();
+
+
+                    }
+                    else {
+                        model.setMoveStartHex(hex);
+                    }
+                } else if(oldHex != null) {
                     hex.unitClass = oldHex.unitClass;
                     hex.health = oldHex.health;
                     oldHex.unitClass = "";

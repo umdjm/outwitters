@@ -100,6 +100,13 @@ MapEditor.Hexagon = function(id, x, y) {
     this.offsetY = 0;
 };
 
+MapEditor.Hexagon.prototype.getUnitType = function(){
+    $.each(MapEditor.Config, function(race, v) {
+        if(this.unitClass.indexOf(race) > -1) return race;
+    });
+    return "";
+};
+
 MapEditor.Hexagon.prototype.updateImage = function() {
     if(this.class == "" && this.unitClass == "") return;
 
