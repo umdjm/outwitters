@@ -65,6 +65,7 @@ MapEditor.View = (function() {
             themeChanging = false;
         });
     });
+
     $("div.color").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
@@ -89,6 +90,13 @@ MapEditor.View = (function() {
     $("div.race").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
+
+        model.setCurrentTheme($(this).attr("title"));
+        var oldClass = $("body").attr("class");
+        $("body").switchClass(oldClass, model.getCurrentTheme(), 300, function() {
+            grid.updateImages(ctx);
+            themeChanging = false;
+        });
 
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");

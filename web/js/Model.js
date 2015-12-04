@@ -5,6 +5,7 @@ MapEditor.Model = (function() {
         selectedClass = "t1",
         selectedUnit = "",
         selectedColor = "blue",
+        selectedTheme = "scallywags",
         currentBase = 1,
 
 
@@ -32,6 +33,14 @@ MapEditor.Model = (function() {
         swapTheme = function() {
             currentTheme++;
             if(currentTheme > 3) currentTheme = 0;
+        },
+
+        setCurrentTheme = function(id) {
+            selectedTheme = id;
+        },
+
+        getCurrentTheme = function(id) {
+            return selectedTheme;
         },
 
         getColor = function() {
