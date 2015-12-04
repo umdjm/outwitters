@@ -37,5 +37,11 @@ function loadMapData(id){
     }
 
     MapEditor.Model.setTheme(parseInt(mapTheme, 10));
+    var oldClass = $("body").attr("class");
+    $("body").switchClass(oldClass, model.getTheme(), 300, function() {
+        grid.updateImages(ctx);
+        themeChanging = false;
+    });
+
     grid.setClasses(json, ctx);
 }
