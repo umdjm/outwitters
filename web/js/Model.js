@@ -10,6 +10,7 @@ MapEditor.Model = (function() {
         selectedPlayerRaces = ["scallywags", "scallywags", "scallywags", "scallywags"],
         playerColors = ["blue", "red", "green", "yellow"],
         currentBase = 1,
+        moveMode = false,
 
 
         getClass = function() {
@@ -49,7 +50,7 @@ MapEditor.Model = (function() {
         },
 
         setMoveMode = function(input){
-            moveMode = input == true;
+            moveMode = (input == true);
         },
         isMoveMode = function(){
             return moveMode;
@@ -133,6 +134,7 @@ MapEditor.Model = (function() {
         getHealth: getHealth,
         setHealth: setHealth,
         getBase: getBase,
+        setMoveMode: setMoveMode,
         isMoveMode: isMoveMode,
         setMoveStartHex: setMoveStartHex,
         getMoveStartHex: getMoveStartHex,
