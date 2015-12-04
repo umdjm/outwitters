@@ -190,7 +190,7 @@ MapEditor.Grid.prototype.getClasses = function() {
         current = {};
         current.class = this.Hexes[h].class;
         current.unitClass = this.Hexes[h].unitClass;
-        current.playerClass = this.Hexes[h].playerClass;
+        current.playerNum = this.Hexes[h].playerNum;
         array.push(current);
     }
 
@@ -202,7 +202,19 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         current = array[h];
         this.Hexes[h].class = current.class;
         this.Hexes[h].unitClass = current.unitClass;
-        this.Hexes[h].playerClass = current.playerClass;
+        this.Hexes[h].playerNum = current.playerNum;
+        this.Hexes[h].updateImage();
+        this.Hexes[h].draw(ctx);
+    }
+    readyToStoreGridDrawn = true;
+}
+
+MapEditor.Grid.prototype.replacePlayerClass = function(array, ctx, playerNum, newClass) {
+    for(var h in this.Hexes) {
+        current = array[h];
+        this.Hexes[h].class = current.class;
+        this.Hexes[h].unitClass = current.unitClass;
+        this.Hexes[h].playerNum = current.playerNum;
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
     }

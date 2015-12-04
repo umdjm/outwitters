@@ -74,7 +74,7 @@ MapEditor.Hexagon = function(id, x, y) {
 
     this.class = "";
     this.unitClass = "";
-    this.playerClass = "";
+    this.playerNum = -1;
 
     this.img = new Image();
 
@@ -124,18 +124,22 @@ MapEditor.Hexagon.prototype.updateImage = function() {
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
 
-            if(!this.playerClass){
-                this.playerClass = "scallywags";
+            var playerClass = "";
+            if(this.playerNum == -1){
+                //start each player with scallywags race as it is the default race when starting a new map
+                playerClass = "scallywags";
+            }else{
+                playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
             }
 
             if(this.unitClass.indexOf("_special") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
-                this.imgUnit.src = '../units/' + this.playerClass + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
-                this.imgUnit.src = '../units/' + this.playerClass + '_' + this.unitClass + '.png';
+                this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else {
-                this.imgUnit.src = '../units/' + this.playerClass + '_other.png';
+                this.imgUnit.src = '../units/' + playerClass + '_other.png';
             }
 
 

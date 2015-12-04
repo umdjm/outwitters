@@ -41,9 +41,17 @@ MapEditor.Model = (function() {
             selectedPlayerRaces[playerIndex] = id;
         }
 
-        getSelectedPlayerRace = function(id) {
+        getSelectedPlayerRace = function() {
             var playerIndex = playerColors.indexOf(selectedColor);
             return selectedPlayerRaces[playerIndex];
+        }
+
+        getCurrentPlayerNum = function(){
+            return playerColors.indexOf(selectedColor);
+        }
+
+        getPlayerRace = function(id){
+            return selectedPlayerRaces[id];
         }
 
         getColor = function() {
@@ -92,6 +100,8 @@ MapEditor.Model = (function() {
         swapTheme: swapTheme,
         setSelectedPlayerRace: setSelectedPlayerRace,
         getSelectedPlayerRace: getSelectedPlayerRace,
+        getCurrentPlayerNum: getCurrentPlayerNum,
+        getPlayerRace: getPlayerRace,
         getUnit: getUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,

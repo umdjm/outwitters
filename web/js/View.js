@@ -183,18 +183,18 @@ MapEditor.View = (function() {
         } else {
             if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
-                var selectedPlayerClass = model.getSelectedPlayerRace();
+                var selectedPlayerNum = model.getCurrentPlayerNum;
                 if(selectedUnit == "rmv") {
                     hex.unitClass = "";
-                    hex.playerClass = "";
+                    hex.playerNum = -1;
                     eraseOnDrag = false;
                 } else if(hex.unitClass == selectedUnit && hex.unitClass != "") {
                     hex.unitClass = "";
-                    hex.playerClass = "";
+                    hex.playerNum = -1;
                     eraseOnDrag = true;
                 } else {
                     hex.unitClass = selectedUnit;
-                    hex.playerClass = selectedPlayerClass;
+                    hex.playerNum = selectedPlayerNum;
                     eraseOnDrag = false;
                 }
             } else {
