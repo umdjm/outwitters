@@ -331,6 +331,26 @@ div.race {
     background-color: #995e00 !important;
 }
 
+.blue div#race_scallywags {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialblue.png') -5px -5px no-repeat;
+}
+
+.blue div#race_feedback {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialblue.png') -5px -5px no-repeat;
+}
+
+.blue div#race_adorables {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
+}
+
+.blue div#race_veggienauts {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
+}
+
 body #palette div.unit#rmv {
     background-color: none !important;
 }
@@ -424,11 +444,6 @@ body.scallywags .blue #special {
 body.scallywags .blue #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
-}
-
-body.scallywags .blue #race_scallywags {
-    background-size: 50px 50px !important;
-    background: url('../units/scallywags_specialblue.png') -5px -5px no-repeat;
 }
 
 body.scallywags .red #s {
