@@ -6,14 +6,16 @@ function loadMapData(id){
 
 	var mapId = id;
 	var mapTheme, mapName, mapData;
-	maps.foreach(function(entry) {
+
+	for(int i = 0; i < maps.length; i++){
+		var entry = maps[i];
 		if(entry.mapId == mapId){
 			mapTheme = entry.mapTheme;
 			mapName = entry.mapName;
 			mapData = entry.mapData;
 		}
-	});
-
+	}
+	
     var json = JSON.parse(mapData);
     
     if(json.error) {
