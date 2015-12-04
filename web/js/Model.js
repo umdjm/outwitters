@@ -88,6 +88,7 @@ MapEditor.Model = (function() {
         getThemeID: getThemeID,
         setTheme: setTheme,
         setColor: setColor,
+        getColor: getColor,
         swapTheme: swapTheme,
         setSelectedPlayerRace: setSelectedPlayerRace,
         getSelectedPlayerRace: getSelectedPlayerRace,

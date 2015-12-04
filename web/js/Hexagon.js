@@ -122,7 +122,9 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
-            if(!this.unitClass.match(/^other\D+$/)) {
+            if(this.unitClass.match(/^_special\D+$/)) {
+                this.imgUnit.src = '../units/' + this.unitClass + 'blue.png';
+            } else if(!this.unitClass.match(/^other\D+$/)) {
                 this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
                 this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
