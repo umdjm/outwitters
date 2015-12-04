@@ -85,8 +85,8 @@ MapEditor.Hexagon = function(id, x, y) {
     }
 
     this.imgHealth = new Image();
-    this.imgHealth.width = 56;
-    this.imgHealth.height = 56;
+    this.imgHealth.width = 10;
+    this.imgHealth.height = 10;
     this.imgHealth.src = '../health/number-3.png';
     this.imgHealth.onerror = function() {
         this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
