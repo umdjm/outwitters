@@ -205,7 +205,7 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
 
 
     if(this.isUnitPlaceable() && this.unitClass != "") {
-        ctx.drawImage(this.imgSelection, this.TopLeftPoint.X - 7 - 64, this.TopLeftPoint.Y - 21 - 64, this.imgSelection.width, this.imgSelection.height);
+        ctx.drawImage(this.imgSelection, this.TopLeftPoint.X - 7 - 32, this.TopLeftPoint.Y - 21 - 32, this.imgSelection.width, this.imgSelection.height);
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
         ctx.drawImage(this.imgHealth, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.imgHealth.width, this.imgHealth.height);
     }
