@@ -47,9 +47,10 @@ MapEditor.View = (function() {
     }
 
     jQuery('.tabs .tab-links a').on('click', function(e)  {
-        var currentAttrValue = jQuery(this).attr('href');
+        var currentAttrValue = jQuery(this).attr("title");
  
         // Show/Hide Tabs
+        jQuery(currentAttrValue).show().siblings().hide();
         //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
  
         // Change/remove current tab to active
