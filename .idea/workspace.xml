@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/stylesheets/style.css" />
-    </list>
+    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="" />
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -90,13 +88,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7536232" vertical-offset="6906" max-vertical-offset="23732">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6906" max-vertical-offset="23732">
               <caret line="446" column="38" selection-start-line="446" selection-start-column="38" selection-end-line="446" selection-end-column="38" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scallywags_sniperblue.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/units/scallywags_sniperblue.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scallywags_snipergreen.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/units/scallywags_snipergreen.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scallywags_runneryellow.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/units/scallywags_runneryellow.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -559,12 +578,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="3889000" />
+      <workItem from="1449183888350" duration="4088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3889000" />
+    <option name="totallyTimeSpent" value="4088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -710,10 +729,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7536232" vertical-offset="6906" max-vertical-offset="23732">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6906" max-vertical-offset="23732">
           <caret line="446" column="38" selection-start-line="446" selection-start-column="38" selection-end-line="446" selection-end-column="38" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/units/scallywags_runneryellow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/units/scallywags_sniperblue.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/units/scallywags_snipergreen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
