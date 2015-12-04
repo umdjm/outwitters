@@ -57,7 +57,7 @@ MapEditor.View = (function() {
 
         $("#" + currentAttrValue).show();
         $("#" + currentAttrValue).addClass("active");
-        model.setMoveMode(currentAttrValue == "moveMode");
+        model.setMoveMode(currentAttrValue == "Move Mode");
 
         //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
  
