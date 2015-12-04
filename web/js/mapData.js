@@ -7,7 +7,7 @@ function loadMapData(id){
 	var mapId = id;
 	var mapTheme, mapName, mapData;
 
-	for (var i = 0; i < cars.length; i++) {
+	for (var i = 0; i < maps.length; i++) {
 		var entry = maps[i];
 		if(entry.mapId == mapId){
 			mapTheme = entry.mapTheme;
