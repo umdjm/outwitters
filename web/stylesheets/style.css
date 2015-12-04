@@ -408,22 +408,56 @@ body .blue #mobi {
 body .yellow #mobi {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
-    background-color: #995e00 !important;
-
+    background-color: #995e00 !important
 }
 body .green #mobi {
     background-size: 50px 50px !important;
-    background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
+    background: url('../units/mobi_specialgreen.png') -5px -5px no-repeat;
+    background-color: #207300 !important;
+}
+body .red #bombshell {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialred.png') -5px -5px no-repeat;
+    background-color: #7a1f00 !important;
+}
+body .blue #bombshell {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialblue.png') -5px -5px no-repeat;
+    background-color: #005995 !important;
+}
+body .yellow #bombshell {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialyellow.png') -5px -5px no-repeat;
+    background-color: #995e00 !important;
+
+}
+body .green #bombshell {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
     background-color: #207300 !important;
 }
 
-body.scallywags .blue #soldier {
+body .red #bramble {
     background-size: 50px 50px !important;
-    background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
+    background: url('../units/veggienauts_specialred.png') -5px -5px no-repeat;
+    background-color: #7a1f00 !important;
 }
+body .blue #bramble {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
+    background-color: #005995 !important;
+}
+body .yellow #bramble {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialyellow.png') -5px -5px no-repeat;
+    background-color: #995e00 !important;
 
-
-
+}
+body .green #bramble {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialgreen.png') -5px -5px no-repeat;
+    background-color: #207300 !important;
+}
 
 
 body .red #scrambler {
@@ -448,8 +482,10 @@ body .green #scrambler {
     background-color: #207300 !important;
 }
 
-
-
+body.scallywags .blue #soldier {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
+}
 
 body.scallywags .blue #medic {
     background-size: 50px 50px !important;
