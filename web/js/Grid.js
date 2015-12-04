@@ -203,7 +203,6 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         current = array[h];
         this.Hexes[h].class = current.class;
         this.Hexes[h].unitClass = current.unitClass;
-        this.Hexes[h].playerNum = current.playerNum;
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
     }

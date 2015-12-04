@@ -74,7 +74,7 @@ MapEditor.Hexagon = function(id, x, y) {
 
     this.class = "";
     this.unitClass = "";
-    this.playerNum = -1;
+    this.playerNum = 0;
     this.health = "health3";
 
     this.img = new Image();
@@ -134,10 +134,6 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             var playerClass = "";
             if(this.playerNum >= 0){
                 playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
-            }else{
-                //start each player with scallywags race as it is the default race when starting a new map
-                this.playerNum = 0;
-                playerClass = "scallywags";
             }
 
             if(this.unitClass.indexOf("_special") > -1) {
