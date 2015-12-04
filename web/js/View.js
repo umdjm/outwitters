@@ -50,7 +50,14 @@ MapEditor.View = (function() {
         var currentAttrValue = jQuery(this).attr("title");
  
         // Show/Hide Tabs
-        jQuery(currentAttrValue).show().siblings().hide();
+        $(".tab").each(function() {
+            $(this).hide();
+            $(this).removeClass("active");
+        });
+
+        $("#" + currentAttrValue).show();
+        $("#" + currentAttrValue).addClass("active");
+        
         //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
  
         // Change/remove current tab to active
