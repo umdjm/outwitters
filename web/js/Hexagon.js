@@ -124,7 +124,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
 
-            if(this.playerClass == ""){
+            if(!this.playerClass){
                 this.playerClass = MapEditor.Model.getTheme();
             }
 
