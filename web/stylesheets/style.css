@@ -591,12 +591,12 @@ body .green #feedback_special {
     background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
 }
 
-body.scallywags .red #s {
+.red .scallywags #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_sred.png') center center no-repeat;
 }
 
-body.scallywags .red #b {
+.red .scallywags #b {
     background-size: cover !important;
     background: url('../tiles/scallywags_bred1.png') center center no-repeat;
 }
@@ -636,12 +636,12 @@ body.scallywags .red #b {
     background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
 }
 
-body.scallywags .green #s {
+.green .scallywags #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_sgreen.png') center center no-repeat;
 }
 
-body.scallywags .green #b {
+.green .scallywags #b {
     background-size: cover !important;
     background: url('../tiles/scallywags_bgreen1.png') center center no-repeat;
 }
@@ -681,12 +681,12 @@ body.scallywags .green #b {
     background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
 }
 
-body.scallywags .yellow #s {
+.yellow .scallywags #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_syellow.png') center center no-repeat;
 }
 
-body.scallywags .yellow #b {
+.yellow .scallywags #b {
     background-size: cover !important;
     background: url('../tiles/scallywags_byellow1.png') center center no-repeat;
 }
@@ -816,12 +816,12 @@ body.feedback #o3 {
     display: none !important;
 }
 
-body.feedback .red #s {
+.red .feedback #s {
     background-size: cover !important;
     background: url('../tiles/feedback_sred.png') center center no-repeat;
 }
 
-body.feedback .red #b {
+.red .feedback #b {
     background-size: cover !important;
     background: url('../tiles/feedback_bred1.png') center center no-repeat;
 }
@@ -860,12 +860,12 @@ body.feedback .red #b {
     display: none !important;
 }
 
-body.feedback .green #s {
+.green .feedback #s {
     background-size: cover !important;
     background: url('../tiles/feedback_sgreen.png') center center no-repeat;
 }
 
-body.feedback .green #b {
+.green .feedback #b {
     background-size: cover !important;
     background: url('../tiles/feedback_bgreen1.png') center center no-repeat;
 }
@@ -904,12 +904,12 @@ body.feedback .green #b {
     display: none !important;
 }
 
-body.feedback .yellow #s {
+.yellow .feedback #s {
     background-size: cover !important;
     background: url('../tiles/feedback_syellow.png') center center no-repeat;
 }
 
-body.feedback .yellow #b {
+.yellow .feedback #b {
     background-size: cover !important;
     background: url('../tiles/feedback_byellow1.png') center center no-repeat;
 }
@@ -993,12 +993,12 @@ body.adorables #o3 {
     background: url('../tiles/adorables_o3.png') center center no-repeat;
 }
 
-body.adorables .blue #s {
+.blue .adorables #s {
     background-size: cover !important;
     background: url('../tiles/adorables_sblue.png') center center no-repeat;
 }
 
-body.adorables .blue #b {
+.blue .adorables #b {
     background-size: cover !important;
     background: url('../tiles/adorables_bblue1.png') center center no-repeat;
 }
@@ -1037,12 +1037,12 @@ body.adorables .blue #b {
     display: none !important;
 }
 
-body.adorables .red #s {
+.red .adorables #s {
     background-size: cover !important;
     background: url('../tiles/adorables_sred.png') center center no-repeat;
 }
 
-body.adorables .red #b {
+.red .adorables #b {
     background-size: cover !important;
     background: url('../tiles/adorables_bred1.png') center center no-repeat;
 }
@@ -1081,12 +1081,12 @@ body.adorables .red #b {
     display: none !important;
 }
 
-body.adorables .green #s {
+.green .adorables #s {
     background-size: cover !important;
     background: url('../tiles/adorables_sgreen.png') center center no-repeat;
 }
 
-body.adorables .green #b {
+.green .adorables #b {
     background-size: cover !important;
     background: url('../tiles/adorables_bgreen1.png') center center no-repeat;
 }
@@ -1125,12 +1125,12 @@ body.adorables .green #b {
     display: none !important;
 }
 
-body.adorables .yellow #s {
+.yellow .adorables #s {
     background-size: cover !important;
     background: url('../tiles/adorables_syellow.png') center center no-repeat;
 }
 
-body.adorables .yellow #b {
+.yellow .adorables #b {
     background-size: cover !important;
     background: url('../tiles/adorables_byellow1.png') center center no-repeat;
 }
