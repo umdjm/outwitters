@@ -86,9 +86,10 @@ MapEditor.View = (function() {
         $(this).addClass("selected");
     });
 
-    $("div.race").click(function(e)) {
+    $("div.race").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
+
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
     });
