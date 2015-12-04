@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.html" afterPath="$PROJECT_DIR$/web/views/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/stylesheets/style.css" />
     </list>
     <ignored path="outwitters.iws" />
@@ -63,8 +62,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86733556" vertical-offset="25215" max-vertical-offset="26112">
-              <caret line="1529" column="39" selection-start-line="1529" selection-start-column="39" selection-end-line="1529" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.9241918" vertical-offset="25198" max-vertical-offset="26146">
+              <caret line="1531" column="46" selection-start-line="1531" selection-start-column="46" selection-end-line="1531" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -111,13 +110,6 @@
               <caret line="90" column="24" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="number-1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/health/number-1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -530,12 +522,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="21408000" />
+      <workItem from="1449183888350" duration="21960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21408000" />
+    <option name="totallyTimeSpent" value="21960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -913,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86733556" vertical-offset="25215" max-vertical-offset="26112">
-          <caret line="1529" column="39" selection-start-line="1529" selection-start-column="39" selection-end-line="1529" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.9241918" vertical-offset="25198" max-vertical-offset="26146">
+          <caret line="1531" column="46" selection-start-line="1531" selection-start-column="46" selection-end-line="1531" selection-end-column="46" />
           <folding />
         </state>
       </provider>
