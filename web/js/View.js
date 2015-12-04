@@ -76,6 +76,10 @@ MapEditor.View = (function() {
 
         var oldClass = $("#palette").attr("class");
         $("#palette").removeClass(oldClass).addClass($(this).attr("id"));
+
+        var oldPlayerClass = $("#player_race").attr("class");
+        $("#player_race").removeClass(oldPlayerClass).addClass(model.getSelectedPlayerRace());
+        
         grid.updateImages(ctx);
     });
 
