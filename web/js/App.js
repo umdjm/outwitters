@@ -112,15 +112,7 @@ $(document).ready(function() {
     spinner = new Spinner(opts).spin(target).stop();
     //loadspinner = new Spinner(opts).spin(target);
 
-    var json = JSON.parse(CandyCoreMine);
-    
-    if(json.error) {
-        alert(json.errormessage);
-        return;
-    }
-
-    MapEditor.Model.setTheme(parseInt(2, 10));
-    grid.setClasses(json, ctx);
+    loadMapData(0);
 
     preload(
         "tiles/scallywags_t1.png",
