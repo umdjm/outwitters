@@ -1515,6 +1515,13 @@ p {
     background-size: 20px 20px !important;
     width: 20px !important;
     height: 20px !important;
+    margin: 4px;
+    float: left;
+    border: 1px solid black;
+}
+.health.selected {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 3px 3px #fff;
 }
 #health1 {
     background: url('../health/number-1.png') no-repeat;
