@@ -471,11 +471,6 @@ body.scallywags .blue #b {
     background: url('../tiles/scallywags_bblue1.png') center center no-repeat;
 }
 
-
-body.scallywags .blue #runner {
-    background-size: 50px 50px !important;
-    background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
-}
 body .red #adorables_special {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
@@ -561,7 +556,7 @@ body .green #feedback_special {
     background-color: #207300 !important;
 }
 
-body.scallywags .blue #runner {
+.blue .scallywags #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
@@ -606,7 +601,7 @@ body.scallywags .red #b {
     background: url('../tiles/scallywags_bred1.png') center center no-repeat;
 }
 
-body.scallywags .red #runner {
+.red .scallywags #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerred.png') -5px -5px no-repeat;
 }
@@ -787,7 +782,7 @@ body.feedback .blue #b {
     background: url('../tiles/feedback_bblue1.png') center center no-repeat;
 }
 
-body.feedback .blue #runner {
+.blue .feedback #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerblue.png') -5px -10px no-repeat;
 }
@@ -831,7 +826,7 @@ body.feedback .red #b {
     background: url('../tiles/feedback_bred1.png') center center no-repeat;
 }
 
-body.feedback .red #runner {
+.red .feedback #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerred.png') -5px -10px no-repeat;
 }
