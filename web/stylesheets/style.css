@@ -461,12 +461,12 @@ body.scallywags #o3 {
     background: url('../tiles/scallywags_o3.png') center center no-repeat;
 }
 
-body.scallywags .blue #s {
+.blue .scallywags #s {
     background-size: cover !important;
     background: url('../tiles/scallywags_sblue.png') center center no-repeat;
 }
 
-body.scallywags .blue #b {
+.blue .scallywags #b {
     background-size: cover !important;
     background: url('../tiles/scallywags_bblue1.png') center center no-repeat;
 }
@@ -772,12 +772,12 @@ body.feedback #o3 {
     background: url('../tiles/feedback_o3.png') center center no-repeat;
 }
 
-body.feedback .blue #s {
+.blue .feedback #s {
     background-size: cover !important;
     background: url('../tiles/feedback_sblue.png') center center no-repeat;
 }
 
-body.feedback .blue #b {
+.blue .feedback #b {
     background-size: cover !important;
     background: url('../tiles/feedback_bblue1.png') center center no-repeat;
 }
@@ -1214,12 +1214,12 @@ body.veggienauts #o3 {
     background: url('../tiles/veggienauts_o3.png') center center no-repeat;
 }
 
-body.veggienauts .blue #s {
+.blue .veggienauts #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_sblue.png') center center no-repeat;
 }
 
-body.veggienauts .blue #b {
+.blue .veggienauts #b {
     background-size: cover !important;
     background: url('../tiles/veggienauts_bblue1.png') center center no-repeat;
 }
@@ -1259,12 +1259,12 @@ body.veggienauts .blue #b {
     background: url('../units/veggienauts_otherblue.png') -5px -5px no-repeat;
 }
 
-body.veggienauts .red #s {
+.red .veggienauts #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_sred.png') center center no-repeat;
 }
 
-body.veggienauts .red #b {
+.red .veggienauts #b {
     background-size: cover !important;
     background: url('../tiles/veggienauts_bred1.png') center center no-repeat;
 }
@@ -1304,12 +1304,12 @@ body.veggienauts .red #b {
     background: url('../units/veggienauts_otherred.png') -5px -5px no-repeat;
 }
 
-body.veggienauts .green #s {
+.green .veggienauts #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_sgreen.png') center center no-repeat;
 }
 
-body.veggienauts .green #b {
+.green .veggienauts #b {
     background-size: cover !important;
     background: url('../tiles/veggienauts_bgreen1.png') center center no-repeat;
 }
@@ -1349,12 +1349,12 @@ body.veggienauts .green #b {
     background: url('../units/veggienauts_othergreen.png') -5px -5px no-repeat;
 }
 
-body.veggienauts .yellow #s {
+.yellow .veggienauts #s {
     background-size: cover !important;
     background: url('../tiles/veggienauts_syellow.png') center center no-repeat;
 }
 
-body.veggienauts .yellow #b {
+.yellow .veggienauts #b {
     background-size: cover !important;
     background: url('../tiles/veggienauts_byellow1.png') center center no-repeat;
 }
