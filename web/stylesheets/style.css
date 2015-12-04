@@ -1505,3 +1505,31 @@ p {
 
 .spinner {
 }
+
+.health {
+    background-size: 20px 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 4px;
+    float: left;
+    border: 1px solid black;
+}
+.health.selected {
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 3px 3px #fff;
+}
+#health1 {
+    background: url('../health/health1.png') no-repeat;
+}
+#health2 {
+    background: url('../health/health2.png') no-repeat;
+}
+#health3 {
+    background: url('../health/health3.png') no-repeat;
+}
+#health4 {
+    background: url('../health/health4.png') no-repeat;
+}
+#health5 {
+    background: url('../health/health5.png') no-repeat;
+}

@@ -75,6 +75,7 @@ MapEditor.Hexagon = function(id, x, y) {
     this.class = "";
     this.unitClass = "";
     this.playerNum = -1;
+    this.health = "health3";
 
     this.img = new Image();
 
@@ -83,6 +84,15 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgUnit.height = 56;
     this.imgUnit.onerror = function() {
         this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
+    }
+
+    this.imgHealth = new Image();
+    this.imgHealth.width = 20;
+    this.imgHealth.height = 20;
+    this.imgHealth.src = '../health/health3.png';
+    this.imgHealth.style.backgroundColor = "blue";
+    this.imgHealth.onerror = function() {
+        this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
     }
 
     this.imgUG = new Image();
@@ -142,8 +152,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             } else {
                 this.imgUnit.src = '../units/' + playerClass + '_other.png';
             }
-
-
+            this.imgHealth.src = '../health/' + this.health + '.png';
         }
     } else {
         this.unitClass = "";
@@ -199,6 +208,7 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
 
     if(this.isUnitPlaceable() && this.unitClass != "") {
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
+        ctx.drawImage(this.imgHealth, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.imgHealth.width, this.imgHealth.height);
     }
 
     /*if(this.Id)
