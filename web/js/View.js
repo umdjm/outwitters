@@ -51,6 +51,12 @@ MapEditor.View = (function() {
         e.stopImmediatePropagation();
 
         loadMapData($(this).attr("title"));
+        
+        var oldClass = $("body").attr("class");
+        $("body").switchClass(oldClass, model.getTheme(), 300, function() {
+            grid.updateImages(ctx);
+            themeChanging = false;
+        });
 
     });
 
