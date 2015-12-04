@@ -93,6 +93,9 @@ MapEditor.View = (function() {
 
         model.setSelectedPlayerRace($(this).attr("title"));
 
+        var oldClass = $("#player_race").attr("class");
+        $("#player_race").removeClass(oldClass).addClass(model.getSelectedPlayerRace());
+
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
     });

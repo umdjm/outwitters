@@ -41,6 +41,11 @@ MapEditor.Model = (function() {
             selectedPlayerRaces[playerIndex] = id;
         }
 
+        getSelectedPlayerRace = function(id) {
+            var playerIndex = playerColors.indexOf(selectedColor);
+            return selectedPlayerRaces[playerIndex];
+        }
+
         getColor = function() {
             if(selectedUnit == "rmv") {
                 return "";
@@ -85,6 +90,7 @@ MapEditor.Model = (function() {
         setColor: setColor,
         swapTheme: swapTheme,
         setSelectedPlayerRace: setSelectedPlayerRace,
+        getSelectedPlayerRace: getSelectedPlayerRace,
         getUnit: getUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,
