@@ -65,6 +65,7 @@ MapEditor.View = (function() {
             themeChanging = false;
         });
     });
+
     $("div.color").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
@@ -75,6 +76,15 @@ MapEditor.View = (function() {
 
         var oldClass = $("#palette").attr("class");
         $("#palette").removeClass(oldClass).addClass($(this).attr("id"));
+
+        var playerRace = model.getSelectedPlayerRace();
+
+        var oldPlayerClass = $("#player_race").attr("class");
+        $("#player_race").removeClass(oldPlayerClass).addClass(playerRace);
+
+        $(".race.selected").removeClass("selected");
+        $("#race_"+playerRace).addClass("selected");
+
         grid.updateImages(ctx);
     });
 
@@ -86,6 +96,18 @@ MapEditor.View = (function() {
         $(this).addClass("selected");
     });
 
+    $("div.race").click(function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        model.setSelectedPlayerRace($(this).attr("title"));
+
+        var oldClass = $("#player_race").attr("class");
+        $("#player_race").removeClass(oldClass).addClass(model.getSelectedPlayerRace());
+
+        $(".race.selected").removeClass("selected");
+        $(this).addClass("selected");
+    });
 
     $("div.terrain").click(function(e) {
         e.preventDefault();
