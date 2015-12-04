@@ -46,6 +46,26 @@ MapEditor.View = (function() {
         $("input#author").val($.cookie("author") || "");
     }
 
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr("title");
+ 
+        // Show/Hide Tabs
+        $(".tab").each(function() {
+            $(this).hide();
+            $(this).removeClass("active");
+        });
+
+        $("#" + currentAttrValue).show();
+        $("#" + currentAttrValue).addClass("active");
+        
+        //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+
     $("button#mapSelectionBtn").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();

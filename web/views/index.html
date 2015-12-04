@@ -11,95 +11,85 @@
 	<button id="mapSelectionBtn" class="mapSelectionBtn" title="6">Machination</button>
 </div>
 
-<div id="palette" class="blue">
-	<p>Miscellaneous</p>
-	<div class="terrain" id="" title="Remove Terrain">X</div>
-	<div class="unit" id="rmv" title="Remove Unit"></div>
-
-	<div id="player_race" class="scallywags">
-		<hr style='clear:both;'/>
-		<p>Terrain</p>
-		<div class="terrain selected" id='t1' title="Terrain #1"></div>
-		<div class="terrain" id='t2' title="Terrain #2"></div>
-		<div class="terrain" id='t3' title="Terrain #3"></div>
-		<div class="terrain" id='t4' title="Terrain #4"></div>
-		<div class="terrain" id="bonus" title="Bonus Space"></div>
-		<div class="terrain" id="s" title="Spawn Point"></div>
-
-		<hr style='clear:both;'/>
-		<p>Obstacles</p>
-		<div class="terrain" id='o1' title="Obstacle #1"></div>
-		<div class="terrain" id='o2' title="Obstacle #2"></div>
-		<div class="terrain" id='o3' title="Obstacle #3"></div>
-
-		<hr style='clear:both;'/>
-		<p>Bases</p>
-		<div class="terrain" id='b' title="Base"></div>
-
-		<hr style='clear:both;'/>
-		
-		<p>Units</p>
-		<div class="unit" id="runner" title="Runner"></div>
-		<div class="unit" id="soldier" title="Soldier"></div>
-		<div class="unit" id="medic" title="Medic"></div>
-		<div class="unit" id="sniper" title="Sniper"></div>
-		<div class="unit" id="heavy" title="Heavy"></div>
-		<div class="unit" id="feedback_special" title="Scrambler"></div>
-		<div class="unit" id="scallywags_special" title="Bombshell"></div>
-		<div class="unit" id="adorables_special" title="Mobi"></div>
-		<div class="unit" id="veggienauts_special" title="Bramble"></div>
-	</div>
-
-	<hr style='clear:both;'/>
-	<p>Players</p>
-	<div class="color selected" id="blue" title="Player 1"></div>
-	<div class="color" id="red" title="Player 2"></div>
-	<div class="color" id="green" title="Player 3"></div>
-	<div class="color" id="yellow" title="Player 4"></div>
-
-	<hr style='clear:both;'/>
-	<p>Race</p>
-	<div class="race selected" id="race_scallywags" title="scallywags"></div>
-	<div class="race" id="race_feedback" title="feedback"></div>
-	<div class="race" id="race_adorables" title="adorables"></div>
-	<div class="race" id="race_veggienauts" title="veggienauts"></div>
-
-    <hr style='clear:both;'/>
-    <p>Health</p>
-    <div class="health" id="health1" title="1"></div>
-    <div class="health" id="health2" title="2"></div>
-    <div class="health" id="health3" title="3"></div>
-    <div class="health" id="health4" title="4"></div>
-    <div class="health" id="health5" title="5"></div>
-
-	<hr style='clear:both;'/>
-
-	<form id="form" action="" method="POST">
-					<div class="control-group">
-				<p>Map Name</p>
-				<input id="mapname" class="input-large" type="text" maxlength="30" placeholder="A useful name" />
-				<small>The map name cannot be changed.</small>
-			</div>
-			<hr style='clear:both;'/>
-			<div class="control-group">
-				<p>Author Name</p>
-				<input id="author" class="input-large" type="text" maxlength="30" placeholder="Your OML forums nickname" />
-				<small>Your name appears when viewing the map.</small>
-			</div>
-			<hr style='clear:both;'/>
-			<div class="control-group">
-				<p>Password</p>
-				<div class="input-append">
-					<input id="pw" class="span2" type="password" data-id="" maxlength="30" placeholder="Map Password" />
-					<button type="submit" class="btn btn-primary">Save Map</button>
-				</div>
-				<small>The password is required for editing your map.</small>
-				<small>You better remember it.</small>
-			</div>
-
-	</form>
-
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a title="tab1" href="#tab1">Place Mode</a></li>
+        <li><a title="tab2" href="#tab2">Move Mode</a></li>
+    </ul>
 </div>
+
+
+<div id="palette" class="blue">
+	<div id="tab1" class="tab active">
+		<p>Miscellaneous</p>
+		<div class="terrain" id="" title="Remove Terrain">X</div>
+		<div class="unit" id="rmv" title="Remove Unit"></div>
+
+		<div id="player_race" class="scallywags">
+			<hr style='clear:both;'/>
+			<p>Terrain</p>
+			<div class="terrain selected" id='t1' title="Terrain #1"></div>
+			<div class="terrain" id='t2' title="Terrain #2"></div>
+			<div class="terrain" id='t3' title="Terrain #3"></div>
+			<div class="terrain" id='t4' title="Terrain #4"></div>
+			<div class="terrain" id="bonus" title="Bonus Space"></div>
+			<div class="terrain" id="s" title="Spawn Point"></div>
+
+			<hr style='clear:both;'/>
+			<p>Obstacles</p>
+			<div class="terrain" id='o1' title="Obstacle #1"></div>
+			<div class="terrain" id='o2' title="Obstacle #2"></div>
+			<div class="terrain" id='o3' title="Obstacle #3"></div>
+
+			<hr style='clear:both;'/>
+			<p>Bases</p>
+			<div class="terrain" id='b' title="Base"></div>
+
+			<hr style='clear:both;'/>
+			
+			<p>Units</p>
+			<div class="unit" id="runner" title="Runner"></div>
+			<div class="unit" id="soldier" title="Soldier"></div>
+			<div class="unit" id="medic" title="Medic"></div>
+			<div class="unit" id="sniper" title="Sniper"></div>
+			<div class="unit" id="heavy" title="Heavy"></div>
+			<div class="unit" id="feedback_special" title="Scrambler"></div>
+			<div class="unit" id="scallywags_special" title="Bombshell"></div>
+			<div class="unit" id="adorables_special" title="Mobi"></div>
+			<div class="unit" id="veggienauts_special" title="Bramble"></div>
+		</div>
+
+		<hr style='clear:both;'/>
+		<p>Players</p>
+		<div class="color selected" id="blue" title="Player 1"></div>
+		<div class="color" id="red" title="Player 2"></div>
+		<div class="color" id="green" title="Player 3"></div>
+		<div class="color" id="yellow" title="Player 4"></div>
+
+		<hr style='clear:both;'/>
+		<p>Race</p>
+		<div class="race selected" id="race_scallywags" title="scallywags"></div>
+		<div class="race" id="race_feedback" title="feedback"></div>
+		<div class="race" id="race_adorables" title="adorables"></div>
+		<div class="race" id="race_veggienauts" title="veggienauts"></div>
+
+	    <hr style='clear:both;'/>
+	    <p>Health</p>
+	    <div class="health" id="health1" title="1"></div>
+	    <div class="health" id="health2" title="2"></div>
+	    <div class="health" id="health3" title="3"></div>
+	    <div class="health" id="health4" title="4"></div>
+	    <div class="health" id="health5" title="5"></div>
+
+		<hr style='clear:both;'/>
+
+	</div>
+	
+	<div id="tab2" class="tab">
+
+	</div>
+</div>
+
 <div id="headline">
 	<div id="fork">
 		<button id="theme" class="btn btn-inverse btn-small "><span class='icon-retweet icon-white'></span>Change Theme</button>
