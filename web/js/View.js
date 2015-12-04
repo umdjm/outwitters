@@ -211,7 +211,19 @@ MapEditor.View = (function() {
             }
 
         } else {
-            if(model.getUnit()) {
+            if(model.isMoveMode()) {
+                if(hex.unitClass != ""){
+                    model.setMoveStartHex(hex);
+                } else if(model.getMoveStartHex() != null) {
+                    var oldHex = model.getMoveStartHex();
+                    hex.unitClass = oldHex.unitClass;
+                    hex.health = oldHex.health;
+                    oldHex.unitClass = "";
+                    oldHex.health = "";
+                    oldHex.updateImage();
+                }
+            }
+            else if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
                 var selectedPlayerNum = model.getCurrentPlayerNum();
                 if(selectedUnit == "rmv") {

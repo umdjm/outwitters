@@ -3,6 +3,7 @@ MapEditor.Model = (function() {
         themes = ["scallywags", "feedback", "adorables", "veggienauts"],
         currentTheme = 0,
         selectedClass = "t1",
+        moveStartHex = null,
         selectedUnit = "",
         selectedHealth = "health3",
         selectedColor = "blue",
@@ -46,14 +47,25 @@ MapEditor.Model = (function() {
             var playerIndex = playerColors.indexOf(selectedColor);
             return selectedPlayerRaces[playerIndex];
         },
+        isMoveMode = function(){
+            return true;
+        },
+
+        setMoveStartHex = function(hex){
+            moveStartHex = hex;
+        },
+
+        getMoveStartHex = function(){
+            return moveStartHex;
+        },
 
         getCurrentPlayerNum = function(){
             return playerColors.indexOf(selectedColor);
-        }
+        },
 
         getPlayerRace = function(id){
             return selectedPlayerRaces[id];
-        }
+        },
 
         getColor = function() {
             if(selectedUnit == "rmv") {
