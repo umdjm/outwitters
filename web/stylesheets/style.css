@@ -561,37 +561,37 @@ body .green #feedback_special {
     background-color: #207300 !important;
 }
 
-body.blue .scallywags #runner {
+body.scallywags .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
 }
 
-body.blue .scallywags #soldier {
+body.scallywags .blue #soldier {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
 }
 
-body.blue .scallywags #medic {
+body.scallywags .blue #medic {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_medicblue.png') -5px -5px no-repeat;
 }
 
-body.blue .scallywags #sniper {
+body.scallywags .blue #sniper {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_sniperblue.png') -5px -5px no-repeat;
 }
 
-body.blue .scallywags #heavy {
+body.scallywags .blue #heavy {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_heavyblue.png') -15px -5px no-repeat;
 }
 
-body.blue .scallywags #special {
+body.scallywags .blue #special {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_specialblue.png') -5px -5px no-repeat;
 }
 
-body.blue .scallywags #other {
+body.scallywags .blue #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otherblue.png') -5px -5px no-repeat;
 }
@@ -606,37 +606,37 @@ body.scallywags .red #b {
     background: url('../tiles/scallywags_bred1.png') center center no-repeat;
 }
 
-body.red .scallywags #runner {
+body.scallywags .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerred.png') -5px -5px no-repeat;
 }
 
-body.red .scallywags #soldier {
+body.scallywags .red #soldier {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_soldierred.png') -5px -5px no-repeat;
 }
 
-body.red .scallywags #medic {
+body.scallywags .red #medic {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_medicred.png') -5px -5px no-repeat;
 }
 
-body.red .scallywags #sniper {
+body.scallywags .red #sniper {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_sniperred.png') -5px -5px no-repeat;
 }
 
-body.red .scallywags #heavy {
+body.scallywags .red #heavy {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_heavyred.png') -15px -5px no-repeat;
 }
 
-body.red .scallywags #special {
+body.scallywags .red #special {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_specialred.png') -5px -5px no-repeat;
 }
 
-body.red .scallywags #other {
+body.scallywags .red #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otherred.png') -5px -5px no-repeat;
 }
@@ -651,37 +651,37 @@ body.scallywags .green #b {
     background: url('../tiles/scallywags_bgreen1.png') center center no-repeat;
 }
 
-body.green .scallywags #runner {
+body.scallywags .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnergreen.png') -5px -5px no-repeat;
 }
 
-body.green .scallywags #soldier {
+body.scallywags .green #soldier {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_soldiergreen.png') -5px -5px no-repeat;
 }
 
-body.green .scallywags #medic {
+body.scallywags .green #medic {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_medicgreen.png') -5px -5px no-repeat;
 }
 
-body.green .scallywags #sniper {
+body.scallywags .green #sniper {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_snipergreen.png') -5px -5px no-repeat;
 }
 
-body.green .scallywags #heavy {
+body.scallywags .green #heavy {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_heavygreen.png') -15px -5px no-repeat;
 }
 
-body.green .scallywags #special {
+body.scallywags .green #special {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_specialgreen.png') -5px -5px no-repeat;
 }
 
-body.green .scallywags #other {
+body.scallywags .green #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_othergreen.png') -5px -5px no-repeat;
 }
@@ -696,37 +696,37 @@ body.scallywags .yellow #b {
     background: url('../tiles/scallywags_byellow1.png') center center no-repeat;
 }
 
-body.yellow .scallywags #runner {
+body.scallywags .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runneryellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .scallywags #soldier {
+body.scallywags .yellow #soldier {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_soldieryellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .scallywags #medic {
+body.scallywags .yellow #medic {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_medicyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .scallywags #sniper {
+body.scallywags .yellow #sniper {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_sniperyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .scallywags #heavy {
+body.scallywags .yellow #heavy {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_heavyyellow.png') -15px -5px no-repeat;
 }
 
-body.yellow .scallywags #special {
+body.scallywags .yellow #special {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_specialyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .scallywags #other {
+body.scallywags .yellow #other {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_otheryellow.png') -5px -5px no-repeat;
 }
@@ -787,37 +787,37 @@ body.feedback .blue #b {
     background: url('../tiles/feedback_bblue1.png') center center no-repeat;
 }
 
-body.blue .feedback #runner {
+body.feedback .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerblue.png') -5px -10px no-repeat;
 }
 
-body.blue .feedback #soldier {
+body.feedback .blue #soldier {
     background-size: 50px 50px !important;
     background: url('../units/feedback_soldierblue.png') -5px -5px no-repeat;
 }
 
-body.blue .feedback #medic {
+body.feedback .blue #medic {
     background-size: 50px 50px !important;
     background: url('../units/feedback_medicblue.png') -5px -5px no-repeat;
 }
 
-body.blue .feedback #sniper {
+body.feedback .blue #sniper {
     background-size: 50px 50px !important;
     background: url('../units/feedback_sniperblue.png') -5px -5px no-repeat;
 }
 
-body.blue .feedback #heavy {
+body.feedback .blue #heavy {
     background-size: 50px 50px !important;
     background: url('../units/feedback_heavyblue.png') -5px -5px no-repeat;
 }
 
-body.blue .feedback #special {
+body.feedback .blue #special {
     background-size: 50px 50px !important;
     background: url('../units/feedback_specialblue.png') -5px -5px no-repeat;
 }
 
-body.blue .feedback #other {
+body.feedback .blue #other {
     display: none !important;
 }
 
@@ -831,37 +831,37 @@ body.feedback .red #b {
     background: url('../tiles/feedback_bred1.png') center center no-repeat;
 }
 
-.red .feedback #runner {
+body.feedback .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnerred.png') -5px -10px no-repeat;
 }
 
-.red .feedback #soldier {
+body.feedback .red #soldier {
     background-size: 50px 50px !important;
     background: url('../units/feedback_soldierred.png') -5px -5px no-repeat;
 }
 
-.red .feedback #medic {
+body.feedback .red #medic {
     background-size: 50px 50px !important;
     background: url('../units/feedback_medicred.png') -5px -5px no-repeat;
 }
 
-.red .feedback #sniper {
+body.feedback .red #sniper {
     background-size: 50px 50px !important;
     background: url('../units/feedback_sniperred.png') -5px -5px no-repeat;
 }
 
-.red .feedback #heavy {
+body.feedback .red #heavy {
     background-size: 50px 50px !important;
     background: url('../units/feedback_heavyred.png') -5px -5px no-repeat;
 }
 
-.red .feedback #special {
+body.feedback .red #special {
     background-size: 50px 50px !important;
     background: url('../units/feedback_specialred.png') -5px -5px no-repeat;
 }
 
-.red .feedback #other {
+body.feedback .red #other {
     display: none !important;
 }
 
@@ -875,37 +875,37 @@ body.feedback .green #b {
     background: url('../tiles/feedback_bgreen1.png') center center no-repeat;
 }
 
-.green .feedback #runner {
+body.feedback .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runnergreen.png') -5px -10px no-repeat;
 }
 
-.green .feedback #soldier {
+body.feedback .red #soldier {
     background-size: 50px 50px !important;
     background: url('../units/feedback_soldiergreen.png') -5px -5px no-repeat;
 }
 
-.green .feedback #medic {
+body.feedback .red #medic {
     background-size: 50px 50px !important;
     background: url('../units/feedback_medicgreen.png') -5px -5px no-repeat;
 }
 
-.green .feedback #sniper {
+body.feedback .red #sniper {
     background-size: 50px 50px !important;
     background: url('../units/feedback_snipergreen.png') -5px -5px no-repeat;
 }
 
-.green .feedback #heavy {
+body.feedback .red #heavy {
     background-size: 50px 50px !important;
     background: url('../units/feedback_heavygreen.png') -5px -5px no-repeat;
 }
 
-.green .feedback #special {
+body.feedback .red #special {
     background-size: 50px 50px !important;
     background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
 }
 
-.green .feedback #other {
+body.feedback .red #other {
     display: none !important;
 }
 
@@ -919,37 +919,37 @@ body.feedback .yellow #b {
     background: url('../tiles/feedback_byellow1.png') center center no-repeat;
 }
 
-.yellow .feedback #runner {
+body.feedback .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/feedback_runneryellow.png') -5px -10px no-repeat;
 }
 
-.yellow .feedback #soldier {
+body.feedback .yellow #soldier {
     background-size: 50px 50px !important;
     background: url('../units/feedback_soldieryellow.png') -5px -5px no-repeat;
 }
 
-.yellow .feedback #medic {
+body.feedback .yellow #medic {
     background-size: 50px 50px !important;
     background: url('../units/feedback_medicyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .feedback #sniper {
+body.feedback .yellow #sniper {
     background-size: 50px 50px !important;
     background: url('../units/feedback_sniperyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .feedback #heavy {
+body.feedback .yellow #heavy {
     background-size: 50px 50px !important;
     background: url('../units/feedback_heavyyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .feedback #special {
+body.feedback .yellow #special {
     background-size: 50px 50px !important;
     background: url('../units/feedback_specialyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .feedback #other {
+body.feedback .yellow #other {
     display: none !important;
 }
 
@@ -1008,37 +1008,37 @@ body.adorables .blue #b {
     background: url('../tiles/adorables_bblue1.png') center center no-repeat;
 }
 
-body.blue .adorables #runner {
+body.adorables .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/adorables_runnerblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #soldier {
+body.adorables .blue #soldier {
     background-size: 50px 50px !important;
     background: url('../units/adorables_soldierblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #medic {
+body.adorables .blue #medic {
     background-size: 50px 50px !important;
     background: url('../units/adorables_medicblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #sniper {
+body.adorables .blue #sniper {
     background-size: 50px 50px !important;
     background: url('../units/adorables_sniperblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #heavy {
+body.adorables .blue #heavy {
     background-size: 50px 50px !important;
     background: url('../units/adorables_heavyblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #special {
+body.adorables .blue #special {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialblue.png') -5px -5px no-repeat;
 }
 
-body.blue .adorables #other {
+body.adorables .blue #other {
     display: none !important;
 }
 
@@ -1052,37 +1052,37 @@ body.adorables .red #b {
     background: url('../tiles/adorables_bred1.png') center center no-repeat;
 }
 
-.red .adorables #runner {
+body.adorables .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/adorables_runnerred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #soldier {
+body.adorables .red #soldier {
     background-size: 50px 50px !important;
     background: url('../units/adorables_soldierred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #medic {
+body.adorables .red #medic {
     background-size: 50px 50px !important;
     background: url('../units/adorables_medicred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #sniper {
+body.adorables .red #sniper {
     background-size: 50px 50px !important;
     background: url('../units/adorables_sniperred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #heavy {
+body.adorables .red #heavy {
     background-size: 50px 50px !important;
     background: url('../units/adorables_heavyred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #special {
+body.adorables .red #special {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
 }
 
-.red .adorables #other {
+body.adorables .red #other {
     display: none !important;
 }
 
@@ -1096,37 +1096,37 @@ body.adorables .green #b {
     background: url('../tiles/adorables_bgreen1.png') center center no-repeat;
 }
 
-.green .adorables #runner {
+body.adorables .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/adorables_runnergreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #soldier {
+body.adorables .green #soldier {
     background-size: 50px 50px !important;
     background: url('../units/adorables_soldiergreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #medic {
+body.adorables .green #medic {
     background-size: 50px 50px !important;
     background: url('../units/adorables_medicgreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #sniper {
+body.adorables .green #sniper {
     background-size: 50px 50px !important;
     background: url('../units/adorables_snipergreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #heavy {
+body.adorables .green #heavy {
     background-size: 50px 50px !important;
     background: url('../units/adorables_heavygreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #special {
+body.adorables .green #special {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
 }
 
-.green .adorables #other {
+body.adorables .green #other {
     display: none !important;
 }
 
@@ -1140,37 +1140,37 @@ body.adorables .yellow #b {
     background: url('../tiles/adorables_byellow1.png') center center no-repeat;
 }
 
-.yellow .adorables #runner {
+body.adorables .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/adorables_runneryellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #soldier {
+body.adorables .yellow #soldier {
     background-size: 50px 50px !important;
     background: url('../units/adorables_soldieryellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #medic {
+body.adorables .yellow #medic {
     background-size: 50px 50px !important;
     background: url('../units/adorables_medicyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #sniper {
+body.adorables .yellow #sniper {
     background-size: 50px 50px !important;
     background: url('../units/adorables_sniperyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #heavy {
+body.adorables .yellow #heavy {
     background-size: 50px 50px !important;
     background: url('../units/adorables_heavyyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #special {
+body.adorables .yellow #special {
     background-size: 50px 50px !important;
     background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
 }
 
-.yellow .adorables #other {
+body.adorables .yellow #other {
     display: none !important;
 }
 
@@ -1229,37 +1229,37 @@ body.veggienauts .blue #b {
     background: url('../tiles/veggienauts_bblue1.png') center center no-repeat;
 }
 
-body.blue .veggienauts #runner {
+body .veggienauths .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_runnerblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #soldier {
+body .veggienauths .blue #soldier {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_soldierblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #medic {
+body .veggienauths .blue #medic {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_medicblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #sniper {
+body .veggienauths .blue #sniper {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_sniperblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #heavy {
+body .veggienauths .blue #heavy {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_heavyblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #special {
+body .veggienauths .blue #special {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
 }
 
-body.blue .veggienauts #other {
+body .veggienauths .blue #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_otherblue.png') -5px -5px no-repeat;
 }
@@ -1274,37 +1274,37 @@ body.veggienauts .red #b {
     background: url('../tiles/veggienauts_bred1.png') center center no-repeat;
 }
 
-.red .veggienauts #runner {
+body .veggienauths .red #runner {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_runnerred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #soldier {
+body .veggienauths .red #soldier {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_soldierred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #medic {
+body .veggienauths .red #medic {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_medicred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #sniper {
+body .veggienauths .red #sniper {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_sniperred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #heavy {
+body .veggienauths .red #heavy {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_heavyred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #special {
+body .veggienauths .red #special {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_specialred.png') -5px -5px no-repeat;
 }
 
-.red .veggienauts #other {
+body .veggienauths .red #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_otherred.png') -5px -5px no-repeat;
 }
@@ -1319,37 +1319,37 @@ body.veggienauts .green #b {
     background: url('../tiles/veggienauts_bgreen1.png') center center no-repeat;
 }
 
-.green .veggienauts #runner {
+body .veggienauths .green #runner {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_runnergreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #soldier {
+body .veggienauths .green #soldier {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_soldiergreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #medic {
+body .veggienauths .green #medic {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_medicgreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #sniper {
+body .veggienauths .green #sniper {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_snipergreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #heavy {
+body .veggienauths .green #heavy {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_heavygreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #special {
+body .veggienauths .green #special {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_specialgreen.png') -5px -5px no-repeat;
 }
 
-.green .veggienauts #other {
+body .veggienauths .green #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_othergreen.png') -5px -5px no-repeat;
 }
@@ -1364,37 +1364,37 @@ body.veggienauts .yellow #b {
     background: url('../tiles/veggienauts_byellow1.png') center center no-repeat;
 }
 
-body.yellow .veggienauts #runner {
+body .veggienauths .yellow #runner {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_runneryellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #soldier {
+body .veggienauths .yellow #soldier {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_soldieryellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #medic {
+body .veggienauths .yellow #medic {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_medicyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #sniper {
+body .veggienauths .yellow #sniper {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_sniperyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #heavy {
+body .veggienauths .yellow #heavy {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_heavyyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #special {
+body .veggienauths .yellow #special {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_specialyellow.png') -5px -5px no-repeat;
 }
 
-body.yellow .veggienauts #other {
+body .veggienauths .yellow #other {
     background-size: 50px 50px !important;
     background: url('../units/veggienauts_otheryellow.png') -5px -5px no-repeat;
 }
