@@ -22,4 +22,9 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.html');
 });
 
+$app->get('/{name}', function($name) use($app) {
+  $app['monolog']->addDebug('logging output.');
+  return $app['twig']->render('index.html');
+});
+
 $app->run();
