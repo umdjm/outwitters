@@ -243,14 +243,7 @@ MapEditor.View = (function() {
         }
 
         if(model.getUnit()) {
-            var selectedUnit = model.getUnit();
-            if(selectedUnit == "rmv") {
-                hex.unitClass = "";
-            } else if(hex.unitClass == selectedUnit && eraseOnDrag) {
-                hex.unitClass = "";
-            } else if(!eraseOnDrag) {
-                hex.unitClass = selectedUnit;
-            }
+            return;
         } else {
             var selectedClass = model.getClass();
             if(hex.class == selectedClass && eraseOnDrag) {
