@@ -112,7 +112,7 @@ $(document).ready(function() {
     spinner = new Spinner(opts).spin(target).stop();
     //loadspinner = new Spinner(opts).spin(target);
 
-    loadMapData(0);
+    loadMapData(1);
 
     preload(
         "tiles/scallywags_t1.png",
