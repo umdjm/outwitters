@@ -422,6 +422,35 @@ body.scallywags .blue #soldier {
     background: url('../units/scallywags_soldierblue.png') -5px -5px no-repeat;
 }
 
+
+
+
+
+body .red #scrambler {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialred.png') -5px -5px no-repeat;
+    background-color: #7a1f00 !important;
+}
+body .blue #scrambler {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialblue.png') -5px -5px no-repeat;
+    background-color: #005995 !important;
+}
+body .yellow #scrambler {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialyellow.png') -5px -5px no-repeat;
+    background-color: #995e00 !important;
+
+}
+body .green #scrambler {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
+    background-color: #207300 !important;
+}
+
+
+
+
 body.scallywags .blue #medic {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_medicblue.png') -5px -5px no-repeat;

@@ -80,8 +80,8 @@
       <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.672728" vertical-offset="21" max-vertical-offset="1836">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.436363" vertical-offset="21" max-vertical-offset="1836">
+              <caret line="35" column="35" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35451505" vertical-offset="6805" max-vertical-offset="23239">
-              <caret line="419" column="30" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.7536232" vertical-offset="6906" max-vertical-offset="23732">
+              <caret line="446" column="38" selection-start-line="446" selection-start-column="38" selection-end-line="446" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -559,12 +559,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="3511000" />
+      <workItem from="1449183888350" duration="3889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3511000" />
+    <option name="totallyTimeSpent" value="3889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -692,10 +692,15 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/units/adorables_specialred.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.672728" vertical-offset="21" max-vertical-offset="1836">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.436363" vertical-offset="21" max-vertical-offset="1836">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -705,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35451505" vertical-offset="6805" max-vertical-offset="23239">
-          <caret line="419" column="30" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.7536232" vertical-offset="6906" max-vertical-offset="23732">
+          <caret line="446" column="38" selection-start-line="446" selection-start-column="38" selection-end-line="446" selection-end-column="38" />
           <folding />
         </state>
       </provider>
