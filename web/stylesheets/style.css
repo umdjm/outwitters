@@ -1510,3 +1510,22 @@ p {
 
 .spinner {
 }
+
+.health {
+    background-size: 20px 20px !important;
+}
+#health1 {
+    background: url('../health/number-1.png') -5px -5px no-repeat;
+}
+#health2 {
+    background: url('../health/number-2.png') -5px -5px no-repeat;
+}
+#health3 {
+    background: url('../health/number-3.png') -5px -5px no-repeat;
+}
+#health4 {
+    background: url('../health/number-4.png') -5px -5px no-repeat;
+}
+#health5 {
+    background: url('../health/number-5.png') -5px -5px no-repeat;
+}

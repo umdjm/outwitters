@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="" />
+    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.html" afterPath="$PROJECT_DIR$/web/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/stylesheets/style.css" />
+    </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,10 +35,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="number-3.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="number-3.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/health/number-3.png">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-26.192308" vertical-offset="424" max-vertical-offset="2193">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#2;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#3;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#4;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#5;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#6;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.86733556" vertical-offset="25215" max-vertical-offset="26112">
+              <caret line="1529" column="39" selection-start-line="1529" selection-start-column="39" selection-end-line="1529" selection-end-column="39" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -50,16 +81,6 @@
         <entry file="file://$PROJECT_DIR$/web/health/number-5.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11359" max-vertical-offset="25789">
-              <caret line="678" column="33" selection-start-line="678" selection-start-column="33" selection-end-line="678" selection-end-column="33" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -86,7 +107,7 @@
       <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.103449" vertical-offset="918" max-vertical-offset="5644">
+            <state vertical-scroll-proportion="-26.37931" vertical-offset="765" max-vertical-offset="5644">
               <caret line="90" column="24" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
               <folding />
             </state>
@@ -97,16 +118,6 @@
         <entry file="file://$PROJECT_DIR$/web/health/number-1.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/Grid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3791">
-              <caret line="94" column="33" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="33" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -121,11 +132,11 @@
         <option value="$PROJECT_DIR$/web/tiles/copytiles.sh" />
         <option value="$PROJECT_DIR$/web/views/index.twig" />
         <option value="$PROJECT_DIR$/web/js/Model.js" />
-        <option value="$PROJECT_DIR$/web/views/index.html" />
-        <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/js/App.js" />
         <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
+        <option value="$PROJECT_DIR$/web/views/index.html" />
+        <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
       </list>
     </option>
   </component>
@@ -210,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,7 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,12 +530,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="20273000" />
+      <workItem from="1449183888350" duration="21408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20273000" />
+    <option name="totallyTimeSpent" value="21408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -665,14 +676,6 @@
     <entry file="file://$PROJECT_DIR$/web/units/feedback_specialblue.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0" vertical-offset="424" max-vertical-offset="2057">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
@@ -819,14 +822,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11359" max-vertical-offset="25789">
-          <caret line="678" column="33" selection-start-line="678" selection-start-column="33" selection-end-line="678" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6891892" vertical-offset="0" max-vertical-offset="901">
@@ -867,14 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.103449" vertical-offset="918" max-vertical-offset="5644">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/health/number-2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -898,6 +885,38 @@
     <entry file="file://$PROJECT_DIR$/web/health/number-3.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.37931" vertical-offset="765" max-vertical-offset="5644">
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.192308" vertical-offset="424" max-vertical-offset="2193">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#3;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#4;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#5;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#6;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86733556" vertical-offset="25215" max-vertical-offset="26112">
+          <caret line="1529" column="39" selection-start-line="1529" selection-start-column="39" selection-end-line="1529" selection-end-column="39" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
