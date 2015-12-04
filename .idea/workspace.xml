@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/health/number-1.png" afterPath="$PROJECT_DIR$/web/health/number-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/health/number-2.png" afterPath="$PROJECT_DIR$/web/health/number-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/health/number-3.png" afterPath="$PROJECT_DIR$/web/health/number-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/health/number-4.png" afterPath="$PROJECT_DIR$/web/health/number-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/health/number-5.png" afterPath="$PROJECT_DIR$/web/health/number-5.png" />
-    </list>
+    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="" />
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -38,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="number-3.png" pinned="false" current-in-tab="false">
+      <file leaf-file-name="number-3.png" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/health/number-3.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -52,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="number-5.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="number-5.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/health/number-5.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -525,12 +519,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="20196000" />
+      <workItem from="1449183888350" duration="20273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20196000" />
+    <option name="totallyTimeSpent" value="20273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -881,17 +875,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/health/number-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/health/number-2.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/health/number-3.png">
+    <entry file="file://$PROJECT_DIR$/web/health/number-1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -902,6 +891,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/health/number-5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/health/number-3.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
