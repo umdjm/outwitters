@@ -91,9 +91,6 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgHealth.height = 20;
     this.imgHealth.src = '../health/health3.png';
     this.imgHealth.style.backgroundColor = "blue";
-    this.imgHealth.onerror = function() {
-        this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
-    }
 
     this.imgUG = new Image();
     this.imgUG.width = 48;
