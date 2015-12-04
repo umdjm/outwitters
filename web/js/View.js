@@ -225,7 +225,7 @@ MapEditor.View = (function() {
             }
 
         } else {
-            else if(model.getUnit()) {
+            if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
                 var selectedPlayerNum = model.getCurrentPlayerNum();
                 if(selectedUnit == "rmv") {
