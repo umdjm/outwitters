@@ -209,18 +209,6 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
     readyToStoreGridDrawn = true;
 }
 
-MapEditor.Grid.prototype.replacePlayerClass = function(array, ctx, playerNum, newClass) {
-    for(var h in this.Hexes) {
-        current = array[h];
-        this.Hexes[h].class = current.class;
-        this.Hexes[h].unitClass = current.unitClass;
-        this.Hexes[h].playerNum = current.playerNum;
-        this.Hexes[h].updateImage();
-        this.Hexes[h].draw(ctx);
-    }
-    readyToStoreGridDrawn = true;
-}
-
 MapEditor.Grid.prototype.updateImages = function(ctx) {
 
     for (var h in this.Hexes)
