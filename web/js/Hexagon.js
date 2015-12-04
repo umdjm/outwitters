@@ -129,6 +129,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
                 playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
             }else{
                 //start each player with scallywags race as it is the default race when starting a new map
+                this.playerNum = 0;
                 playerClass = "scallywags";
             }
 
