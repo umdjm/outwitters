@@ -46,6 +46,14 @@ MapEditor.View = (function() {
         $("input#author").val($.cookie("author") || "");
     }
 
+    $("button#mapSelectionBtn").click(function(e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        loadMapData($(this).attr("title"));
+
+    });
+
     $("button#theme").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
