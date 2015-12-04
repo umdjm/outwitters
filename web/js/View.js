@@ -230,7 +230,8 @@ MapEditor.View = (function() {
                 if(hex.unitClass != ""){
                     if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
                         var unitType = hex.getUnitType();
-
+                        if(unitType =="")
+                        MapEditor.Config["unitType"]
 
                     }
                     else {
