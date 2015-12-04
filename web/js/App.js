@@ -62,7 +62,7 @@ var storeMapImageForked = function() {
 var fillMapData = function(mapID, themeID) {
     thisMapID = mapID;
     MapEditor.View.enableRating();
-    $.post("ajax/get.php", {"id": mapID}, function(response) {
+    $.post("http://omc.wappdesign.net/ajax/get.php", {"id": mapID}, function(response) {
         var json = JSON.parse(response);
 
         if(json.error) {

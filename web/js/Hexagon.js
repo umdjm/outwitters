@@ -122,8 +122,8 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 
     if(this.isUnitPlaceable()) {
         if(this.unitClass != "") {
-            if(this.unitClass.match(/^_special\D+$/)) {
-                this.imgUnit.src = '../units/' + this.unitClass + 'blue.png';
+            if(this.unitClass.indexOf("_special") > -1) {
+                this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
                 this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_' + this.unitClass + '.png';
             } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
