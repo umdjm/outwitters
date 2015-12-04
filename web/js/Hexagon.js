@@ -92,6 +92,11 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgHealth.src = '../health/health3.png';
     this.imgHealth.style.backgroundColor = "blue";
 
+    this.imgSelection = new Image();
+    this.imgSelection.width = 128;
+    this.imgSelection.height = 128;
+    this.imgSelection.src = '../img/selectedUnit.png';
+
     this.imgUG = new Image();
     this.imgUG.width = 48;
     this.imgUG.height = 54;
@@ -207,6 +212,9 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
 
 
     if(this.isUnitPlaceable() && this.unitClass != "") {
+        if(MapEditor.Model.getMoveStartHex() == this){
+            ctx.drawImage(this.imgSelection, this.TopLeftPoint.X - 39, this.TopLeftPoint.Y - 53, this.imgSelection.width, this.imgSelection.height);
+        }
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
         ctx.drawImage(this.imgHealth, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.imgHealth.width, this.imgHealth.height);
     }

@@ -182,7 +182,20 @@ MapEditor.View = (function() {
 
         if(!hex) return;
 
-        if(model.isBaseSelected() && !model.getUnit()) {
+        if(model.isMoveMode()) {
+            if(hex.unitClass != ""){
+                model.setMoveStartHex(hex);
+            } else if(model.getMoveStartHex() != null) {
+                var oldHex = model.getMoveStartHex();
+                hex.unitClass = oldHex.unitClass;
+                hex.playerNum = oldHex.playerNum;
+                hex.health = oldHex.health;
+                oldHex.unitClass = "";
+                oldHex.health = "";
+                oldHex.playerNum = 0;
+                oldHex.updateImage();
+            }
+        }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
                 selectedClass = model.getClass(),
