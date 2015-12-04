@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Hexagon.js" afterPath="$PROJECT_DIR$/web/js/Hexagon.js" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,73 +27,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scallywags_t4.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_t4.png">
+      <file leaf-file-name="number-2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/health/number-2.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scallywags_t3.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_t3.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="11359" max-vertical-offset="25789">
+              <caret line="678" column="33" selection-start-line="678" selection-start-column="33" selection-end-line="678" selection-end-column="33" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scallywags_t2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_t2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="View.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/View.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3859" max-vertical-offset="8823">
+              <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scallywags_t1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_t1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scallywags_byellow1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_byellow1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scallywags_byellow.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_byellow.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scallywags_bred1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_bred1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scallywags_bred.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_bred.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scallywags_bonus.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/tiles/scallywags_bonus.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="veggienauts_bonus.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/tiles/veggienauts_bonus.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5627">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -109,10 +76,10 @@
         <option value="$PROJECT_DIR$/web/views/index.twig" />
         <option value="$PROJECT_DIR$/web/js/Model.js" />
         <option value="$PROJECT_DIR$/web/views/index.html" />
-        <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
         <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/js/App.js" />
+        <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
       </list>
     </option>
   </component>
@@ -197,24 +164,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outwitters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outwitters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,25 +200,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outwitters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="outwitters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="health" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,12 +473,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="15984000" />
+      <workItem from="1449183888350" duration="16764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15984000" />
+    <option name="totallyTimeSpent" value="16764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -714,34 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18617614" vertical-offset="11359" max-vertical-offset="25789">
-          <caret line="678" column="33" selection-start-line="678" selection-start-column="33" selection-end-line="678" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="5474">
-          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2894" max-vertical-offset="3791">
           <caret line="213" column="30" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4827585" vertical-offset="221" max-vertical-offset="8704">
-          <caret line="36" column="32" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -904,6 +811,35 @@
     <entry file="file://$PROJECT_DIR$/web/tiles/veggienauts_bonus.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/health/number-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11359" max-vertical-offset="25789">
+          <caret line="678" column="33" selection-start-line="678" selection-start-column="33" selection-end-line="678" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3859" max-vertical-offset="8823">
+          <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5627">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

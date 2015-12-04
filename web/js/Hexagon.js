@@ -84,6 +84,14 @@ MapEditor.Hexagon = function(id, x, y) {
         this.imgUnit.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
     }
 
+    this.imgHealth = new Image();
+    this.imgHealth.width = 56;
+    this.imgHealth.height = 56;
+    this.imgHealth.src = '../health/number-3.png';
+    this.imgHealth.onerror = function() {
+        this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
+    }
+
     this.imgUG = new Image();
     this.imgUG.width = 48;
     this.imgUG.height = 54;
@@ -187,6 +195,7 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
 
     if(this.isUnitPlaceable() && this.unitClass != "") {
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
+        ctx.drawImage(this.imgHealth, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgHealth.width, this.imgHealth.height);
     }
 
     /*if(this.Id)
