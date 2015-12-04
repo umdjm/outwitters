@@ -183,7 +183,7 @@ MapEditor.View = (function() {
         } else {
             if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
-                var selectedPlayerNum = model.getCurrentPlayerNum;
+                var selectedPlayerNum = model.getCurrentPlayerNum();
                 if(selectedUnit == "rmv") {
                     hex.unitClass = "";
                     hex.playerNum = -1;
