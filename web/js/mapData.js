@@ -38,7 +38,8 @@ function loadMapData(id){
 
     MapEditor.Model.setTheme(parseInt(mapTheme, 10));
 
-    $("#mapname").innerHTML = mapName;
+    var maphtml = $("#mapname");
+    maphtml.innerHTML = mapName;
 
     grid.setClasses(json, ctx);
 }
