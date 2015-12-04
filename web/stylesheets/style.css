@@ -351,6 +351,66 @@ div.race {
     background: url('../units/veggienauts_specialblue.png') -5px -5px no-repeat;
 }
 
+.red div#race_scallywags {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialred.png') -5px -5px no-repeat;
+}
+
+.red div#race_feedback {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialred.png') -5px -5px no-repeat;
+}
+
+.red div#race_adorables {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialred.png') -5px -5px no-repeat;
+}
+
+.red div#race_veggienauts {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialred.png') -5px -5px no-repeat;
+}
+
+.green div#race_scallywags {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialgreen.png') -5px -5px no-repeat;
+}
+
+.green div#race_feedback {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialgreen.png') -5px -5px no-repeat;
+}
+
+.green div#race_adorables {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialgreen.png') -5px -5px no-repeat;
+}
+
+.green div#race_veggienauts {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialgreen.png') -5px -5px no-repeat;
+}
+
+.yellow div#race_scallywags {
+    background-size: 50px 50px !important;
+    background: url('../units/scallywags_specialyellow.png') -5px -5px no-repeat;
+}
+
+.yellow div#race_feedback {
+    background-size: 50px 50px !important;
+    background: url('../units/feedback_specialyellow.png') -5px -5px no-repeat;
+}
+
+.yellow div#race_adorables {
+    background-size: 50px 50px !important;
+    background: url('../units/adorables_specialyellow.png') -5px -5px no-repeat;
+}
+
+.yellow div#race_veggienauts {
+    background-size: 50px 50px !important;
+    background: url('../units/veggienauts_specialyellow.png') -5px -5px no-repeat;
+}
+
 body #palette div.unit#rmv {
     background-color: none !important;
 }
