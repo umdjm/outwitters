@@ -85,8 +85,8 @@ MapEditor.Hexagon = function(id, x, y) {
     }
 
     this.imgHealth = new Image();
-    this.imgHealth.width = 10;
-    this.imgHealth.height = 10;
+    this.imgHealth.width = 20;
+    this.imgHealth.height = 20;
     this.imgHealth.src = '../health/number-3.png';
     this.imgHealth.onerror = function() {
         this.imgHealth.src = '../units/' + MapEditor.Model.getTheme() + '_other.png';
@@ -195,7 +195,7 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
 
     if(this.isUnitPlaceable() && this.unitClass != "") {
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
-        ctx.drawImage(this.imgHealth, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgHealth.width, this.imgHealth.height);
+        ctx.drawImage(this.imgHealth, this.TopLeftPoint.X, this.TopLeftPoint.Y, this.imgHealth.width, this.imgHealth.height);
     }
 
     /*if(this.Id)
