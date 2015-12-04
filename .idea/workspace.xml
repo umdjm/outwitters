@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="" />
+    <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/style.css" afterPath="$PROJECT_DIR$/web/stylesheets/style.css" />
+    </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -110,8 +112,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64631337" vertical-offset="7548" max-vertical-offset="25772">
-              <caret line="477" column="0" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4503902" vertical-offset="7637" max-vertical-offset="25789">
+              <caret line="473" column="0" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,8 +131,8 @@
         <option value="$PROJECT_DIR$/web/views/index.twig" />
         <option value="$PROJECT_DIR$/web/js/Model.js" />
         <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
-        <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/web/views/index.html" />
+        <option value="$PROJECT_DIR$/web/stylesheets/style.css" />
       </list>
     </option>
   </component>
@@ -578,12 +580,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="9894000" />
+      <workItem from="1449183888350" duration="10041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9894000" />
+    <option name="totallyTimeSpent" value="10041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -795,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64631337" vertical-offset="7548" max-vertical-offset="25772">
-          <caret line="477" column="0" selection-start-line="477" selection-start-column="0" selection-end-line="477" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4503902" vertical-offset="7637" max-vertical-offset="25789">
+          <caret line="473" column="0" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
           <folding />
         </state>
       </provider>

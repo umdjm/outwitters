@@ -471,6 +471,7 @@ body.scallywags .blue #b {
     background: url('../tiles/scallywags_bblue1.png') center center no-repeat;
 }
 
+
 body.scallywags .blue #runner {
     background-size: 50px 50px !important;
     background: url('../units/scallywags_runnerblue.png') -5px -5px no-repeat;
