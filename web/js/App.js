@@ -62,6 +62,7 @@ var storeMapImageForked = function() {
 var fillMapData = function(mapID, themeID) {
     thisMapID = mapID;
     MapEditor.View.enableRating();
+    /*
     $.post("ajax/get.php", {"id": mapID}, function(response) {
         var json = JSON.parse(response);
 
@@ -74,6 +75,16 @@ var fillMapData = function(mapID, themeID) {
         grid.setClasses(json, ctx);
 
     });
+    */
+    var json = JSON.parse(CandyCoreMine);
+    
+    if(json.error) {
+        alert(json.errormessage);
+        return;
+    }
+
+    MapEditor.Model.setTheme(parseInt(themeID, 10));
+    grid.setClasses(json, ctx);
 };
 
 var onRedraw = function() {
