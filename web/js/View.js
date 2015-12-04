@@ -218,9 +218,11 @@ MapEditor.View = (function() {
                 } else if(model.getMoveStartHex() != null) {
                     var oldHex = model.getMoveStartHex();
                     hex.unitClass = oldHex.unitClass;
+                    hex.playerNum = oldHex.playerNum;
                     hex.health = oldHex.health;
                     oldHex.unitClass = "";
                     oldHex.health = "";
+                    oldHex.playerNum = 0;
                     oldHex.updateImage();
                 }
             }
