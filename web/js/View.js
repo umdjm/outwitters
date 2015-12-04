@@ -114,6 +114,8 @@ MapEditor.View = (function() {
 
         $(".race.selected").removeClass("selected");
         $(this).addClass("selected");
+
+        grid.updateImages(ctx);
     });
 
     $("div.terrain").click(function(e) {
