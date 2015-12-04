@@ -132,7 +132,7 @@ MapEditor.Model = (function() {
         getBase: getBase,
         isMoveMode: isMoveMode,
         setMoveStartHex: setMoveStartHex,
-        getMoveStartHex: getMoveStartHex
+        getMoveStartHex: getMoveStartHex,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();
