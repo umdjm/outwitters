@@ -148,7 +148,7 @@ MapEditor.Model = (function() {
         },
         popForward = function(){
             if(forwardMoveQueue.length == 0) return null;
-            moveQueue.push(getBoardState);
+            moveQueue.push(getBoardState());
             var boardState = forwardMoveQueue.pop();
             wits = boardState.wits;
             $("#currentWits").val(wits);
@@ -185,6 +185,7 @@ MapEditor.Model = (function() {
         popForward: popForward,
         addWitUsed: addWitUsed,
         setWits: setWits,
+        getBoardState: getBoardState,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();

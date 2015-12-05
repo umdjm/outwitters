@@ -186,7 +186,7 @@ MapEditor.View = (function() {
         e.preventDefault();
         var offset = $(this).offset();
         var hex = grid.GetHexAt(new MapEditor.Point(e.pageX - offset.left, e.pageY - offset.top));
-        var startState = grid.getClasses();
+        var startState = model.getBoardState();
 
         if(!hex) return;
 
