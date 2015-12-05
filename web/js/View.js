@@ -183,10 +183,26 @@ MapEditor.View = (function() {
         if(!hex) return;
 
         if(model.isMoveMode()) {
+            var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                model.setMoveStartHex(hex);
-            } else if(model.getMoveStartHex() != null) {
-                var oldHex = model.getMoveStartHex();
+                if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
+                    var unitType = oldHex.getUnitType();
+                    if(MapEditor.Config.hasOwnProperty(unitType)){
+                        var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
+                        var oldHealth = parseInt(hex.health.replace("health", ""));
+                        var newHealth = oldHealth - attack;
+                        if(newHealth <= 0){
+                            hex.unitClass = "";
+                            hex.health = "";
+                        }else {
+                            hex.health = "health" + newHealth;
+                        }
+                    }
+                }
+                else {
+                    model.setMoveStartHex(hex);
+                }
+            } else if(oldHex != null) {
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
                 var unitMoveRange = unit.RANGE;
