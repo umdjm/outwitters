@@ -179,6 +179,7 @@ MapEditor.View = (function() {
         e.preventDefault();
         var offset = $(this).offset();
         var hex = grid.GetHexAt(new MapEditor.Point(e.pageX - offset.left, e.pageY - offset.top));
+        var startState = grid.getClasses();
 
         if(!hex) return;
 
@@ -202,7 +203,7 @@ MapEditor.View = (function() {
                                 hex.health = "health" + newHealth;
                             }
                         }
-                        model.pushMove(grid.getClasses());
+                        model.pushMove(startState);
                         model.setMoveStartHex(null);
                     }else{
                         model.setMoveStartHex(hex);
@@ -225,7 +226,7 @@ MapEditor.View = (function() {
                     oldHex.playerNum = 0;
 
                     oldHex.updateImage();
-                    model.pushMove(grid.getClasses());
+                    model.pushMove(startState);
                     model.setMoveStartHex(null);
                 }else{
                     model.setMoveStartHex(hex);
