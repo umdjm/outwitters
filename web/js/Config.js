@@ -39,8 +39,8 @@ MapEditor.Config = {
     },
     "Scrambler":{
         ATTACK_STRENGTH: 0,
-            ATTACK_RANGE: 1,
-            RANGE: 3
+        ATTACK_RANGE: 1,
+        RANGE: 3
     },
     "Mobi":{
         ATTACK_STRENGTH: 0,

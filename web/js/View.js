@@ -187,13 +187,18 @@ MapEditor.View = (function() {
                 model.setMoveStartHex(hex);
             } else if(model.getMoveStartHex() != null) {
                 var oldHex = model.getMoveStartHex();
-                hex.unitClass = oldHex.unitClass;
-                hex.playerNum = oldHex.playerNum;
-                hex.health = oldHex.health;
-                oldHex.unitClass = "";
-                oldHex.health = "";
-                oldHex.playerNum = 0;
-                oldHex.updateImage();
+                var unitType = hex.getUnitType();
+                var unitMoveRange = unitType.RANGE;
+                var hexDistance = grid.GetHexDistance(oldHex, hex);
+                if(unitMoveRange <= hexDistance){
+                    hex.unitClass = oldHex.unitClass;
+                    hex.playerNum = oldHex.playerNum;
+                    hex.health = oldHex.health;
+                    oldHex.unitClass = "";
+                    oldHex.health = "";
+                    oldHex.playerNum = 0;
+                    oldHex.updateImage();
+                }
             }
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
