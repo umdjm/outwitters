@@ -168,7 +168,9 @@ MapEditor.Hexagon.prototype.updateImage = function() {
     } else {
         this.unitClass = "";
         this.health = "";
-        this.playerNum = -1;
+        if(!this.class.match(/b\D+\d/)) {
+            this.playerNum = -1;
+        }
     }
 
 }
