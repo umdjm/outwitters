@@ -185,19 +185,26 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
+                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
                     var unitType = oldHex.getUnitType();
-                    if(MapEditor.Config.hasOwnProperty(unitType)){
-                        var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
-                        var oldHealth = parseInt(hex.health.replace("health", ""));
-                        var newHealth = oldHealth - attack;
-                        if(newHealth <= 0){
-                            hex.unitClass = "";
-                            hex.health = "";
-                        }else {
-                            hex.health = "health" + newHealth;
+                    var unit = MapEditor.Config[unitType];
+                    var unitAttackRange = unit.ATTACK_RANGE;
+                    var hexDistance = grid.GetHexDistance(oldHex, hex);
+                    if(unitAttackRange >= hexDistance){
+                        if(MapEditor.Config.hasOwnProperty(unitType)){
+                            var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
+                            var oldHealth = parseInt(hex.health.replace("health", ""));
+                            var newHealth = oldHealth - attack;
+                            if(newHealth <= 0){
+                                hex.unitClass = "";
+                                hex.health = "";
+                            }else {
+                                hex.health = "health" + newHealth;
+                            }
                         }
-                        model.pushMove(grid.getClasses());
+                        model.pushMove(grid.getClasses());//test
+                    }else{
+                        model.setMoveStartHex(hex);
                     }
                 }
                 else {
@@ -218,7 +225,7 @@ MapEditor.View = (function() {
                     oldHex.updateImage();
                     model.pushMove(grid.getClasses());
                 }else{
-                    model.setMoveStartHex(null);
+                    model.setMoveStartHex(hex);
                 }
             }
         }else if(model.isBaseSelected() && !model.getUnit()) {
