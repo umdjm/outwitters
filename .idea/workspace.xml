@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Grid.js" afterPath="$PROJECT_DIR$/web/js/Grid.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Hexagon.js" afterPath="$PROJECT_DIR$/web/js/Hexagon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/View.js" afterPath="$PROJECT_DIR$/web/js/View.js" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +87,10 @@
       <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8472687" vertical-offset="1008" max-vertical-offset="6188">
-              <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.3329493" vertical-offset="2720" max-vertical-offset="6273">
+              <caret line="177" column="28" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="28" />
               <folding>
-                <element signature="e#11858#12686#0" expanded="false" />
+                <element signature="e#12018#12846#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -495,12 +493,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="60321000" />
+      <workItem from="1449183888350" duration="60743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60321000" />
+    <option name="totallyTimeSpent" value="60743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -887,10 +885,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8472687" vertical-offset="1008" max-vertical-offset="6188">
-          <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.3329493" vertical-offset="2720" max-vertical-offset="6273">
+          <caret line="177" column="28" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="28" />
           <folding>
-            <element signature="e#11858#12686#0" expanded="false" />
+            <element signature="e#12018#12846#0" expanded="false" />
           </folding>
         </state>
       </provider>

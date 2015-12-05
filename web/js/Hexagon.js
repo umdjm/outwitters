@@ -102,7 +102,12 @@ MapEditor.Hexagon = function(id, x, y) {
     this.movedImage = new Image();
     this.movedImage.width = 20;
     this.movedImage.height = 20;
-    this.movedImage.src = '../img/hasMoved.png';
+    this.movedImage.src = '../images/move.png';
+
+    this.attackedImage = new Image();
+    this.attackedImage.width = 20;
+    this.attackedImage.height = 20;
+    this.attackedImage.src = '../images/fist.png';
 
     this.imgUG = new Image();
     this.imgUG.width = 48;
