@@ -193,7 +193,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
+                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
                     var unitAttackRange = unit.ATTACK_RANGE;
@@ -210,14 +210,15 @@ MapEditor.View = (function() {
                                 model.addWitUsed();
                                 hex.health = "health" + newHealth;
                             }
+                            hex.hasMoved = true;
                         }
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
-                    }else{
+                    }else if(!hex.hasMoved){
                         model.setMoveStartHex(hex);
                     }
                 }
-                else {
+                else if(!hex.hasMoved){
                     model.setMoveStartHex(hex);
                 }
             } else if(oldHex != null) {
@@ -225,7 +226,7 @@ MapEditor.View = (function() {
                 var unit = MapEditor.Config[unitType];
                 var unitMoveRange = unit.RANGE;
                 var hexDistance = grid.GetHexDistance(oldHex, hex);
-                if(unitMoveRange >= hexDistance){
+                if(unitMoveRange >= hexDistance && !hex.hasMoved){
                     hex.unitClass = oldHex.unitClass;
                     hex.playerNum = oldHex.playerNum;
                     hex.health = oldHex.health;
@@ -237,7 +238,8 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
                     model.addWitUsed();
-                }else{
+                    hex.hasMoved = true;
+                }else if(!hex.hasMoved){
                     model.setMoveStartHex(hex);
                 }
             }

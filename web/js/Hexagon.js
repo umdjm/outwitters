@@ -76,6 +76,8 @@ MapEditor.Hexagon = function(id, x, y) {
     this.unitClass = "";
     this.playerNum = 0;
     this.health = "health3";
+    this.hasMoved = false;
+    this.hasAttacked = false;
 
     this.img = new Image();
 
@@ -96,6 +98,11 @@ MapEditor.Hexagon = function(id, x, y) {
     this.imgSelection.width = 128;
     this.imgSelection.height = 128;
     this.imgSelection.src = '../img/selectedUnit.png';
+
+    this.movedImage = new Image();
+    this.movedImage.width = 20;
+    this.movedImage.height = 20;
+    this.movedImage.src = '../img/hasMoved.png';
 
     this.imgUG = new Image();
     this.imgUG.width = 48;

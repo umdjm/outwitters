@@ -192,6 +192,10 @@ MapEditor.Grid.prototype.getClasses = function() {
         current.unitClass = this.Hexes[h].unitClass;
         current.playerNum = this.Hexes[h].playerNum;
         current.health = this.Hexes[h].health;
+
+        if(this.Hexes[h].hasMoved) current.hasMoved = true;
+        if(this.Hexes[h].hasAttacked) current.hasAttacked = true;
+
         array.push(current);
     }
 
@@ -213,6 +217,10 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         else {
             this.Hexes[h].health = this.Hexes[h].getDefaultHealth();
         }
+
+        if(current.hasMoved) this.Hexes[h].hasMoved = true;
+        if(current.hasAttacked) this.Hexes[h].hasAttacked = true;
+
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
     }
