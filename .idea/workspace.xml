@@ -59,8 +59,8 @@
       <file leaf-file-name="Grid.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.931034" vertical-offset="968" max-vertical-offset="1836">
-              <caret line="204" column="42" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="42" />
+            <state vertical-scroll-proportion="-11.172414" vertical-offset="968" max-vertical-offset="1836">
+              <caret line="201" column="3" selection-start-line="201" selection-start-column="3" selection-end-line="201" selection-end-column="30" />
               <folding>
                 <element signature="e#429#2159#0" expanded="false" />
                 <element signature="e#2306#2729#0" expanded="false" />
@@ -87,10 +87,10 @@
       <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7246544" vertical-offset="2482" max-vertical-offset="5865">
-              <caret line="183" column="40" selection-start-line="183" selection-start-column="40" selection-end-line="183" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.2937788" vertical-offset="1683" max-vertical-offset="5848">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
-                <element signature="e#10981#11809#0" expanded="false" />
+                <element signature="e#10940#11768#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -528,12 +528,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="45872000" />
+      <workItem from="1449183888350" duration="46379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45872000" />
+    <option name="totallyTimeSpent" value="46379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -904,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.931034" vertical-offset="968" max-vertical-offset="1836">
-          <caret line="204" column="42" selection-start-line="204" selection-start-column="34" selection-end-line="204" selection-end-column="42" />
+        <state vertical-scroll-proportion="-11.172414" vertical-offset="968" max-vertical-offset="1836">
+          <caret line="201" column="3" selection-start-line="201" selection-start-column="3" selection-end-line="201" selection-end-column="30" />
           <folding>
             <element signature="e#429#2159#0" expanded="false" />
             <element signature="e#2306#2729#0" expanded="false" />
@@ -920,10 +920,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7246544" vertical-offset="2482" max-vertical-offset="5865">
-          <caret line="183" column="40" selection-start-line="183" selection-start-column="40" selection-end-line="183" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.2937788" vertical-offset="1683" max-vertical-offset="5848">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <element signature="e#10981#11809#0" expanded="false" />
+            <element signature="e#10940#11768#0" expanded="false" />
           </folding>
         </state>
       </provider>
