@@ -210,7 +210,7 @@ MapEditor.View = (function() {
                                 model.addWitUsed();
                                 hex.health = "health" + newHealth;
                             }
-                            hex.hasAttacked = true;
+                            oldHex.hasAttacked = true;
                         }
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
@@ -230,15 +230,17 @@ MapEditor.View = (function() {
                     hex.unitClass = oldHex.unitClass;
                     hex.playerNum = oldHex.playerNum;
                     hex.health = oldHex.health;
+                    hex.hasMoved = true;
+
                     oldHex.unitClass = "";
                     oldHex.health = "";
                     oldHex.playerNum = 0;
+                    oldHex.hasMoved = false;
 
                     oldHex.updateImage();
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
                     model.addWitUsed();
-                    hex.hasMoved = true;
                 }else if(!hex.hasMoved){
                     model.setMoveStartHex(hex);
                 }
