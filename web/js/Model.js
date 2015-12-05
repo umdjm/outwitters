@@ -12,6 +12,7 @@ MapEditor.Model = (function() {
         currentBase = 1,
         moveMode = false,
         moveQueue = [],
+        forwardMoveQueue = [],
 
 
         getClass = function() {
@@ -119,10 +120,20 @@ MapEditor.Model = (function() {
             return currentBase;
         },
         popMove = function(){
-            return moveQueue.pop();
+            if(moveQueue.length == 0) return null;
+            var val = moveQueue.pop();
+            forwardMoveQueue.push(val);
+            return val;
         },
         pushMove = function(move){
             moveQueue.push(move);
+            forwardMoveQueue = [];
+        },
+        popForward = function(){
+            if(forwardMoveQueue.length == 0) return null;
+            var move = forwardMoveQueue.pop();
+            moveQueue.push(move);
+            return move;
         };
 
 
@@ -152,6 +163,7 @@ MapEditor.Model = (function() {
         getMoveStartHex: getMoveStartHex,
         pushMove: pushMove,
         popMove: popMove,
+        popForward: popForward,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();
