@@ -12,6 +12,7 @@ MapEditor.Model = (function() {
         currentBase = 1,
         moveMode = false,
         moveQueue = [],
+        wits = 0,
         forwardMoveQueue = [],
 
 
@@ -97,7 +98,16 @@ MapEditor.Model = (function() {
 
         getSelectedUnit = function() {
             return selectedUnit;
-        }
+        },
+        addWitUsed = function(){
+            currentWits = currentWits + 1;
+            $("#currentWits").set(currentWits);
+        },
+
+        setWits = function(newWits){
+            currentWits = newWits;
+            $("#currentWits").set(currentWits);
+        },
 
         getHealth = function() {
             return selectedHealth;
@@ -119,10 +129,19 @@ MapEditor.Model = (function() {
         getBase = function() {
             return currentBase;
         },
+        getBoardState = function(){
+            var hexes = grid.getClasses();
+            var wits = currentWits;
+            return {hexes: hexes, wits: wits};
+        },
         popMove = function(){
             if(moveQueue.length == 0) return null;
-            forwardMoveQueue.push(grid.getClasses());
-            return moveQueue.pop();
+            forwardMoveQueue.push(getBoardState());
+
+            var boardState = moveQueue.pop();
+            currentWits = boardState.wits;
+            $("#currentWits").set(currentWits);
+            return boardState.hexes;
         },
         pushMove = function(move){
             moveQueue.push(move);
@@ -130,8 +149,11 @@ MapEditor.Model = (function() {
         },
         popForward = function(){
             if(forwardMoveQueue.length == 0) return null;
-            moveQueue.push(grid.getClasses());
-            return forwardMoveQueue.pop();
+            moveQueue.push(getBoardState);
+            var boardState = forwardMoveQueue.pop();
+            currentWits = boardState.wits;
+            $("#currentWits").set(currentWits);
+            return boardState.hexes;
         };
 
 
@@ -162,6 +184,8 @@ MapEditor.Model = (function() {
         pushMove: pushMove,
         popMove: popMove,
         popForward: popForward,
+        addWitUsed: addWitUsed,
+        setWits: setWits,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();

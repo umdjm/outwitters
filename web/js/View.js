@@ -46,6 +46,12 @@ MapEditor.View = (function() {
         $("input#author").val($.cookie("author") || "");
     }
 
+    $("#currentWits").change(function(){
+        var inputWits = $( this ).val();
+        if(isNaN(inputWits)) return;
+        model.setWits(inputWits);
+    });
+
     jQuery('.tabs .tab-links a').on('click', function(e)  {
         var currentAttrValue = jQuery(this).attr("title");
  
@@ -57,6 +63,7 @@ MapEditor.View = (function() {
 
         $("#" + currentAttrValue).show();
         $("#" + currentAttrValue).addClass("active");
+
         model.setMoveMode(currentAttrValue == "moveMode");
 
         //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
@@ -200,6 +207,7 @@ MapEditor.View = (function() {
                                 hex.unitClass = "";
                                 hex.health = "";
                             }else {
+                                model.addWitUsed();
                                 hex.health = "health" + newHealth;
                             }
                         }
@@ -228,6 +236,7 @@ MapEditor.View = (function() {
                     oldHex.updateImage();
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
+                    model.addWitUsed();
                 }else{
                     model.setMoveStartHex(hex);
                 }
