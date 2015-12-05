@@ -140,6 +140,7 @@ MapEditor.View = (function() {
             hex.health = "health" + unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
             model.pushMove(startState);
+            $("#moveModeUnits").hide();
             hex.updateImage();
         }else{
             model.setUnit($(this).attr("id"));
