@@ -259,6 +259,8 @@ MapEditor.Hexagon.prototype.draw = function(ctx) {
         }
         ctx.drawImage(this.imgUnit, this.TopLeftPoint.X - 3, this.TopLeftPoint.Y - 17, this.imgUnit.width, this.imgUnit.height);
         ctx.drawImage(this.imgHealth, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.imgHealth.width, this.imgHealth.height);
+        if(this.hasMoved) ctx.drawImage(this.movedImage, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.movedImage.width, this.movedImage.height)
+        if(this.hasAttacked) ctx.drawImage(this.attackedImage, this.TopLeftPoint.X, this.TopLeftPoint.Y - 10, this.attackedImage.width, this.attackedImage.height);
     }
 
     /*if(this.Id)
