@@ -11,6 +11,7 @@ MapEditor.Model = (function() {
         playerColors = ["blue", "red", "green", "yellow"],
         currentBase = 1,
         moveMode = false,
+        moveQueue = [],
 
 
         getClass = function() {
@@ -116,6 +117,12 @@ MapEditor.Model = (function() {
 
         getBase = function() {
             return currentBase;
+        },
+        popMove = function(){
+            moveQueue.pop();
+        },
+        pushMove = function(move){
+            moveQueue.push(move);
         };
 
 
@@ -143,6 +150,8 @@ MapEditor.Model = (function() {
         isMoveMode: isMoveMode,
         setMoveStartHex: setMoveStartHex,
         getMoveStartHex: getMoveStartHex,
+        pushMove: pushMove,
+        popMove: popMove,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();

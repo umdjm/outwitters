@@ -197,6 +197,7 @@ MapEditor.View = (function() {
                         }else {
                             hex.health = "health" + newHealth;
                         }
+                        model.pushMove(grid.getClasses());
                     }
                 }
                 else {
@@ -215,6 +216,7 @@ MapEditor.View = (function() {
                     oldHex.health = "";
                     oldHex.playerNum = 0;
                     oldHex.updateImage();
+                    model.pushMove(grid.getClasses());
                 }else{
                     model.setMoveStartHex(null);
                 }
@@ -368,6 +370,12 @@ MapEditor.View = (function() {
                 }
             });
         }
+    });
+
+    $("#backBtn").click(function(){
+        var lastMove = model.popMove();
+        if(lastMove == null) return;
+        grid.setClasses(lastMove, ctx);
     });
 
     $("#descriptiontext").dblclick(function(e) {
