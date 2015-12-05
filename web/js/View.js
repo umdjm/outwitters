@@ -49,7 +49,7 @@ MapEditor.View = (function() {
     $("#currentWits").change(function(){
         var inputWits = $( this ).val();
         if(isNaN(inputWits)) return;
-        model.setWits(inputWits);
+        model.setWits(parseInt(inputWits));
     });
 
     jQuery('.tabs .tab-links a').on('click', function(e)  {
