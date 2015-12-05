@@ -126,9 +126,27 @@ MapEditor.View = (function() {
     $("div.unit").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        model.setUnit($(this).attr("id"));
-        $(".unit.selected, .terrain.selected").removeClass("selected");
-        $(this).addClass("selected");
+        if(model.isMoveMode()){
+            var startState = model.getBoardState();
+            var hex = model.getMoveStartHex();
+            var unitType = $(this).attr("id");
+            var unit;
+            for(var race in MapEditor.Config) {
+                if (unitType.toLowerCase().indexOf(race.toLowerCase()) > -1) {
+                    unit = MapEditor.Config[race];
+                }
+            }
+            hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
+            hex.health = "health" + unit.INITIAL_HEALTH;
+            model.setWits(model.getWits() + unit.SPAWN_COST);
+            model.pushMove(startState);
+            $("#moveModeUnits").hide();
+            hex.updateImage();
+        }else{
+            model.setUnit($(this).attr("id"));
+            $(".unit.selected, .terrain.selected").removeClass("selected");
+            $(this).addClass("selected");
+        }
     });
 
     $("div.health").click(function(e) {
@@ -222,7 +240,7 @@ MapEditor.View = (function() {
                 else {
                     model.setMoveStartHex(hex);
                 }
-            } else if(oldHex != null) {
+            } else if(oldHex != null && oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
                 var unitMoveRange = unit.RANGE;
@@ -236,9 +254,11 @@ MapEditor.View = (function() {
 
                     oldHex.unitClass = "";
                     oldHex.health = "";
-                    oldHex.playerNum = 0;
                     oldHex.hasMoved = false;
                     oldHex.hasAttacked = false;
+                    if(!oldHex.class.match(/(s\D+)/)){ //not moving off a spawn tile
+                        oldHex.playerNum = 0;
+                    }
 
                     oldHex.updateImage();
                     model.pushMove(startState);
@@ -248,6 +268,24 @@ MapEditor.View = (function() {
                     model.setMoveStartHex(hex);
                 }
             }
+
+            if(hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+                $("#moveModeUnits").show();
+                var oldClass = $("#moveModeUnits").attr("class");
+                $("#moveModeUnits").removeClass(oldClass);
+                var newClass = model.getPlayerRace(hex.playerNum);
+                $("#moveModeUnits").addClass(newClass);
+
+                var oldPalette = $("#palette").attr("class");
+                $("#palette").removeClass(oldPalette);
+                var newPalette = model.getPlayerColor(hex.playerNum);
+                $("#palette").addClass(newPalette);
+
+                model.setMoveStartHex(hex);
+            }else{
+                $("#moveModeUnits").hide();
+            }
+
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),

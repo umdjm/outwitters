@@ -150,6 +150,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             this.img.width = 88;
             this.img.height = 110;
         } else if(this.class.match(/(s\D+)/)){
+            //spawn tile
             this.img.src = '../tiles/' + MapEditor.Model.getPlayerRace(this.playerNum) + '_' + this.class + '.png';
             this.offsetY = 0;
             this.offsetX = 0;
