@@ -101,12 +101,12 @@ MapEditor.Model = (function() {
         },
         addWitUsed = function(){
             currentWits = currentWits + 1;
-            $("#currentWits").set(currentWits);
+            $("#currentWits").val(currentWits);
         },
 
         setWits = function(newWits){
             currentWits = newWits;
-            $("#currentWits").set(currentWits);
+            $("#currentWits").val(currentWits);
         },
 
         getHealth = function() {
@@ -140,7 +140,7 @@ MapEditor.Model = (function() {
 
             var boardState = moveQueue.pop();
             currentWits = boardState.wits;
-            $("#currentWits").set(currentWits);
+            $("#currentWits").val(currentWits);
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -152,7 +152,7 @@ MapEditor.Model = (function() {
             moveQueue.push(getBoardState);
             var boardState = forwardMoveQueue.pop();
             currentWits = boardState.wits;
-            $("#currentWits").set(currentWits);
+            $("#currentWits").val(currentWits);
             return boardState.hexes;
         };
 
