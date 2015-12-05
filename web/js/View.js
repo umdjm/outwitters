@@ -268,11 +268,12 @@ MapEditor.View = (function() {
                 $("#palette").removeClass(oldPalette);
                 var newPalette = model.getPlayerColor(hex.playerNum);
                 $("#palette").addClass(newPalette);
+
+                model.setMoveStartHex(hex);
             }else{
                 $("#moveModeUnits").hide();
             }
 
-            model.setMoveStartHex(hex);
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
