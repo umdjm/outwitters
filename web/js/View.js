@@ -243,7 +243,9 @@ MapEditor.View = (function() {
             }
 
             if(hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
-                
+                $("#moveModeUnits").show();
+            }else{
+                $("#moveModeUnits").hide();
             }
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
