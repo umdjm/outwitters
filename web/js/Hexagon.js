@@ -107,11 +107,16 @@ MapEditor.Hexagon = function(id, x, y) {
 
 MapEditor.Hexagon.prototype.getUnitType = function(){
     var unitClass = this.unitClass;
-    for(var race in MapEditor.Config) {
-        if (unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1) {
-            return race;
+    for(var unitType in MapEditor.Config) {
+        if (unitClass.toLowerCase().indexOf(unitType.toLowerCase()) > -1) {
+            return unitType;
         }
     }
+    if(unitClass.toLowerCase().indexof("adorables_special") > -1) return "Mobi";
+    if(unitClass.toLowerCase().indexof("feedback_special") > -1) return "Scrambler";
+    if(unitClass.toLowerCase().indexof("veggienauts_special") > -1) return "Bramble";
+    if(unitClass.toLowerCase().indexof("scallywag_special") > -1) return "Bombshell";
+
     return "";
 };
 
