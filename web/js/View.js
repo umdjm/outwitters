@@ -256,6 +256,8 @@ MapEditor.View = (function() {
             }else{
                 $("#moveModeUnits").hide();
             }
+
+            model.setMoveStartHex(hex);
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
