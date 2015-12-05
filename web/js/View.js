@@ -131,7 +131,7 @@ MapEditor.View = (function() {
             var unitType = $(this).attr("id");
             var unit;
             for(var race in MapEditor.Config) {
-                if (unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1) {
+                if (unitType.toLowerCase().indexOf(race.toLowerCase()) > -1) {
                     unit = MapEditor.Config[race];
                 }
             }
