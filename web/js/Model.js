@@ -99,6 +99,7 @@ MapEditor.Model = (function() {
         getSelectedUnit = function() {
             return selectedUnit;
         },
+
         addWitUsed = function(){
             wits = wits + 1;
             $("#currentWits").val(wits);
@@ -107,6 +108,10 @@ MapEditor.Model = (function() {
         setWits = function(newWits){
             wits = newWits;
             $("#currentWits").val(wits);
+        },
+
+        getWits = function(){
+            return wits;
         },
 
         getHealth = function() {
@@ -185,6 +190,7 @@ MapEditor.Model = (function() {
         popForward: popForward,
         addWitUsed: addWitUsed,
         setWits: setWits,
+        getWits: getWits,
         getBoardState: getBoardState,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }

@@ -126,9 +126,18 @@ MapEditor.View = (function() {
     $("div.unit").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        model.setUnit($(this).attr("id"));
-        $(".unit.selected, .terrain.selected").removeClass("selected");
-        $(this).addClass("selected");
+        if(model.isMoveMode()){
+            var hex = model.getMoveStartHex();
+            var unitClass = $(this).attr("id");
+            var unit = MapEditor.Config[unitClass];
+            hex.unitClass = unitClass;
+            hex.health = unit.INITIAL_HEALTH;
+            model.setWits(model.getWits() + unit.SPAWN_COST);
+        }else{
+            model.setUnit($(this).attr("id"));
+            $(".unit.selected, .terrain.selected").removeClass("selected");
+            $(this).addClass("selected");
+        }
     });
 
     $("div.health").click(function(e) {
