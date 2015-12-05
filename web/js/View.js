@@ -186,12 +186,12 @@ MapEditor.View = (function() {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
                 if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
-                    var unitType = hex.getUnitType();
+                    var unitType = oldHex.getUnitType();
                     if(MapEditor.Config.hasOwnProperty(unitType)){
                         var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
                         var oldHealth = parseInt(hex.health.replace("health", ""));
                         var newHealth = oldHealth - attack;
-                        if(newHealth == 0){
+                        if(newHealth <= 0){
                             hex.unitClass = "";
                             hex.health = "";
                         }else {
