@@ -69,10 +69,10 @@
       <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41248608" vertical-offset="1500" max-vertical-offset="5576">
-              <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.4503902" vertical-offset="1483" max-vertical-offset="5593">
+              <caret line="111" column="25" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="25" />
               <folding>
-                <element signature="e#10352#11180#0" expanded="false" />
+                <element signature="e#10384#11212#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -564,12 +564,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="33899000" />
+      <workItem from="1449183888350" duration="34215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33899000" />
+    <option name="totallyTimeSpent" value="34215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -956,10 +956,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41248608" vertical-offset="1500" max-vertical-offset="5576">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.4503902" vertical-offset="1483" max-vertical-offset="5593">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="25" />
           <folding>
-            <element signature="e#10352#11180#0" expanded="false" />
+            <element signature="e#10384#11212#0" expanded="false" />
           </folding>
         </state>
       </provider>
