@@ -107,12 +107,14 @@ MapEditor.Hexagon = function(id, x, y) {
 
 MapEditor.Hexagon.prototype.getUnitType = function(){
     var unitClass = this.unitClass;
+    var returnValue = "";
     $.each(MapEditor.Config, function(race, v) {
         if(unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1){
-            return race;
+            returnValue = race;
+            return returnValue;
         }
     });
-    return "";
+    return returnValue;
 };
 
 MapEditor.Hexagon.prototype.updateImage = function() {
