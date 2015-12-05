@@ -214,11 +214,11 @@ MapEditor.View = (function() {
                         }
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
-                    }else if(!hex.hasMoved){
+                    }else {
                         model.setMoveStartHex(hex);
                     }
                 }
-                else if(!hex.hasMoved){
+                else {
                     model.setMoveStartHex(hex);
                 }
             } else if(oldHex != null) {
@@ -241,7 +241,7 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
                     model.addWitUsed();
-                }else if(!hex.hasMoved){
+                }else {
                     model.setMoveStartHex(hex);
                 }
             }
