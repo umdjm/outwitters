@@ -185,7 +185,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && ((hex.playerNum != oldHex.playerNum + 2) || (hex.playerNum != oldHex.playerNum - 2))){
+                if(oldHex != null && ((hex.playerNum != oldHex.playerNum) || (hex.playerNum != oldHex.playerNum + 2) || (hex.playerNum != oldHex.playerNum - 2))){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
                     var unitAttackRange = unit.ATTACK_RANGE;
