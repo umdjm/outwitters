@@ -93,7 +93,11 @@ MapEditor.Model = (function() {
             return (selectedUnit == "" ? false : selectedUnit + getColor());
         },
 
-            getHealth = function() {
+        getSelectedUnit = function() {
+            return selectedUnit;
+        }
+
+        getHealth = function() {
             return selectedHealth;
         },
 
@@ -129,6 +133,7 @@ MapEditor.Model = (function() {
         getCurrentPlayerNum: getCurrentPlayerNum,
         getPlayerRace: getPlayerRace,
         getUnit: getUnit,
+        getSelectedUnit: getSelectedUnit,
         setUnit: setUnit,
         rmvUnit: rmvUnit,
         getHealth: getHealth,
