@@ -161,7 +161,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             } else {
                 this.imgUnit.src = '../units/' + playerClass + '_other.png';
             }
-            if(!current.isValidHealth(current.health)) {
+            if(!this.isValidHealth(current.health)) {
                 this.health = this.getDefaultHealth();
             }
             this.imgHealth.src = '../health/' + this.health + '.png';
@@ -175,13 +175,13 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 }
 
 MapEditor.Hexagon.prototype.isValidHealth = function(input) {
-    if(current.health == "health1" || current.health == "health2" || current.health == "health3" || current.health == "health4" || current.health == "health5")
+    if(input == "health1" || input == "health2" || input == "health3" || input == "health4" || input == "health5")
         return true;
     return false;
 }
 MapEditor.Hexagon.prototype.getDefaultHealth = function() {
     if(this.getUnitType() == "") return "health3";
-    var unitType = MapEditor.Config[this.Hexes[h].getUnitType()];
+    var unitType = MapEditor.Config[this.getUnitType()];
     return "health" + unitType.INITIAL_HEALTH;
 }
 /**
