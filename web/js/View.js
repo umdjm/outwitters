@@ -203,6 +203,7 @@ MapEditor.View = (function() {
                             }
                         }
                         model.pushMove(grid.getClasses());
+                        model.setMoveStartHex(null);
                     }else{
                         model.setMoveStartHex(hex);
                     }
@@ -222,8 +223,10 @@ MapEditor.View = (function() {
                     oldHex.unitClass = "";
                     oldHex.health = "";
                     oldHex.playerNum = 0;
+
                     oldHex.updateImage();
                     model.pushMove(grid.getClasses());
+                    model.setMoveStartHex(null);
                 }else{
                     model.setMoveStartHex(hex);
                 }
