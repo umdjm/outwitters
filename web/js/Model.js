@@ -100,13 +100,13 @@ MapEditor.Model = (function() {
             return selectedUnit;
         },
         addWitUsed = function(){
-            currentWits = currentWits + 1;
-            $("#currentWits").val(currentWits);
+            wits = wits + 1;
+            $("#currentWits").val(wits);
         },
 
         setWits = function(newWits){
-            currentWits = newWits;
-            $("#currentWits").val(currentWits);
+            wits = newWits;
+            $("#currentWits").val(wits);
         },
 
         getHealth = function() {
@@ -131,7 +131,6 @@ MapEditor.Model = (function() {
         },
         getBoardState = function(){
             var hexes = grid.getClasses();
-            var wits = currentWits;
             return {hexes: hexes, wits: wits};
         },
         popMove = function(){
@@ -139,8 +138,8 @@ MapEditor.Model = (function() {
             forwardMoveQueue.push(getBoardState());
 
             var boardState = moveQueue.pop();
-            currentWits = boardState.wits;
-            $("#currentWits").val(currentWits);
+            wits = boardState.wits;
+            $("#currentWits").val(wits);
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -151,8 +150,8 @@ MapEditor.Model = (function() {
             if(forwardMoveQueue.length == 0) return null;
             moveQueue.push(getBoardState);
             var boardState = forwardMoveQueue.pop();
-            currentWits = boardState.wits;
-            $("#currentWits").val(currentWits);
+            wits = boardState.wits;
+            $("#currentWits").val(wits);
             return boardState.hexes;
         };
 
