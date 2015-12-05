@@ -229,7 +229,7 @@ MapEditor.View = (function() {
                 else {
                     model.setMoveStartHex(hex);
                 }
-            } else if(oldHex != null) {
+            } else if(oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
                 var unitMoveRange = unit.RANGE;
