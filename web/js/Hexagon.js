@@ -125,7 +125,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
 
         if(this.class.match(/b\D+\d/)) {
             // base picture
-            this.img.src = '../tiles/' + MapEditor.Model.getTheme() + '_' + this.class + '.png';
+            this.img.src = '../tiles/' + MapEditor.Model.getPlayerRace(this.playerNum) + '_' + this.class + '.png';
             this.offsetY = -43;
             this.offsetX = -20;
             this.img.width = 88;
@@ -168,7 +168,9 @@ MapEditor.Hexagon.prototype.updateImage = function() {
     } else {
         this.unitClass = "";
         this.health = "";
-        this.playerNum = -1;
+        if(!this.class.match(/b\D+\d/)) {
+            this.playerNum = -1;
+        }
     }
 
 }
