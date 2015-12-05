@@ -263,6 +263,11 @@ MapEditor.View = (function() {
                 $("#moveModeUnits").removeClass(oldClass);
                 var newClass = model.getPlayerRace(hex.playerNum);
                 $("#moveModeUnits").addClass(newClass);
+
+                var oldPalette = $("#palette").attr("class");
+                $("#palette").removeClass(oldPalette);
+                var newPalette = model.getPlayerColor(hex.playerNum);
+                $("#palette").addClass(newPalette);
             }else{
                 $("#moveModeUnits").hide();
             }
