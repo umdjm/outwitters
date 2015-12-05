@@ -129,6 +129,11 @@ MapEditor.View = (function() {
         if(model.isMoveMode()){
             var hex = model.getMoveStartHex();
             var unitClass = $(this).attr("id");
+            for(var race in MapEditor.Config) {
+                if (unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1) {
+                    unitClass = race;
+                }
+            }
             var unit = MapEditor.Config[unitClass];
             hex.unitClass = unitClass;
             hex.health = unit.INITIAL_HEALTH;
