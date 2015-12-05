@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149465f9-9395-4945-afb2-f97c189e4773" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/Hexagon.js" afterPath="$PROJECT_DIR$/web/js/Hexagon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/View.js" afterPath="$PROJECT_DIR$/web/js/View.js" />
     </list>
     <ignored path="outwitters.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="View.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/View.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3252" max-vertical-offset="10506">
-              <caret line="234" column="41" selection-start-line="234" selection-start-column="41" selection-end-line="234" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.18394649" vertical-offset="3150" max-vertical-offset="10506">
+              <caret line="195" column="163" selection-start-line="195" selection-start-column="163" selection-end-line="195" selection-end-column="163" />
               <folding />
             </state>
           </provider>
@@ -84,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hexagon.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3924192" vertical-offset="4102" max-vertical-offset="6307">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4102" max-vertical-offset="6307">
               <caret line="262" column="113" selection-start-line="262" selection-start-column="113" selection-end-line="262" selection-end-column="113" />
               <folding>
                 <element signature="e#12343#13171#0" expanded="false" />
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/web/js/Model.js" />
         <option value="$PROJECT_DIR$/web/js/Config.js" />
         <option value="$PROJECT_DIR$/web/js/Grid.js" />
-        <option value="$PROJECT_DIR$/web/js/View.js" />
         <option value="$PROJECT_DIR$/web/js/Hexagon.js" />
+        <option value="$PROJECT_DIR$/web/js/View.js" />
       </list>
     </option>
   </component>
@@ -525,12 +525,12 @@
       <created>1449183887843</created>
       <option name="number" value="Default" />
       <updated>1449183887843</updated>
-      <workItem from="1449183888350" duration="61169000" />
+      <workItem from="1449183888350" duration="61294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61169000" />
+    <option name="totallyTimeSpent" value="61294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -897,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3252" max-vertical-offset="10506">
-          <caret line="234" column="41" selection-start-line="234" selection-start-column="41" selection-end-line="234" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/move.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -917,11 +909,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Hexagon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3924192" vertical-offset="4102" max-vertical-offset="6307">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4102" max-vertical-offset="6307">
           <caret line="262" column="113" selection-start-line="262" selection-start-column="113" selection-end-line="262" selection-end-column="113" />
           <folding>
             <element signature="e#12343#13171#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18394649" vertical-offset="3150" max-vertical-offset="10506">
+          <caret line="195" column="163" selection-start-line="195" selection-start-column="163" selection-end-line="195" selection-end-column="163" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -193,7 +193,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && oldHex.hasAttacked){
+                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
                     var unitAttackRange = unit.ATTACK_RANGE;
@@ -210,7 +210,7 @@ MapEditor.View = (function() {
                                 model.addWitUsed();
                                 hex.health = "health" + newHealth;
                             }
-                            hex.hasMoved = true;
+                            hex.hasAttacked = true;
                         }
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
