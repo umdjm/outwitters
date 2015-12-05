@@ -202,7 +202,7 @@ MapEditor.View = (function() {
                                 hex.health = "health" + newHealth;
                             }
                         }
-                        model.pushMove(grid.getClasses());//test
+                        model.pushMove(grid.getClasses());
                     }else{
                         model.setMoveStartHex(hex);
                     }
