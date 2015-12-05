@@ -203,7 +203,7 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         current = array[h];
         this.Hexes[h].class = current.class;
         this.Hexes[h].unitClass = current.unitClass;
-        if(current.playerNumber == 0 || current.playerNumber == 1 || current.playerNumber == 2 || current.playerNumber == 3)
+        if(current.playerNum == 0 || current.playerNum == 1 || current.playerNum == 2 || current.playerNum == 3)
             this.Hexes[h].playerNum = current.playerNum;
         else this.Hexes[h].playerNum = 0;
 
