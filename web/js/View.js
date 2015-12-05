@@ -138,6 +138,7 @@ MapEditor.View = (function() {
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
             hex.health = "health" + unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
+            hex.updateImage();
         }else{
             model.setUnit($(this).attr("id"));
             $(".unit.selected, .terrain.selected").removeClass("selected");
