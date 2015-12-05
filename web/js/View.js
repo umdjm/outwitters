@@ -389,6 +389,13 @@ MapEditor.View = (function() {
         grid.setClasses(lastMove, ctx);
     });
 
+    $("#fwdBtn").click(function(){
+        var replayMove = model.popForward();
+        if(replayMove == null) return;
+        grid.setClasses(replayMove, ctx);
+    });
+
+
     $("#descriptiontext").dblclick(function(e) {
         e.preventDefault();
         e.stopPropagation();

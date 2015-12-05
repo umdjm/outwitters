@@ -130,7 +130,13 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             this.offsetX = -20;
             this.img.width = 88;
             this.img.height = 110;
-        } else if(this.class.match(/(t\d|bonus|b\D+|s\D+)/)) {
+        } else if(this.class.match(/(s\D+)/)){
+            this.img.src = '../tiles/' + MapEditor.Model.getPlayerRace(this.playerNum) + '_' + this.class + '.png';
+            this.offsetY = 0;
+            this.offsetX = 0;
+            this.img.width = 48;
+            this.img.height = 42;
+        } else if(this.class.match(/(t\d|bonus|b\D+)/)) {
             this.offsetY = 0;
             this.offsetX = 0;
             this.img.width = 48;
