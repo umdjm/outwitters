@@ -130,9 +130,8 @@ MapEditor.Model = (function() {
         },
         popForward = function(){
             if(forwardMoveQueue.length == 0) return null;
-            var move = forwardMoveQueue.pop();
-            moveQueue.push(move);
-            return move;
+            moveQueue.push(grid.getClasses());
+            return forwardMoveQueue.pop();
         };
 
 
