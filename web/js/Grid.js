@@ -205,15 +205,11 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         this.Hexes[h].unitClass = current.unitClass;
         //this.Hexes[h].playerNum = current.playerNum;
 
-        if(current.health == "health1" || current.health == "health2" || current.health == "health3" || current.health == "health4" || current.health == "health5"){
+        if(this.Hexes[h].isValidHealth(current.health)){
             this.Hexes[h].health = current.health;
         }
-        else if(this.Hexes[h].getUnitType() != ""){
-            var unitType = MapEditor.Config[this.Hexes[h].getUnitType()];
-            this.Hexes[h].health = "health" + unitType.INITIAL_HEALTH;
-        }
         else {
-            this.Hexes[h].health = "health3";
+            this.Hexes[h].health = this.Hexes[h].getDefaultHealth();
         }
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
