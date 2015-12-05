@@ -241,6 +241,10 @@ MapEditor.View = (function() {
                     model.setMoveStartHex(hex);
                 }
             }
+
+            if(hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+                
+            }
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
