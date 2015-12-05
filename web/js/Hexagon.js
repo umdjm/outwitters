@@ -108,7 +108,7 @@ MapEditor.Hexagon = function(id, x, y) {
 MapEditor.Hexagon.prototype.getUnitType = function(){
     var unitClass = this.unitClass;
     $.each(MapEditor.Config, function(race, v) {
-        if(unitClass.toLowerCase.indexOf(race.toLowerCase()) > -1) return race;
+        if(unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1) return race;
     });
     return "";
 };
