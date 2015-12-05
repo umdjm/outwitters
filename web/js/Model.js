@@ -121,9 +121,8 @@ MapEditor.Model = (function() {
         },
         popMove = function(){
             if(moveQueue.length == 0) return null;
-            var val = moveQueue.pop();
-            forwardMoveQueue.push(val);
-            return val;
+            forwardMoveQueue.push(grid.getClasses());
+            return moveQueue.pop();
         },
         pushMove = function(move){
             moveQueue.push(move);
