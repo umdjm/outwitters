@@ -183,10 +183,26 @@ MapEditor.View = (function() {
         if(!hex) return;
 
         if(model.isMoveMode()) {
+            var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                model.setMoveStartHex(hex);
-            } else if(model.getMoveStartHex() != null) {
-                var oldHex = model.getMoveStartHex();
+                if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
+                    var unitType = hex.getUnitType();
+                    if(MapEditor.Config.hasOwnProperty(unitType)){
+                        var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
+                        var oldHealth = parseInt(hex.health.replace("health", ""));
+                        var newHealth = oldHealth - attack;
+                        if(newHealth == 0){
+                            hex.unitClass = "";
+                            hex.health = "";
+                        }else {
+                            hex.health = "health" + newHealth;
+                        }
+                    }
+                }
+                else {
+                    model.setMoveStartHex(hex);
+                }
+            } else if(oldHex != null) {
                 hex.unitClass = oldHex.unitClass;
                 hex.playerNum = oldHex.playerNum;
                 hex.health = oldHex.health;
@@ -195,6 +211,8 @@ MapEditor.View = (function() {
                 oldHex.playerNum = 0;
                 oldHex.updateImage();
             }
+
+
         }else if(model.isBaseSelected() && !model.getUnit()) {
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
@@ -225,35 +243,7 @@ MapEditor.View = (function() {
             }
 
         } else {
-            if(model.isMoveMode()) {
-                var oldHex = model.getMoveStartHex();
-                if(hex.unitClass != ""){
-                    if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
-                        var unitType = hex.getUnitType();
-                        if(MapEditor.Config.hasOwnProperty(unitType)){
-                            var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
-                            var oldHealth = parseInt(hex.health.replace("health", ""));
-                            var newHealth = oldHealth - attack;
-                            if(newHealth == 0){
-                                hex.unitClass = "";
-                                hex.health = "";
-                            }else {
-                                hex.health = "health" + newHealth;
-                            }
-                        }
-                    }
-                    else {
-                        model.setMoveStartHex(hex);
-                    }
-                } else if(oldHex != null) {
-                    hex.unitClass = oldHex.unitClass;
-                    hex.health = oldHex.health;
-                    oldHex.unitClass = "";
-                    oldHex.health = "";
-                    oldHex.updateImage();
-                }
-            }
-            else if(model.getUnit()) {
+            if(model.getUnit()) {
                 var selectedUnit = model.getUnit();
                 var selectedPlayerNum = model.getCurrentPlayerNum();
                 if(selectedUnit == "rmv") {
