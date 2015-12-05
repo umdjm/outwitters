@@ -128,15 +128,15 @@ MapEditor.View = (function() {
         e.stopImmediatePropagation();
         if(model.isMoveMode()){
             var hex = model.getMoveStartHex();
-            var unitClass = $(this).attr("id");
+            var unitType = $(this).attr("id");
             var unit;
             for(var race in MapEditor.Config) {
                 if (unitClass.toLowerCase().indexOf(race.toLowerCase()) > -1) {
                     unit = MapEditor.Config[race];
                 }
             }
-            hex.unitClass = unitClass;
-            hex.health = unit.INITIAL_HEALTH;
+            hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
+            hex.health = "health" + unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
         }else{
             model.setUnit($(this).attr("id"));
