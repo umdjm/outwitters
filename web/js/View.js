@@ -258,6 +258,10 @@ MapEditor.View = (function() {
 
             if(hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
                 $("#moveModeUnits").show();
+                var oldClass = $("#moveModeUnits").getClass();
+                $("#moveModeUnits").removeClass(oldClass);
+                var newClass = model.getPlayerRace(hex.playerNum);
+                $("#moveModeUnits").addClass(newClass);
             }else{
                 $("#moveModeUnits").hide();
             }
