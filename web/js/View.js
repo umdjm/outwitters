@@ -287,7 +287,7 @@ MapEditor.View = (function() {
                 } else {
                     hex.unitClass = selectedUnit;
                     hex.playerNum = selectedPlayerNum;
-                    hex.health = MapEditor.Model.getHealth();
+                    hex.health = hex.getDefaultHealth();
                     eraseOnDrag = false;
                 }
             } else {
@@ -298,7 +298,7 @@ MapEditor.View = (function() {
                     eraseOnDrag = true;
                 } else {
                     hex.class = selectedClass;
-                    hex.health = hex.getDefaultHealth();
+                    hex.health = MapEditor.Model.getHealth();
                     eraseOnDrag = false;
                 }
             }
