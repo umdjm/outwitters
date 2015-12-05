@@ -112,10 +112,10 @@ MapEditor.Hexagon.prototype.getUnitType = function(){
             return unitType;
         }
     }
-    if(unitClass.toLowerCase().indexof("adorables_special") > -1) return "Mobi";
-    if(unitClass.toLowerCase().indexof("feedback_special") > -1) return "Scrambler";
-    if(unitClass.toLowerCase().indexof("veggienauts_special") > -1) return "Bramble";
-    if(unitClass.toLowerCase().indexof("scallywag_special") > -1) return "Bombshell";
+    if(unitClass.toLowerCase().indexOf("adorables_special") > -1) return "Mobi";
+    if(unitClass.toLowerCase().indexOf("feedback_special") > -1) return "Scrambler";
+    if(unitClass.toLowerCase().indexOf("veggienauts_special") > -1) return "Bramble";
+    if(unitClass.toLowerCase().indexOf("scallywag_special") > -1) return "Bombshell";
 
     return "";
 };
