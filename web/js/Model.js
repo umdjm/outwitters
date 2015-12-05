@@ -119,7 +119,7 @@ MapEditor.Model = (function() {
             return currentBase;
         },
         popMove = function(){
-            moveQueue.pop();
+            return moveQueue.pop();
         },
         pushMove = function(move){
             moveQueue.push(move);
