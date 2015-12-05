@@ -246,7 +246,9 @@ MapEditor.View = (function() {
                     hex.health = oldHex.health;
                     oldHex.unitClass = "";
                     oldHex.health = "";
-                    oldHex.playerNum = 0;
+                    if(!oldHex.class.match(/(s\D+)/){ //not moving off a spawn tile
+                        oldHex.playerNum = 0;
+                    }
 
                     oldHex.updateImage();
                     model.pushMove(startState);
