@@ -106,9 +106,9 @@ MapEditor.Hexagon = function(id, x, y) {
 };
 
 MapEditor.Hexagon.prototype.getUnitType = function(){
-    var unitClass = this.unitClass.toLowerCase;
+    var unitClassLower = this.unitClass.toLowerCase();
     $.each(MapEditor.Config, function(race, v) {
-        if(unitClass.indexOf(race.toLowerCase()) > -1) return race;
+        if(unitClassLower.indexOf(race.toLowerCase()) > -1) return race;
     });
     return "";
 };
