@@ -187,16 +187,23 @@ MapEditor.View = (function() {
             if(hex.unitClass != ""){
                 if(oldHex != null && (hex.playerNum != oldHex.playerNum)){
                     var unitType = oldHex.getUnitType();
-                    if(MapEditor.Config.hasOwnProperty(unitType)){
-                        var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
-                        var oldHealth = parseInt(hex.health.replace("health", ""));
-                        var newHealth = oldHealth - attack;
-                        if(newHealth <= 0){
-                            hex.unitClass = "";
-                            hex.health = "";
-                        }else {
-                            hex.health = "health" + newHealth;
+                    var unit = MapEditor.Config[unitType];
+                    var unitAttackRange = unit.ATTACK_RANGE;
+                    var hexDistance = grid.GetHexDistance(oldHex, hex);
+                    if(unitAttackRange >= hexDistance){
+                        if(MapEditor.Config.hasOwnProperty(unitType)){
+                            var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
+                            var oldHealth = parseInt(hex.health.replace("health", ""));
+                            var newHealth = oldHealth - attack;
+                            if(newHealth <= 0){
+                                hex.unitClass = "";
+                                hex.health = "";
+                            }else {
+                                hex.health = "health" + newHealth;
+                            }
                         }
+                    }else{
+                        model.setMoveStartHex(hex);
                     }
                 }
                 else {
@@ -216,7 +223,7 @@ MapEditor.View = (function() {
                     oldHex.playerNum = 0;
                     oldHex.updateImage();
                 }else{
-                    model.setMoveStartHex(null);
+                    model.setMoveStartHex(hex);
                 }
             }
         }else if(model.isBaseSelected() && !model.getUnit()) {
