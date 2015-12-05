@@ -127,6 +127,7 @@ MapEditor.View = (function() {
         e.preventDefault();
         e.stopImmediatePropagation();
         if(model.isMoveMode()){
+            var startState = model.getBoardState();
             var hex = model.getMoveStartHex();
             var unitType = $(this).attr("id");
             var unit;
@@ -138,6 +139,7 @@ MapEditor.View = (function() {
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
             hex.health = "health" + unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
+            model.pushMove(startState);
             hex.updateImage();
         }else{
             model.setUnit($(this).attr("id"));
