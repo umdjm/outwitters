@@ -187,7 +187,7 @@ MapEditor.View = (function() {
                 model.setMoveStartHex(hex);
             } else if(model.getMoveStartHex() != null) {
                 var oldHex = model.getMoveStartHex();
-                var unitType = MapEditor.Config[model.getSelectedUnit()];
+                var unitType = hex.getUnitType();
                 var unitMoveRange = unitType.RANGE;
                 var hexDistance = grid.GetHexDistance(oldHex, hex);
                 if(unitMoveRange <= hexDistance){
