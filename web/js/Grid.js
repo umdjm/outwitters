@@ -204,7 +204,7 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
         this.Hexes[h].class = current.class;
         this.Hexes[h].unitClass = current.unitClass;
         //this.Hexes[h].playerNum = current.playerNum;
-        //this.Hexes[h].health = current.health;
+        this.Hexes[h].health = current.health;
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
     }
