@@ -205,6 +205,9 @@ MapEditor.Grid.prototype.getClasses = function() {
             current.hasSpawned = true;
         else this.Hexes[h].hasSpawned = false;
 
+        if(this.Hexes[h].witSpacePlayerNum > -1)
+            current.witSpacePlayerNum = this.Hexes[h].witSpacePlayerNum;
+
         array.push(current);
     }
 
@@ -235,6 +238,10 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
 
         if(current.hasSpawned) this.Hexes[h].hasSpawned = true;
         else this.Hexes[h].hasSpawned = false;
+
+        if(typeof(current.witSpacePlayerNum) !== "undefined")
+            this.Hexes[h].witSpacePlayerNum = current.witSpacePlayerNum;
+        else this.Hexes[h].witSpacePlayerNum = -1;
 
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);

@@ -79,6 +79,7 @@ MapEditor.Hexagon = function(id, x, y) {
     this.hasMoved = false;
     this.hasAttacked = false;
     this.hasSpawned = false;
+    this.witSpacePlayerNum = -1;
 
     this.img = new Image();
 
@@ -150,6 +151,17 @@ MapEditor.Hexagon.prototype.updateImage = function() {
             this.offsetX = -20;
             this.img.width = 88;
             this.img.height = 110;
+        } else if(this.class.match(/bonus/)){
+
+            if(this.witSpacePlayerNum > -1)
+                this.img.src = "../tiles/bonus_" + MapEditor.Model.getPlayerColor(this.witSpacePlayerNum) + ".png";
+            else this.img.src = "../tiles/bonus.png";
+
+            this.offsetY = 0;
+            this.offsetX = 0;
+            this.img.width = 48;
+            this.img.height = 42;
+
         } else if(this.class.match(/(s\D+)/)){
             //spawn tile
             this.img.src = '../tiles/' + MapEditor.Model.getPlayerRace(this.playerNum) + '_' + this.class + '.png';
