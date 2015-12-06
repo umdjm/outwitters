@@ -278,6 +278,23 @@ MapEditor.View = (function() {
                     hex.hasMoved = true;
                     hex.hasAttacked = true;
                     model.setMoveStartHex(null);
+                    model.pushMove(startState);
+                    model.addWitUsed();
+                }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
+                    if(hex == oldHex && !hex.hasAttacked){
+                        var playerNum = hex.playerNum;
+                        var getPlayerColor = model.getPlayerColor(playerNum);
+                        hex.unitClass = "special"+getPlayerColor;
+                        var boosted = (hex.health == "health4");
+                        if(boosted){
+                            hex.health = "health2";
+                        }else{
+                            hex.health = "health1";
+                        }
+                        model.setMoveStartHex(null);
+                        model.pushMove(startState);
+                        model.addWitUsed();
+                    }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
