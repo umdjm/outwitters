@@ -330,7 +330,7 @@ MapEditor.View = (function() {
 
                     hex.health = hex.getDefaultHealth();
                     if($(".health.selected").length > 0){
-                        hex.health = parseInt($(".health.selected").attr("title"));
+                        hex.health = "health" + parseInt($(".health.selected").attr("title"));
                         $(".health.selected").removeClass("selected");
                     }
                     eraseOnDrag = false;
