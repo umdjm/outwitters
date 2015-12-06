@@ -299,30 +299,34 @@ MapEditor.View = (function() {
                     model.setMoveStartHex(null);
                 }
             } else if(mobiMoveModeSelectedHex != null){
-                hex.unitClass = mobiMoveModeSelectedHex.unitClass;
-                hex.playerNum = mobiMoveModeSelectedHex.playerNum;
-                hex.health = mobiMoveModeSelectedHex.health;
-                hex.hasAttacked = mobiMoveModeSelectedHex.hasAttacked;
-                hex.hasMoved = true;
+                var hexDistance = grid.GetHexDistance(hex, mobiHex);
+                var mobiUnit = MapEditor.Config["Mobi"];
+                if(mobiUnit.ATTACK_RANGE >= hexDistance){
+                    hex.unitClass = mobiMoveModeSelectedHex.unitClass;
+                    hex.playerNum = mobiMoveModeSelectedHex.playerNum;
+                    hex.health = mobiMoveModeSelectedHex.health;
+                    hex.hasAttacked = mobiMoveModeSelectedHex.hasAttacked;
+                    hex.hasMoved = true;
 
-                mobiMoveModeSelectedHex.unitClass = "";
-                mobiMoveModeSelectedHex.health = "";
-                mobiMoveModeSelectedHex.hasMoved = false;
-                mobiMoveModeSelectedHex.hasAttacked = false;
-                if(!mobiMoveModeSelectedHex.class.match(/(s\D+)/)){ //not moving off a spawn tile
-                    mobiMoveModeSelectedHex.playerNum = 0;
+                    mobiMoveModeSelectedHex.unitClass = "";
+                    mobiMoveModeSelectedHex.health = "";
+                    mobiMoveModeSelectedHex.hasMoved = false;
+                    mobiMoveModeSelectedHex.hasAttacked = false;
+                    if(!mobiMoveModeSelectedHex.class.match(/(s\D+)/)){ //not moving off a spawn tile
+                        mobiMoveModeSelectedHex.playerNum = 0;
+                    }
+
+                    hex.updateImage();
+                    mobiMoveModeSelectedHex.updateImage();
+                    model.pushMove(startState);
+                    model.addWitUsed();
+
+                    mobiHex.hasAttacked = true;
                 }
 
-                hex.updateImage();
-                mobiMoveModeSelectedHex.updateImage();
-                model.pushMove(startState);
-                model.setMoveStartHex(null);
-                model.addWitUsed();
-
                 mobiMoveModeSelectedHex = null;
-                mobiHex.hasAttacked = true;
                 mobiHex = null;
-
+                model.setMoveStartHex(null);
             } else if(oldHex != null && oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
