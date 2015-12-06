@@ -131,6 +131,7 @@ MapEditor.Hexagon.prototype.getUnitType = function(){
     if(unitClass.toLowerCase().indexOf("feedback_special") > -1) return "Scrambler";
     if(unitClass.toLowerCase().indexOf("veggienauts_special") > -1) return "Bramble";
     if(unitClass.toLowerCase().indexOf("scallywag_special") > -1) return "Bombshell";
+    if(unitClass.toLowerCase().indexOf("scallywag_other") > -1) return "Bombshelled";
 
     return "";
 };

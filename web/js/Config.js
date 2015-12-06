@@ -46,9 +46,17 @@ MapEditor.Config = {
         ATTACK_STRENGTH: 3,
         ATTACK_RANGE: 3,
         RANGE: 3,
+        INITIAL_HEALTH: 1,
+        MAX_HEALTH: 2,
+        SPAWN_COST: 7
+    },
+    "Bombshelled":{
+        ATTACK_STRENGTH: 3,
+        ATTACK_RANGE: 3,
+        RANGE: 0,
         INITIAL_HEALTH: 3,
         MAX_HEALTH: 4,
-        SPAWN_COST: 7
+        SPAWN_COST: 0
     },
     "Bramble":{
         ATTACK_STRENGTH: 0,

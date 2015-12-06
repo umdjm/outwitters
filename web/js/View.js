@@ -260,11 +260,24 @@ MapEditor.View = (function() {
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
                     }
-                }else if(oldHex != null && oldHex.getUnitType() == "Mobi"  && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
+                }else if(oldHex != null && oldHex.getUnitType() == "Mobi" && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
                     if(!oldHex.hasAttacked){
                         mobiMoveModeSelectedHex = hex;
                         mobiHex = oldHex;
                     }
+                }else if(oldHex != null && oldHex.getUnitType() == "Bombshell" && hex == oldHex){
+                    var playerNum = hex.playerNum;
+                    var getPlayerColor = model.getPlayerColor(playerNum);
+                    hex.unitClass = "other"+getPlayerColor;
+                    var boosted = (hex.health == "health2");
+                    if(boosted){
+                        hex.health = "health4";
+                    }else{
+                        hex.health = "health3";
+                    }
+                    hex.hasMoved = true;
+                    hex.hasAttacked = true;
+                    model.setMoveStartHex(null);
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
