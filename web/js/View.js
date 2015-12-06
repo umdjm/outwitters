@@ -5,6 +5,7 @@ MapEditor.View = (function() {
         mousedown = false,
         themeChanging = false;
         mobiMoveModeSelectedHex = null;
+        mobiHex = null;
 
     var enableRating = function() {
         $('input.star').rating("disable");
@@ -260,6 +261,7 @@ MapEditor.View = (function() {
                     }
                 }else if(oldHex != null && oldHex.getUnitType() == "Mobi"  && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
                     mobiMoveModeSelectedHex = hex;
+                    mobiHex = oldHex;
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
@@ -316,6 +318,10 @@ MapEditor.View = (function() {
                 model.pushMove(startState);
                 model.setMoveStartHex(null);
                 model.addWitUsed();
+
+                mobiMoveModeSelectedHex = null;
+                mobiHex.hasAttacked = true;
+                mobiHex = null;
 
             } else if(oldHex != null && oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
