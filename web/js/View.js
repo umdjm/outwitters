@@ -245,8 +245,12 @@ MapEditor.View = (function() {
                         }
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
-                    }else {
+                    }
+                    else if(hex.playerNum == model.getCurrentPlayerNum()){
                         model.setMoveStartHex(hex);
+                    }
+                    else {
+                        model.setMoveStartHex(null);
                     }
                 }
                 else if(hex.playerNum == model.getCurrentPlayerNum()){
