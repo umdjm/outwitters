@@ -227,6 +227,16 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
     readyToStoreGridDrawn = true;
 }
 
+
+MapEditor.Grid.prototype.restartTurn = function(ctx) {
+    for(var h in this.Hexes) {
+        this.Hexes[h].hasMoved = false;
+        this.Hexes[h].hasAttacked = false;
+        this.Hexes[h].updateImage();
+    }
+    updateImages();
+}
+
 MapEditor.Grid.prototype.updateImages = function(ctx) {
 
     for (var h in this.Hexes)

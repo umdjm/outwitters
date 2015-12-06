@@ -116,6 +116,7 @@ MapEditor.View = (function() {
             $(this).addClass("selected");
             model.setColor(clickedColor);
             model.setWits(0);
+            grid.restartTurn(ctx);
         }
     });
     $("div.color").click(function(e) {
