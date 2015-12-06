@@ -130,13 +130,14 @@ MapEditor.View = (function() {
             var startState = model.getBoardState();
             var hex = model.getMoveStartHex();
             var unitType = $(this).attr("id");
-            var unit;
-            for(var race in MapEditor.Config) {
-                if (unitType.toLowerCase().indexOf(race.toLowerCase()) > -1) {
-                    unit = MapEditor.Config[race];
-                }
-            }
+            var unit = hex.getUnitType();
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
+
+            var health = unit.INITIAL_HEALTH;
+            if(!isNaN($(".health.selected"))){
+                health = parseInt($(".health.selected").attr("title"));
+                $(".health.selected").removeClass("selected");
+            }
             hex.health = "health" + unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
             model.pushMove(startState);
