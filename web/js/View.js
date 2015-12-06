@@ -132,13 +132,7 @@ MapEditor.View = (function() {
             var unitType = $(this).attr("id");
             var unit = hex.getUnitType();
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
-
-            var health = unit.INITIAL_HEALTH;
-            if(!isNaN($(".health.selected"))){
-                health = parseInt($(".health.selected").attr("title"));
-                $(".health.selected").removeClass("selected");
-            }
-            hex.health = "health" + unit.INITIAL_HEALTH;
+            hex.health = unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
             model.pushMove(startState);
             $("#moveModeUnits").hide();
@@ -333,7 +327,12 @@ MapEditor.View = (function() {
                 } else {
                     hex.unitClass = selectedUnit;
                     hex.playerNum = selectedPlayerNum;
+
                     hex.health = hex.getDefaultHealth();
+                    if(!isNaN($(".health.selected"))){
+                        hex.health = parseInt($(".health.selected").attr("title"));
+                        $(".health.selected").removeClass("selected");
+                    }
                     eraseOnDrag = false;
                 }
             } else {
