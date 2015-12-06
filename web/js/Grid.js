@@ -222,8 +222,12 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
             this.Hexes[h].health = this.Hexes[h].getDefaultHealth();
         }
 
-        if(current.hasMoved) this.Hexes[h].hasMoved = true;
-        if(current.hasAttacked) this.Hexes[h].hasAttacked = true;
+        if(current.hasMoved)
+            this.Hexes[h].hasMoved = true;
+        else this.Hexes[h].hasMoved = true;
+        if(current.hasAttacked)
+            this.Hexes[h].hasAttacked = true;
+        else this.Hexes[h].hasAttacked = true;
 
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
