@@ -158,6 +158,9 @@ MapEditor.Model = (function() {
             moveQueue.push(move);
             forwardMoveQueue = [];
         },
+        getMoveQueue = function(move){
+            return moveQueue;
+        },
         popForward = function(){
             if(forwardMoveQueue.length == 0) return null;
             moveQueue.push(getBoardState());
@@ -201,6 +204,7 @@ MapEditor.Model = (function() {
         setWits: setWits,
         getWits: getWits,
         getBoardState: getBoardState,
+        getMoveQueue: getMoveQueue,
         isBaseSelected: function() { return selectedClass.match(/^b$/); }
     }
 })();

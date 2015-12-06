@@ -46,6 +46,22 @@ MapEditor.View = (function() {
         $("input#author").val($.cookie("author") || "");
     }
 
+    $("#replayBtn").click(function(){
+        var boardState = model.getBoardState();
+        var moveHistory = model.getMoveQueue();
+        var i = 0;
+        function moveReplayForward(){
+            if(i < moveHistory.length){
+                grid.setClasses(moveHistory[i].hexes);
+                $("#currentWits").val(moveHistory[i].wits);
+                setTimeout(moveReplayForward, 1000);
+            }
+            else {
+                grid.setClasses(boardState.hexes);
+                $("#currentWits").val(boardState.wits);
+            }
+        }
+    });
     $("#currentWits").change(function(){
         var inputWits = $( this ).val();
         if(isNaN(inputWits)) return;
