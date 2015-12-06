@@ -329,7 +329,7 @@ MapEditor.View = (function() {
                     hex.playerNum = selectedPlayerNum;
 
                     hex.health = hex.getDefaultHealth();
-                    if(!isNaN($(".health.selected"))){
+                    if($(".health.selected").length > 0){
                         hex.health = parseInt($(".health.selected").attr("title"));
                         $(".health.selected").removeClass("selected");
                     }
