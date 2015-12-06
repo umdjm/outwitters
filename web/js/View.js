@@ -242,6 +242,21 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
+                if(oldHex.getUnitType() == "Medic" && (hex.playerNum == oldHex.playerNum)){
+                    var unit = MapEditor.Config[unitType];
+                    var unitAttackRange = unit.ATTACK_RANGE;
+                    var hexDistance = grid.GetHexDistance(oldHex, hex);
+                    if(unitAttackRange >= hexDistance){
+                        var hexUnitType = hex.getUnitType();
+                        var hexUnit = MapEditor.Config[hexUnitType];
+                        var maxHealth = hexUnit.MAX_HEALTH;
+                        hex.health = "health" + maxHealth;
+                        oldHex.hasAttacked = true;
+                        oldHex.updateImage();
+                        model.pushMove(startState);
+                        model.setMoveStartHex(null);
+                    }
+                }
                 if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
