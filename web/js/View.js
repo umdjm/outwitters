@@ -104,7 +104,7 @@ MapEditor.View = (function() {
     $("div.moveModeColor").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        $(".moveModelColor.selected").removeClass("selected");
+        $(".moveModeColor.selected").removeClass("selected");
         $(this).addClass("selected");
     });
     $("div.color").click(function(e) {
