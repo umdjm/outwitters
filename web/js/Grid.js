@@ -224,10 +224,10 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
 
         if(current.hasMoved)
             this.Hexes[h].hasMoved = true;
-        else this.Hexes[h].hasMoved = true;
+        else this.Hexes[h].hasMoved = false;
         if(current.hasAttacked)
             this.Hexes[h].hasAttacked = true;
-        else this.Hexes[h].hasAttacked = true;
+        else this.Hexes[h].hasAttacked = false;
 
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
