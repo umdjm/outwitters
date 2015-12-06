@@ -148,7 +148,7 @@ MapEditor.View = (function() {
             var hex = model.getMoveStartHex();
             var unitType = $(this).attr("id");
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
-            var unit = hex.getUnitType();
+            var unit = MapEditor.Config[hex.getUnitType()];
             hex.health = unit.INITIAL_HEALTH;
             model.setWits(model.getWits() + unit.SPAWN_COST);
             model.pushMove(startState);
