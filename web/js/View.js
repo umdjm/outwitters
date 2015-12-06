@@ -111,7 +111,7 @@ MapEditor.View = (function() {
         e.preventDefault();
         e.stopImmediatePropagation();
         var clickedColor = $(this).attr("id");
-        if(model.getWits() > 0 && confirm("Do you want to start a new turn?")) {
+        if(confirm("Do you want to start a new turn?")) {
             $(".moveModeColor.selected").removeClass("selected");
             $(this).addClass("selected");
             model.setColor(clickedColor);
