@@ -183,7 +183,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
                 this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
-            } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
+            } else if(playerClass == "veggienauts" || playerClass == "scallywags") {
                 this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else {
                 this.imgUnit.src = '../units/' + playerClass + '_other.png';
