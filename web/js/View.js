@@ -243,7 +243,7 @@ MapEditor.View = (function() {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
                 if(oldHex != null && oldHex.getUnitType() == "Medic" && (hex.playerNum == oldHex.playerNum)){
-                    var unit = MapEditor.Config[unitType];
+                    var unit = MapEditor.Config["Medic"];
                     var unitAttackRange = unit.ATTACK_RANGE;
                     var hexDistance = grid.GetHexDistance(oldHex, hex);
                     if(unitAttackRange >= hexDistance){
