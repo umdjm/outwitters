@@ -256,8 +256,7 @@ MapEditor.View = (function() {
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
                     }
-                }
-                if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
+                }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
                     var unitAttackRange = unit.ATTACK_RANGE;
