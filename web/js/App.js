@@ -315,4 +315,4 @@ $(document).ready(function() {
 
 
 getHexGridWH();
-setInterval(function() { grid.redraw(ctx) }, 1000);
+//setInterval(function() { grid.redraw(ctx) }, 1000);
