@@ -167,6 +167,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()){
             var startState = model.getBoardState();
             var hex = model.getMoveStartHex();
+            hex.hasSpawned = true;
             var unitType = $(this).attr("id");
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
             var unit = MapEditor.Config[hex.getUnitType()];
@@ -362,7 +363,7 @@ MapEditor.View = (function() {
                 }
             }
 
-            if(hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+            if(!hex.hasSpawned && hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
                 $("#moveModeUnits").show();
                 var oldClass = $("#moveModeUnits").attr("class");
                 $("#moveModeUnits").removeClass(oldClass);
