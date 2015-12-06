@@ -249,8 +249,11 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(hex);
                     }
                 }
-                else {
+                else if(hex.getPlayerColor() == model.getCurrentPlayerColor()){
                     model.setMoveStartHex(hex);
+                }
+                else {
+                    model.setMoveStartHex(null);
                 }
             } else if(oldHex != null && oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
@@ -276,12 +279,16 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
                     model.addWitUsed();
-                }else {
+                }
+                else if(hex.getPlayerColor() == model.getCurrentPlayerColor()){
                     model.setMoveStartHex(hex);
+                }
+                else {
+                    model.setMoveStartHex(null);
                 }
             }
 
-            if(hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+            if(hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
                 $("#moveModeUnits").show();
                 var oldClass = $("#moveModeUnits").attr("class");
                 $("#moveModeUnits").removeClass(oldClass);
