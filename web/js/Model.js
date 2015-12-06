@@ -71,6 +71,9 @@ MapEditor.Model = (function() {
             return playerColors.indexOf(selectedColor);
         },
 
+        getCurrentPlayerColor = function(){
+            return selectedColor;
+        },
         getPlayerRace = function(id){
             return selectedPlayerRaces[id];
         },
@@ -179,6 +182,7 @@ MapEditor.Model = (function() {
         getCurrentPlayerNum: getCurrentPlayerNum,
         getPlayerRace: getPlayerRace,
         getPlayerColor: getPlayerColor,
+        getCurrentPlayerColor: getCurrentPlayerColor,
         getUnit: getUnit,
         getSelectedUnit: getSelectedUnit,
         setUnit: setUnit,

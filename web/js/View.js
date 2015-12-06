@@ -110,8 +110,13 @@ MapEditor.View = (function() {
     $("div.moveModeColor").click(function(e) {
         e.preventDefault();
         e.stopImmediatePropagation();
-        $(".moveModeColor.selected").removeClass("selected");
-        $(this).addClass("selected");
+        var clickedColor = $(this).attr("id");
+        if(clickedColor != model.getCurrentPlayerColor() && confirm("Do you want to start a new turn?")) {
+            $(".moveModeColor.selected").removeClass("selected");
+            $(this).addClass("selected");
+            model.setColor(clickedColor);
+            model.setWits(0);
+        }
     });
     $("div.color").click(function(e) {
         e.preventDefault();
