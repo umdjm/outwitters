@@ -249,7 +249,7 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(hex);
                     }
                 }
-                else if(hex.getPlayerColor() == model.getCurrentPlayerColor()){
+                else if(hex.playerNum == model.getCurrentPlayerNum()){
                     model.setMoveStartHex(hex);
                 }
                 else {
@@ -280,7 +280,7 @@ MapEditor.View = (function() {
                     model.setMoveStartHex(null);
                     model.addWitUsed();
                 }
-                else if(hex.getPlayerColor() == model.getCurrentPlayerColor()){
+                else if(hex.playerNum == model.getCurrentPlayerNum()){
                     model.setMoveStartHex(hex);
                 }
                 else {
