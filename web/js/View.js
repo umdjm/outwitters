@@ -251,6 +251,7 @@ MapEditor.View = (function() {
                         var hexUnit = MapEditor.Config[hexUnitType];
                         var maxHealth = hexUnit.MAX_HEALTH;
                         hex.health = "health" + maxHealth;
+                        model.addWitUsed();
                         oldHex.hasAttacked = true;
                         oldHex.updateImage();
                         model.pushMove(startState);
