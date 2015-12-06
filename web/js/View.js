@@ -61,6 +61,7 @@ MapEditor.View = (function() {
                 $("#currentWits").val(boardState.wits);
             }
         }
+        moveReplayForward();
     });
     $("#currentWits").change(function(){
         var inputWits = $( this ).val();
