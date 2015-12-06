@@ -165,6 +165,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()){
             var startState = model.getBoardState();
             var hex = model.getMoveStartHex();
+            hex.hasSpawned = true;
             var unitType = $(this).attr("id");
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
             var unit = MapEditor.Config[hex.getUnitType()];
