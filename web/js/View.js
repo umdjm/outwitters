@@ -52,12 +52,13 @@ MapEditor.View = (function() {
         var i = 0;
         function moveReplayForward(){
             if(i < moveHistory.length){
-                grid.setClasses(moveHistory[i].hexes);
+                grid.setClasses(moveHistory[i].hexes, ctx);
                 $("#currentWits").val(moveHistory[i].wits);
+                i++;
                 setTimeout(moveReplayForward, 1000);
             }
             else {
-                grid.setClasses(boardState.hexes);
+                grid.setClasses(boardState.hexes, ctx);
                 $("#currentWits").val(boardState.wits);
             }
         }
