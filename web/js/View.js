@@ -260,8 +260,10 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && oldHex.getUnitType() == "Mobi"  && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
-                    mobiMoveModeSelectedHex = hex;
-                    mobiHex = oldHex;
+                    if(!oldHex.hasAttacked){
+                        mobiMoveModeSelectedHex = hex;
+                        mobiHex = oldHex;
+                    }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
