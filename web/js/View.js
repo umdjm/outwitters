@@ -66,6 +66,12 @@ MapEditor.View = (function() {
 
         model.setMoveMode(currentAttrValue == "moveMode");
 
+        if(currentAttrValue == "moveMode"){
+            var playerNumber = model.getCurrentPlayerNum();
+            var selectedColor = model.getPlayerColor(playerNumber);
+            $(".moveModeColor.selected").removeClass("selected");
+            $(".moveModeColor#"+selectedColor).addClass("selected");
+        }
         //jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
  
         // Change/remove current tab to active
