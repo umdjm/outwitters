@@ -78,6 +78,7 @@ MapEditor.Hexagon = function(id, x, y) {
     this.health = "health3";
     this.hasMoved = false;
     this.hasAttacked = false;
+    this.hasSpawned = false;
 
     this.img = new Image();
 

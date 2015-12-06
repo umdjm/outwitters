@@ -196,9 +196,14 @@ MapEditor.Grid.prototype.getClasses = function() {
         if(this.Hexes[h].hasMoved)
             current.hasMoved = true;
         else this.Hexes[h].hasMoved = false;
+
         if(this.Hexes[h].hasAttacked)
             current.hasAttacked = true;
         else this.Hexes[h].hasAttacked = false;
+
+        if(this.Hexes[h].hasSpawned)
+            current.hasSpawned = true;
+        else this.Hexes[h].hasSpawned = false;
 
         array.push(current);
     }
@@ -222,12 +227,14 @@ MapEditor.Grid.prototype.setClasses = function(array, ctx) {
             this.Hexes[h].health = this.Hexes[h].getDefaultHealth();
         }
 
-        if(current.hasMoved)
-            this.Hexes[h].hasMoved = true;
+        if(current.hasMoved)this.Hexes[h].hasMoved = true;
         else this.Hexes[h].hasMoved = false;
-        if(current.hasAttacked)
-            this.Hexes[h].hasAttacked = true;
+
+        if(current.hasAttacked) this.Hexes[h].hasAttacked = true;
         else this.Hexes[h].hasAttacked = false;
+
+        if(current.hasSpawned) this.Hexes[h].hasSpawned = true;
+        else this.Hexes[h].hasSpawned = false;
 
         this.Hexes[h].updateImage();
         this.Hexes[h].draw(ctx);
@@ -240,6 +247,7 @@ MapEditor.Grid.prototype.restartTurn = function(ctx) {
     for(var h in this.Hexes) {
         this.Hexes[h].hasMoved = false;
         this.Hexes[h].hasAttacked = false;
+        this.Hexes[h].hasSpawned = false;
         this.Hexes[h].updateImage();
     }
 }

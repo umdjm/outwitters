@@ -311,7 +311,7 @@ MapEditor.View = (function() {
                 }
             }
 
-            if(hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+            if(!hex.hasSpawned && hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
                 $("#moveModeUnits").show();
                 var oldClass = $("#moveModeUnits").attr("class");
                 $("#moveModeUnits").removeClass(oldClass);
