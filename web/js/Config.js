@@ -2,7 +2,7 @@ var MapEditor = MapEditor || {};
 
 MapEditor.Config = {
 
-    "Runner":{
+    "Rffunner":{
         ATTACK_STRENGTH: 1,
         ATTACK_RANGE: 1,
         RANGE: 5,
