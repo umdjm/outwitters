@@ -339,7 +339,34 @@ MapEditor.View = (function() {
                             model.pushMove(startState);
                             model.setMoveStartHex(null);
                         }
-                    }else{
+                    }
+                    else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                        //change selected character
+                        model.setMoveStartHex(hex);
+                    }
+                    else {
+                        //unselect character
+                        model.setMoveStartHex(null);
+                    }
+                }else if(oldHex != null && oldHex.getUnitType() == "Scrambler" && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
+                    var unit = MapEditor.Config["Scrambler"];
+                    var unitAttackRange = unit.ATTACK_RANGE;
+                    var hexDistance = grid.GetHexDistance(oldHex, hex);
+                    if(unitAttackRange >= hexDistance){
+                        hex.health = "health1";
+                        hex.playerNum = oldHex.playerNum;
+                        hex.updateImage();
+                        oldHex.hasAttacked = true;
+                        oldHex.updateImage();
+                        model.pushMove(startState);
+                        model.setMoveStartHex(null);
+                    }
+                    else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                        //change selected character
+                        model.setMoveStartHex(hex);
+                    }
+                    else {
+                        //unselect character
                         model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
