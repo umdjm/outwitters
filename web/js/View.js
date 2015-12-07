@@ -314,7 +314,7 @@ MapEditor.View = (function() {
                             oldHex.hasAttacked = true;
                             oldHex.updateImage();
 
-                            var adjacents = grid.GetAdjacentHexes();
+                            var adjacents = grid.GetAdjacentHexes(hex.MidPoint);
                             for(var i = 0; i < adjacents.length; i++){
                                 var adjacentHex = adjacents[i];
                                 if(adjacentHex.unitClass != "" && (adjacentHex.playerNum != oldHex.playerNum) && (adjacentHex.playerNum != oldHex.playerNum + 2) && (adjacentHex.playerNum != oldHex.playerNum - 2)){
