@@ -225,7 +225,8 @@ MapEditor.Grid.prototype.getClasses = function() {
 MapEditor.Grid.prototype.getWitBonus = function(color) {
     var result = 0;
     for(var h in this.Hexes) {
-        if(h.witSpacePlayerNum > -1 && MapEditor.Model.getPlayerColor(h.witSpacePlayerNum) == color)
+        hex = this.Hexes[h];
+        if(hex.witSpacePlayerNum > -1 && MapEditor.Model.getPlayerColor(hex.witSpacePlayerNum) == color)
             result++;
     }
     return result;
