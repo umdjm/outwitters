@@ -324,7 +324,7 @@ MapEditor.View = (function() {
                                         adjacentHex.unitClass = "";
                                         adjacentHex.health = "";
                                         var wits = model.getWits();
-                                        model.setWits(wits+1);
+                                        model.setWits(wits-1);
                                     }else{
                                         adjacentHex.health = "health" + health2;
                                     }
