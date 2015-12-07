@@ -55,13 +55,13 @@ MapEditor.View = (function() {
         function moveReplayForward(){
             if(i < moveHistory.length){
                 grid.setClasses(moveHistory[i].hexes, ctx);
-                $("#currentWits").val(moveHistory[i].wits);
+                $("#currentWits").val(moveHistory[i].wits[boardState.selectedColor]);
                 i++;
                 setTimeout(moveReplayForward, 1000);
             }
             else {
                 grid.setClasses(boardState.hexes, ctx);
-                $("#currentWits").val(boardState.wits);
+                $("#currentWits").val(boardState.wits[boardState.selectedColor]);
             }
         }
         moveReplayForward();
@@ -172,7 +172,7 @@ MapEditor.View = (function() {
             hex.unitClass = unitType + model.getPlayerColor(hex.playerNum);
             var unit = MapEditor.Config[hex.getUnitType()];
             hex.health = "health" + unit.INITIAL_HEALTH;
-            model.setWits(model.getWits() + unit.SPAWN_COST);
+            model.setWits(model.getWits() - unit.SPAWN_COST);
             model.pushMove(startState);
             $("#moveModeUnits").hide();
             hex.updateImage();
@@ -286,7 +286,7 @@ MapEditor.View = (function() {
                     model.spendWit();
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
                     //Bombshell Stand
-                    if(hex == oldHex && !hex.hasAttacked){
+                    if(hex == oldHex && !oldHex.hasAttacked){
                         var playerNum = hex.playerNum;
                         var playerRace = model.getPlayerRace(playerNum);
                         var playerColor = model.getPlayerColor(playerNum);
@@ -300,6 +300,47 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                         model.pushMove(startState);
                         model.spendWit();
+                    }else if(!oldHex.hasAttacked && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
+                        var unit = MapEditor.Config["Bombshelled"];
+                        var unitAttackRange = unit.ATTACK_RANGE;
+                        var hexDistance = grid.GetHexDistance(oldHex, hex);
+                        if(unitAttackRange >= hexDistance){
+                            var attack = unit.ATTACK_STRENGTH;
+                            var oldHealth = parseInt(hex.health.replace("health", ""));
+                            var newHealth = oldHealth - attack;
+                            if(newHealth <= 0){
+                                hex.unitClass = "";
+                                hex.health = "";
+                            }else {
+                                model.spendWit();
+                                hex.health = "health" + newHealth;
+                            }
+                            oldHex.hasAttacked = true;
+                            oldHex.updateImage();
+
+                            var adjacents = grid.GetAdjacentHexes(hex.MidPoint);
+                            for(var i = 0; i < adjacents.length; i++){
+                                var adjacentHex = adjacents[i];
+                                if(adjacentHex.unitClass != "" && (adjacentHex.playerNum != oldHex.playerNum) && (adjacentHex.playerNum != oldHex.playerNum + 2) && (adjacentHex.playerNum != oldHex.playerNum - 2)){
+                                    var health1 = parseInt(adjacentHex.health.replace("health", ""));
+                                    var health2 = health1 - 1;
+                                    if(health2 <= 0){
+                                        adjacentHex.unitClass = "";
+                                        adjacentHex.health = "";
+                                        var wits = model.getWits();
+                                        model.setWits(wits+1);
+                                    }else{
+                                        adjacentHex.health = "health" + health2;
+                                    }
+                                    adjacentHex.updateImage();
+                                }
+                            }
+
+                            model.pushMove(startState);
+                            model.setMoveStartHex(null);
+                        }
+                    }else{
+                        model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     //Attack Attempt
