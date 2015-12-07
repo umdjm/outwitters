@@ -296,7 +296,7 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                         model.pushMove(startState);
                         model.addWitUsed();
-                    }else if(!oldHex.hasAttacked){
+                    }else if(!oldHex.hasAttacked && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
                         var unit = MapEditor.Config["Bombshelled"];
                         var unitAttackRange = unit.ATTACK_RANGE;
                         var hexDistance = grid.GetHexDistance(oldHex, hex);
@@ -313,6 +313,22 @@ MapEditor.View = (function() {
                             }
                             oldHex.hasAttacked = true;
                             oldHex.updateImage();
+
+                            var adjacents = grid.GetAdjacentHexes();
+                            for(var i = 0; i < adjacents.length; i++){
+                                var adjacentHex = adjacents[i];
+                                if(adjacentHex.unitClass != "" && (adjacentHex.playerNum != oldHex.playerNum) && (adjacentHex.playerNum != oldHex.playerNum + 2) && (adjacentHex.playerNum != oldHex.playerNum - 2)){
+                                    var health1 = parseInt(hex.health.replace("health", ""));
+                                    var health2 = health1 - 1;
+                                    if(health2 <= 0){
+                                        adjacentHex.unitClass = "";
+                                        adjacentHex.health = "";
+                                    }else{
+                                        hex.health = "health" + health2;
+                                    }
+                                }
+                            }
+
                             model.pushMove(startState);
                             model.setMoveStartHex(null);
                         }
