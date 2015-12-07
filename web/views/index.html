@@ -89,17 +89,24 @@
         <button class="back" id="backBtn" title="Back Button">Back</button>
         <button class="fwdBtn" id="fwdBtn" title="Forward Button">Forward</button>
         <hr style='clear:both;'/>
-        Wits Used: <input id="currentWits" type="text" value="0" name="currentWits"></input>
+
 		<hr style='clear:both;'/>
+        <div class="moveModeColor" id="blue" title="Player 1"></div>
+        Wits Used: <input id="blueWits" class="witCounter" data-color="blue" type="text" value="0" ></input>
+
+        <hr style='clear:both;'/>
+        <div class="moveModeColor" id="red" title="Player 2"></div>
+        Wits Used: <input id="redWits" class="witCounter" data-color="red" type="text" value="0" ></input>
+
+        <hr style='clear:both;'/>
+        <div class="moveModeColor" id="green" title="Player 3"></div>
+        Wits Used: <input id="greenWits" class="witCounter" data-color="green"  type="text" value="0" ></input>
 
 
-        <div id="moveModePlayer">
-            <p>Turn</p>
-            <div class="moveModeColor" id="blue" title="Player 1"></div>
-            <div class="moveModeColor" id="red" title="Player 2"></div>
-            <div class="moveModeColor" id="green" title="Player 3"></div>
-            <div class="moveModeColor" id="yellow" title="Player 4"></div>
-        </div>
+        <hr style='clear:both;'/>
+        <div class="moveModeColor" id="yellow" title="Player 4"></div>
+        Wits Used: <input id="yellowWits" class="witCounter" data-color="yellow" type="text" value="0" ></input>
+
         <hr style='clear:both;'/>
         <button id="replayBtn" title="Replay Button">Show Current Replay</button>
         <hr style='clear:both;'/>

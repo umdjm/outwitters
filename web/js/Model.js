@@ -107,6 +107,11 @@ MapEditor.Model = (function() {
             return selectedUnit;
         },
 
+        setWitsForColor = function(witColor, inputWits){
+            var playerIndex = playerColors.indexOf(witColor);
+            wits[playerIndex] = inputWits;
+        },
+
         spendWit = function(){
             wits[getCurrentPlayerNum()] =  wits[getCurrentPlayerNum()] - 1;
             $("#currentWits").val(wits[getCurrentPlayerNum()]);

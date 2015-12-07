@@ -55,21 +55,23 @@ MapEditor.View = (function() {
         function moveReplayForward(){
             if(i < moveHistory.length){
                 grid.setClasses(moveHistory[i].hexes, ctx);
-                $("#currentWits").val(moveHistory[i].wits[boardState.selectedColor]);
+                $("#" + boardState.selectedColor + "Wits").val(moveHistory[i].wits[boardState.selectedColor]);
                 i++;
                 setTimeout(moveReplayForward, 1000);
             }
             else {
                 grid.setClasses(boardState.hexes, ctx);
-                $("#currentWits").val(boardState.wits[boardState.selectedColor]);
+                $("#" + boardState.selectedColor + "Wits").val(boardState.wits[boardState.selectedColor]);
             }
         }
         moveReplayForward();
     });
-    $("#currentWits").change(function(){
+
+    $(".witCounter").change(function(){
         var inputWits = $( this ).val();
+        var witColor = $(this).data("color");
         if(isNaN(inputWits)) return;
-        model.setWits(parseInt(inputWits));
+        model.setWitsForColor(witColor, parseInt(inputWits));
     });
 
     jQuery('.tabs .tab-links a').on('click', function(e)  {
