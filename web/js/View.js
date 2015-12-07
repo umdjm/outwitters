@@ -342,7 +342,48 @@ MapEditor.View = (function() {
                             model.pushMove(startState);
                             model.setMoveStartHex(null);
                         }
-                    }else{
+                    }
+                    else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                        //change selected character
+                        model.setMoveStartHex(hex);
+                    }
+                    else {
+                        //unselect character
+                        model.setMoveStartHex(null);
+                    }
+                }else if(oldHex != null && oldHex.getUnitType() == "Scrambler" && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2)){
+                    var unit = MapEditor.Config["Scrambler"];
+                    var unitAttackRange = unit.ATTACK_RANGE;
+                    var hexDistance = grid.GetHexDistance(oldHex, hex);
+                    if(unitAttackRange >= hexDistance){
+                        var hexPlayerNum = hex.playerNum;
+                        var hexUnit = hex.getUnitType();
+                        var hexPlayerColor = model.getPlayerColor(hexPlayerNum);
+                        var hexPlayerRace = model.getPlayerRace(hexPlayerNum);
+
+                        var newPlayerColor = model.getPlayerColor(oldHex.playerNum);
+                        if(hex.unitClass.indexOf("_special") > -1){
+                            hex.unitClass = hexPlayerRace + "_special" + newPlayerColor;
+                        }else if(hex.unitClass.indexOf("_other") > -1){
+                            hex.unitClass = hexPlayerRace + "_other" + newPlayerColor;
+                        }else{
+                            hex.unitClass = hexUnit.toLowerCase() + newPlayerColor;
+                        }
+
+                        hex.health = "health1";
+                        hex.playerNum = oldHex.playerNum;
+                        hex.updateImage();
+                        oldHex.hasAttacked = true;
+                        oldHex.updateImage();
+                        model.pushMove(startState);
+                        model.setMoveStartHex(null);
+                    }
+                    else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                        //change selected character
+                        model.setMoveStartHex(hex);
+                    }
+                    else {
+                        //unselect character
                         model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
