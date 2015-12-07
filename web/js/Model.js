@@ -161,7 +161,11 @@ MapEditor.Model = (function() {
 
             var boardState = moveQueue.pop();
             selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(boardState.wits[getPlayerByColor(selectedColor)]);
+            for(var index in boardState.wits){
+                var witColor = playerColors[index];
+                var witForColor = boardState.wits[index];
+                $("#" + witColor + "Wits").val(witForColor);
+            }
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -175,8 +179,11 @@ MapEditor.Model = (function() {
             if(forwardMoveQueue.length == 0) return null;
             moveQueue.push(getBoardState());
             var boardState = forwardMoveQueue.pop();
-            selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(boardState.wits[getPlayerByColor(selectedColor)]);
+            for(var index in boardState.wits){
+                var witColor = playerColors[index];
+                var witForColor = boardState.wits[index];
+                $("#" + witColor + "Wits").val(witForColor);
+            }
             return boardState.hexes;
         };
 
