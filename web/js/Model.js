@@ -153,7 +153,7 @@ MapEditor.Model = (function() {
         },
         getBoardState = function(){
             var hexes = grid.getClasses();
-            return {hexes: hexes, wits: [wits.slice(0)], selectedColor: selectedColor};
+            return {hexes: hexes, wits: wits.slice(0), selectedColor: selectedColor};
         },
         popMove = function(){
             if(moveQueue.length == 0) return null;
