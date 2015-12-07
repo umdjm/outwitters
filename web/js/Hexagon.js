@@ -131,7 +131,8 @@ MapEditor.Hexagon.prototype.getUnitType = function(){
     if(unitClass.toLowerCase().indexOf("adorables_special") > -1) return "Mobi";
     if(unitClass.toLowerCase().indexOf("feedback_special") > -1) return "Scrambler";
     if(unitClass.toLowerCase().indexOf("veggienauts_special") > -1) return "Bramble";
-    if(unitClass.toLowerCase().indexOf("scallywag_special") > -1) return "Bombshell";
+    if(unitClass.toLowerCase().indexOf("scallywags_special") > -1) return "Bombshell";
+    if(unitClass.toLowerCase().indexOf("scallywags_other") > -1) return "Bombshelled";
 
     return "";
 };
@@ -190,11 +191,11 @@ MapEditor.Hexagon.prototype.updateImage = function() {
                 playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
             }
 
-            if(this.unitClass.indexOf("_special") > -1) {
+            if(this.unitClass.indexOf("_special") > -1 || this.unitClass.indexOf("_other") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
                 this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
-            } else if(MapEditor.Model.getTheme() == "veggienauts" || MapEditor.Model.getTheme() == "scallywags") {
+            } else if(playerClass == "veggienauts" || playerClass == "scallywags") {
                 this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
             } else {
                 this.imgUnit.src = '../units/' + playerClass + '_other.png';

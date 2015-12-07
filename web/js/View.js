@@ -4,6 +4,8 @@ MapEditor.View = (function() {
         eraseOnDrag = false,
         mousedown = false,
         themeChanging = false;
+        mobiMoveModeSelectedHex = null;
+        mobiHex = null;
 
     var enableRating = function() {
         $('input.star').rating("disable");
@@ -243,7 +245,7 @@ MapEditor.View = (function() {
         if(model.isMoveMode()) {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
-                if(oldHex != null && oldHex.getUnitType() == "Medic" && (hex.playerNum == oldHex.playerNum)){
+                if(oldHex != null && oldHex.getUnitType() == "Medic" && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
                     var unit = MapEditor.Config["Medic"];
                     var unitAttackRange = unit.ATTACK_RANGE;
                     var hexDistance = grid.GetHexDistance(oldHex, hex);
@@ -257,6 +259,43 @@ MapEditor.View = (function() {
                         oldHex.updateImage();
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
+                    }
+                }else if(oldHex != null && oldHex.getUnitType() == "Mobi" && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
+                    if(!oldHex.hasAttacked){
+                        mobiMoveModeSelectedHex = hex;
+                        mobiHex = oldHex;
+                    }
+                }else if(oldHex != null && oldHex.getUnitType() == "Bombshell" && hex == oldHex){
+                    var playerNum = hex.playerNum;
+                    var playerRace = model.getPlayerRace(playerNum);
+                    var playerColor = model.getPlayerColor(playerNum);
+                    hex.unitClass = playerRace+"_other"+playerColor;
+                    var boosted = (hex.health == "health2");
+                    if(boosted){
+                        hex.health = "health4";
+                    }else{
+                        hex.health = "health3";
+                    }
+                    hex.hasMoved = true;
+                    hex.hasAttacked = true;
+                    model.setMoveStartHex(null);
+                    model.pushMove(startState);
+                    model.addWitUsed();
+                }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
+                    if(hex == oldHex && !hex.hasAttacked){
+                        var playerNum = hex.playerNum;
+                        var playerRace = model.getPlayerRace(playerNum);
+                        var playerColor = model.getPlayerColor(playerNum);
+                        hex.unitClass = playerRace+"_special"+playerColor;
+                        var boosted = (hex.health == "health4");
+                        if(boosted){
+                            hex.health = "health2";
+                        }else{
+                            hex.health = "health1";
+                        }
+                        model.setMoveStartHex(null);
+                        model.pushMove(startState);
+                        model.addWitUsed();
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
@@ -294,6 +333,35 @@ MapEditor.View = (function() {
                 else {
                     model.setMoveStartHex(null);
                 }
+            } else if(mobiMoveModeSelectedHex != null){
+                var hexDistance = grid.GetHexDistance(hex, mobiHex);
+                var mobiUnit = MapEditor.Config["Mobi"];
+                if(mobiUnit.ATTACK_RANGE >= hexDistance){
+                    hex.unitClass = mobiMoveModeSelectedHex.unitClass;
+                    hex.playerNum = mobiMoveModeSelectedHex.playerNum;
+                    hex.health = mobiMoveModeSelectedHex.health;
+                    hex.hasAttacked = mobiMoveModeSelectedHex.hasAttacked;
+                    hex.hasMoved = true;
+
+                    mobiMoveModeSelectedHex.unitClass = "";
+                    mobiMoveModeSelectedHex.health = "";
+                    mobiMoveModeSelectedHex.hasMoved = false;
+                    mobiMoveModeSelectedHex.hasAttacked = false;
+                    if(!mobiMoveModeSelectedHex.class.match(/(s\D+)/)){ //not moving off a spawn tile
+                        mobiMoveModeSelectedHex.playerNum = 0;
+                    }
+
+                    hex.updateImage();
+                    mobiMoveModeSelectedHex.updateImage();
+                    model.pushMove(startState);
+                    model.addWitUsed();
+
+                    mobiHex.hasAttacked = true;
+                }
+
+                mobiMoveModeSelectedHex = null;
+                mobiHex = null;
+                model.setMoveStartHex(null);
             } else if(oldHex != null && oldHex.unitClass != "") {
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
