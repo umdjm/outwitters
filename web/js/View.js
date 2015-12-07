@@ -359,8 +359,10 @@ MapEditor.View = (function() {
                         var hexPlayerRace = model.getPlayerRace(hexPlayerNum);
 
                         var newPlayerColor = model.getPlayerColor(oldHex.playerNum);
-                        if(hex.unitClass.indexOf("_special") > -1 || hex.unitClass.indexOf("_other") > -1){
-                            hex.unitClass = hexPlayerRace + "_" + hexUnit.toLowerCase() + newPlayerColor;
+                        if(hex.unitClass.indexOf("_special") > -1){
+                            hex.unitClass = hexPlayerRace + "_special" + newPlayerColor;
+                        }else if(hex.unitClass.indexOf("_other") > -1){
+                            hex.unitClass = hexPlayerRace + "_other" + newPlayerColor;
                         }else{
                             hex.unitClass = hexUnit.toLowerCase() + newPlayerColor;
                         }
