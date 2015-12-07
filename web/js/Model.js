@@ -164,6 +164,7 @@ MapEditor.Model = (function() {
             for(var index in boardState.wits){
                 var witColor = playerColors[index];
                 var witForColor = boardState.wits[index];
+                wits[index] = witForColor;
                 $("#" + witColor + "Wits").val(witForColor);
             }
             return boardState.hexes;
@@ -182,6 +183,7 @@ MapEditor.Model = (function() {
             for(var index in boardState.wits){
                 var witColor = playerColors[index];
                 var witForColor = boardState.wits[index];
+                wits[index] = witForColor;
                 $("#" + witColor + "Wits").val(witForColor);
             }
             return boardState.hexes;
