@@ -282,7 +282,7 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.addWitUsed();
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
-                    if(hex == oldHex && !hex.hasAttacked){
+                    if(hex == oldHex && !oldHex.hasAttacked){
                         var playerNum = hex.playerNum;
                         var playerRace = model.getPlayerRace(playerNum);
                         var playerColor = model.getPlayerColor(playerNum);
@@ -296,6 +296,26 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                         model.pushMove(startState);
                         model.addWitUsed();
+                    }else if(!oldHex.hasAttacked){
+                        var unit = MapEditor.Config["Bombshelled"];
+                        var unitAttackRange = unit.ATTACK_RANGE;
+                        var hexDistance = grid.GetHexDistance(oldHex, hex);
+                        if(unitAttackRange >= hexDistance){
+                            var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
+                            var oldHealth = parseInt(hex.health.replace("health", ""));
+                            var newHealth = oldHealth - attack;
+                            if(newHealth <= 0){
+                                hex.unitClass = "";
+                                hex.health = "";
+                            }else {
+                                model.addWitUsed();
+                                hex.health = "health" + newHealth;
+                            }
+                            oldHex.hasAttacked = true;
+                            oldHex.updateImage();
+                            model.pushMove(startState);
+                            model.setMoveStartHex(null);
+                        }
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
