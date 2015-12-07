@@ -12,7 +12,7 @@ MapEditor.Model = (function() {
         currentBase = 1,
         moveMode = false,
         moveQueue = [],
-        wits = 0,
+        wits = [0,0,0,0],
         forwardMoveQueue = [],
 
 
@@ -107,18 +107,18 @@ MapEditor.Model = (function() {
             return selectedUnit;
         },
 
-        addWitUsed = function(){
-            wits = wits + 1;
-            $("#currentWits").val(wits);
+        spendWit = function(){
+            wits[getCurrentPlayerNum()] =  wits[getCurrentPlayerNum()] - 1;
+            $("#currentWits").val(wits[getCurrentPlayerNum()]);
         },
 
         setWits = function(newWits){
-            wits = newWits;
-            $("#currentWits").val(wits);
+            wits[getCurrentPlayerNum()] = newWits;
+            $("#currentWits").val(wits[getCurrentPlayerNum()]);
         },
 
         getWits = function(){
-            return wits;
+            return wits[getCurrentPlayerNum()];
         },
 
         getHealth = function() {
@@ -143,7 +143,7 @@ MapEditor.Model = (function() {
         },
         getBoardState = function(){
             var hexes = grid.getClasses();
-            return {hexes: hexes, wits: wits};
+            return {hexes: hexes, wits: wits, selectedColor: selectedColor};
         },
         popMove = function(){
             if(moveQueue.length == 0) return null;
@@ -151,6 +151,7 @@ MapEditor.Model = (function() {
 
             var boardState = moveQueue.pop();
             wits = boardState.wits;
+            selectedColor = boardState.selectedColor;
             $("#currentWits").val(wits);
             return boardState.hexes;
         },
@@ -166,7 +167,8 @@ MapEditor.Model = (function() {
             moveQueue.push(getBoardState());
             var boardState = forwardMoveQueue.pop();
             wits = boardState.wits;
-            $("#currentWits").val(wits);
+            selectedColor = boardState.selectedColor;
+            $("#currentWits").val(wits[getCurrentPlayerNum()]);
             return boardState.hexes;
         };
 
@@ -200,7 +202,7 @@ MapEditor.Model = (function() {
         pushMove: pushMove,
         popMove: popMove,
         popForward: popForward,
-        addWitUsed: addWitUsed,
+        spendWit: spendWit,
         setWits: setWits,
         getWits: getWits,
         getBoardState: getBoardState,

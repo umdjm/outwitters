@@ -135,7 +135,7 @@ MapEditor.View = (function() {
             $(".moveModeColor.selected").removeClass("selected");
             $(this).addClass("selected");
             model.setColor(clickedColor);
-            model.setWits(0);
+            model.setWits(model.getWits() + 5 + grid.getWitBonus(model.getCurrentPlayerColor()));
             grid.restartTurn(ctx);
         }
     });
@@ -255,7 +255,7 @@ MapEditor.View = (function() {
                         var hexUnit = MapEditor.Config[hexUnitType];
                         var maxHealth = hexUnit.MAX_HEALTH;
                         hex.health = "health" + maxHealth;
-                        model.addWitUsed();
+                        model.spendWit();
                         oldHex.hasAttacked = true;
                         oldHex.updateImage();
                         model.pushMove(startState);
@@ -283,7 +283,7 @@ MapEditor.View = (function() {
                     hex.hasAttacked = true;
                     model.setMoveStartHex(null);
                     model.pushMove(startState);
-                    model.addWitUsed();
+                    model.spendWit();
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
                     //Bombshell Stand
                     if(hex == oldHex && !hex.hasAttacked){
@@ -299,7 +299,7 @@ MapEditor.View = (function() {
                         }
                         model.setMoveStartHex(null);
                         model.pushMove(startState);
-                        model.addWitUsed();
+                        model.spendWit();
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     //Attack Attempt
@@ -317,7 +317,7 @@ MapEditor.View = (function() {
                                 hex.unitClass = "";
                                 hex.health = "";
                             }else {
-                                model.addWitUsed();
+                                model.spendWit();
                                 hex.health = "health" + newHealth;
                             }
                             oldHex.hasAttacked = true;
@@ -365,7 +365,7 @@ MapEditor.View = (function() {
                     hex.updateImage();
                     mobiMoveModeSelectedHex.updateImage();
                     model.pushMove(startState);
-                    model.addWitUsed();
+                    model.spendWit();
 
                     mobiHex.hasAttacked = true;
                 }
@@ -398,7 +398,7 @@ MapEditor.View = (function() {
                     oldHex.updateImage();
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
-                    model.addWitUsed();
+                    model.spendWit();
 
                     if(hex.class.match(/bonus/)){
                         hex.witSpacePlayerNum = hex.playerNum;

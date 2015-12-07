@@ -214,6 +214,15 @@ MapEditor.Grid.prototype.getClasses = function() {
     return array;
 }
 
+MapEditor.Grid.prototype.getWitBonus = function(color) {
+    var result = 0;
+    for(var h in this.Hexes) {
+        if(h.witSpacePlayerNum > -1 && MapEditor.Model.getPlayerColor(h.witSpacePlayerNum) == color)
+            result++;
+    }
+    return result;
+}
+
 MapEditor.Grid.prototype.setClasses = function(array, ctx) {
     for(var h in this.Hexes) {
         current = array[h];
