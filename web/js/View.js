@@ -318,7 +318,7 @@ MapEditor.View = (function() {
                             for(var i = 0; i < adjacents.length; i++){
                                 var adjacentHex = adjacents[i];
                                 if(adjacentHex.unitClass != "" && (adjacentHex.playerNum != oldHex.playerNum) && (adjacentHex.playerNum != oldHex.playerNum + 2) && (adjacentHex.playerNum != oldHex.playerNum - 2)){
-                                    var health1 = parseInt(hex.health.replace("health", ""));
+                                    var health1 = parseInt(adjacentHex.health.replace("health", ""));
                                     var health2 = health1 - 1;
                                     if(health2 <= 0){
                                         adjacentHex.unitClass = "";
