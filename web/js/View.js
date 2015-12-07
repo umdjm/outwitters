@@ -246,6 +246,7 @@ MapEditor.View = (function() {
             var oldHex = model.getMoveStartHex();
             if(hex.unitClass != ""){
                 if(oldHex != null && oldHex.getUnitType() == "Medic" && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
+                    //Medic Boost Attempt
                     var unit = MapEditor.Config["Medic"];
                     var unitAttackRange = unit.ATTACK_RANGE;
                     var hexDistance = grid.GetHexDistance(oldHex, hex);
@@ -261,11 +262,13 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && oldHex.getUnitType() == "Mobi" && (hex.playerNum == oldHex.playerNum || hex.playerNum == oldHex.playerNum + 2 || hex.playerNum == oldHex.playerNum - 2)){
+                    //Mobi Select
                     if(!oldHex.hasAttacked){
                         mobiMoveModeSelectedHex = hex;
                         mobiHex = oldHex;
                     }
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshell" && hex == oldHex){
+                    //Bombshell Sit
                     var playerNum = hex.playerNum;
                     var playerRace = model.getPlayerRace(playerNum);
                     var playerColor = model.getPlayerColor(playerNum);
@@ -282,6 +285,7 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.addWitUsed();
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
+                    //Bombshell Stand
                     if(hex == oldHex && !oldHex.hasAttacked){
                         var playerNum = hex.playerNum;
                         var playerRace = model.getPlayerRace(playerNum);
@@ -339,11 +343,13 @@ MapEditor.View = (function() {
                         model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
+                    //Attack Attempt
                     var unitType = oldHex.getUnitType();
                     var unit = MapEditor.Config[unitType];
                     var unitAttackRange = unit.ATTACK_RANGE;
                     var hexDistance = grid.GetHexDistance(oldHex, hex);
                     if(unitAttackRange >= hexDistance){
+                        //Attack Success
                         if(MapEditor.Config.hasOwnProperty(unitType)){
                             var attack = MapEditor.Config[unitType].ATTACK_STRENGTH;
                             var oldHealth = parseInt(hex.health.replace("health", ""));
@@ -361,20 +367,25 @@ MapEditor.View = (function() {
                         model.pushMove(startState);
                         model.setMoveStartHex(null);
                     }
-                    else if(hex.playerNum == model.getCurrentPlayerNum()){
+                    else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                        //change selected character
                         model.setMoveStartHex(hex);
                     }
                     else {
+                        //unselect character
                         model.setMoveStartHex(null);
                     }
                 }
-                else if(hex.playerNum == model.getCurrentPlayerNum()){
+                else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                    //change selected character
                     model.setMoveStartHex(hex);
                 }
                 else {
+                    //unselect character
                     model.setMoveStartHex(null);
                 }
             } else if(mobiMoveModeSelectedHex != null){
+                //Mobi spit
                 var hexDistance = grid.GetHexDistance(hex, mobiHex);
                 var mobiUnit = MapEditor.Config["Mobi"];
                 if(mobiUnit.ATTACK_RANGE >= hexDistance){
@@ -404,11 +415,13 @@ MapEditor.View = (function() {
                 mobiHex = null;
                 model.setMoveStartHex(null);
             } else if(oldHex != null && oldHex.unitClass != "") {
+                //Move Attempt
                 var unitType = oldHex.getUnitType();
                 var unit = MapEditor.Config[unitType];
                 var unitMoveRange = unit.RANGE;
                 var hexDistance = grid.GetHexDistance(oldHex, hex);
                 if(unitMoveRange >= hexDistance && !oldHex.hasMoved){
+                    //Move Success
                     hex.unitClass = oldHex.unitClass;
                     hex.playerNum = oldHex.playerNum;
                     hex.health = oldHex.health;
@@ -427,16 +440,23 @@ MapEditor.View = (function() {
                     model.pushMove(startState);
                     model.setMoveStartHex(null);
                     model.addWitUsed();
+
+                    if(hex.class.match(/bonus/)){
+                        hex.witSpacePlayerNum = hex.playerNum;
+                    }
                 }
-                else if(hex.playerNum == model.getCurrentPlayerNum()){
+                else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
+                    //Replace selected character
                     model.setMoveStartHex(hex);
                 }
                 else {
+                    //Unselect character
                     model.setMoveStartHex(null);
                 }
             }
 
-            if(!hex.hasSpawned && hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){ //spawn tile selected and no unit on top
+            if(!hex.hasSpawned && hex.playerNum == model.getCurrentPlayerNum() && hex.class.match(/(s\D+)/) && hex.unitClass == ""){
+            //spawn tile selected and no unit on top
                 $("#moveModeUnits").show();
                 var oldClass = $("#moveModeUnits").attr("class");
                 $("#moveModeUnits").removeClass(oldClass);
@@ -450,10 +470,12 @@ MapEditor.View = (function() {
 
                 model.setMoveStartHex(hex);
             }else{
+                //hide spawn
                 $("#moveModeUnits").hide();
             }
 
         }else if(model.isBaseSelected() && !model.getUnit()) {
+            //Not move mode
             var
                 adjacents = grid.GetAdjacentHexes(hex.MidPoint),
                 selectedClass = model.getClass(),
