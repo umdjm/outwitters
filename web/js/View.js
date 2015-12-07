@@ -353,6 +353,18 @@ MapEditor.View = (function() {
                     var unitAttackRange = unit.ATTACK_RANGE;
                     var hexDistance = grid.GetHexDistance(oldHex, hex);
                     if(unitAttackRange >= hexDistance){
+                        var hexPlayerNum = hex.playerNum;
+                        var hexUnit = hex.getUnitType();
+                        var hexPlayerColor = model.getPlayerColor(hexPlayerNum);
+                        var hexPlayerRace = model.getPlayerRace(hexPlayerNum);
+
+                        var newPlayerColor = model.getPlayerColor(oldHex.playerNum);
+                        if(hex.unitClass.indexOf("_special") > -1 || hex.unitClass.indexOf("_other") > -1){
+                            hex.unitClass = hexPlayerRace + "_" + hexUnit.toLowerCase() + newPlayerColor;
+                        }else{
+                            hex.unitClass = hexUnit.toLowerCase() + newPlayerColor;
+                        }
+
                         hex.health = "health1";
                         hex.playerNum = oldHex.playerNum;
                         hex.updateImage();
