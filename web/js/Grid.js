@@ -172,7 +172,15 @@ MapEditor.Grid.prototype.GetAdjacentHexes = function(/*Point*/ p) {
 
             checkPoint = new MapEditor.Point(p.X + toRight, p.Y + toTop);
 
-            if (this.Hexes[h].Contains(checkPoint) && !adjacents.Contains(this.Hexes[h]))
+            var hexInAdjacents = false;
+            var i;
+            for (i = 0; i < adjacents.length; i++) {
+                if (adjacents[i] === this.Hexes[h]) {
+                    hexInAdjacents = true;
+                }
+            }
+
+            if (this.Hexes[h].Contains(checkPoint) && !hexInAdjacents)
             {
                 adjacents.push(this.Hexes[h]);
             }
