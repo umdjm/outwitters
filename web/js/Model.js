@@ -113,13 +113,15 @@ MapEditor.Model = (function() {
         },
 
         spendWit = function(){
-            wits[getCurrentPlayerNum()] =  wits[getCurrentPlayerNum()] - 1;
-            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
+            var currPlayer = getCurrentPlayerNum();
+            wits[currPlayer] =  wits[currPlayer] - 1;
+            $("#" + selectedColor + "Wits").val(wits[currPlayer]);
         },
 
         setWits = function(newWits){
-            wits[getCurrentPlayerNum()] = newWits;
-            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
+            var currPlayer = getCurrentPlayerNum();
+            wits[currPlayer] = newWits;
+            $("#" + selectedColor + "Wits").val(wits[currPlayer]);
         },
 
         getWits = function(){
@@ -146,6 +148,9 @@ MapEditor.Model = (function() {
         getBase = function() {
             return currentBase;
         },
+        getPlayerByColor = function(inputColor){
+            return playerColors.indexOf(inputColor);
+        },
         getBoardState = function(){
             var hexes = grid.getClasses();
             return {hexes: hexes, wits: wits, selectedColor: selectedColor};
@@ -157,7 +162,7 @@ MapEditor.Model = (function() {
             var boardState = moveQueue.pop();
             wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
+            $("#" + selectedColor + "Wits").val(wits[getPlayerByColor(selectedColor)]);
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -173,7 +178,7 @@ MapEditor.Model = (function() {
             var boardState = forwardMoveQueue.pop();
             wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
+            $("#" + selectedColor + "Wits").val(wits[getPlayerByColor(selectedColor)]);
             return boardState.hexes;
         };
 
