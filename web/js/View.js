@@ -267,8 +267,9 @@ MapEditor.View = (function() {
                     }
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshell" && hex == oldHex){
                     var playerNum = hex.playerNum;
-                    var getPlayerColor = model.getPlayerColor(playerNum);
-                    hex.unitClass = "other"+getPlayerColor;
+                    var playerRace = model.getPlayerRace(playerNum);
+                    var playerColor = model.getPlayerColor(playerNum);
+                    hex.unitClass = playerRace+"_other"+playerColor;
                     var boosted = (hex.health == "health2");
                     if(boosted){
                         hex.health = "health4";
@@ -283,8 +284,9 @@ MapEditor.View = (function() {
                 }else if(oldHex != null && oldHex.getUnitType() == "Bombshelled"){
                     if(hex == oldHex && !hex.hasAttacked){
                         var playerNum = hex.playerNum;
-                        var getPlayerColor = model.getPlayerColor(playerNum);
-                        hex.unitClass = "special"+getPlayerColor;
+                        var playerRace = model.getPlayerRace(playerNum);
+                        var playerColor = model.getPlayerColor(playerNum);
+                        hex.unitClass = playerRace+"_special"+playerColor;
                         var boosted = (hex.health == "health4");
                         if(boosted){
                             hex.health = "health2";

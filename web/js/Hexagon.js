@@ -179,7 +179,7 @@ MapEditor.Hexagon.prototype.updateImage = function() {
                 playerClass = MapEditor.Model.getPlayerRace(this.playerNum);
             }
 
-            if(this.unitClass.indexOf("_special") > -1) {
+            if(this.unitClass.indexOf("_special") > -1 || this.unitClass.indexOf("_other") > -1) {
                 this.imgUnit.src = '../units/' + this.unitClass + '.png';
             } else if(!this.unitClass.match(/^other\D+$/)) {
                 this.imgUnit.src = '../units/' + playerClass + '_' + this.unitClass + '.png';
