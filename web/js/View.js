@@ -387,7 +387,7 @@ MapEditor.View = (function() {
                     model.setMoveStartHex(null);
                     model.addWitUsed();
                 }
-                else if(hex.playerNum == model.getCurrentPlayerNum()){
+                else if(hex.playerNum == model.getCurrentPlayerNum() && hex.unitClass != ""){
                     model.setMoveStartHex(hex);
                 }
                 else {
