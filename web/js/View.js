@@ -324,7 +324,7 @@ MapEditor.View = (function() {
                                         adjacentHex.unitClass = "";
                                         adjacentHex.health = "";
                                     }else{
-                                        hex.health = "health" + health2;
+                                        adjacentHex.health = "health" + health2;
                                     }
                                 }
                             }
