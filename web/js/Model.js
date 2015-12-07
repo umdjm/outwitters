@@ -114,12 +114,12 @@ MapEditor.Model = (function() {
 
         spendWit = function(){
             wits[getCurrentPlayerNum()] =  wits[getCurrentPlayerNum()] - 1;
-            $("#currentWits").val(wits[getCurrentPlayerNum()]);
+            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
         },
 
         setWits = function(newWits){
             wits[getCurrentPlayerNum()] = newWits;
-            $("#currentWits").val(wits[getCurrentPlayerNum()]);
+            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
         },
 
         getWits = function(){
@@ -157,7 +157,7 @@ MapEditor.Model = (function() {
             var boardState = moveQueue.pop();
             wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#currentWits").val(wits);
+            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -173,7 +173,7 @@ MapEditor.Model = (function() {
             var boardState = forwardMoveQueue.pop();
             wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#currentWits").val(wits[getCurrentPlayerNum()]);
+            $("#" + selectedColor + "Wits").val(wits[getCurrentPlayerNum()]);
             return boardState.hexes;
         };
 
