@@ -326,6 +326,7 @@ MapEditor.View = (function() {
                                     }else{
                                         adjacentHex.health = "health" + health2;
                                     }
+                                    adjacentHex.updateImage();
                                 }
                             }
 
