@@ -160,9 +160,8 @@ MapEditor.Model = (function() {
             forwardMoveQueue.push(getBoardState());
 
             var boardState = moveQueue.pop();
-            wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(wits[getPlayerByColor(selectedColor)]);
+            $("#" + selectedColor + "Wits").val(boardState.wits[getPlayerByColor(selectedColor)]);
             return boardState.hexes;
         },
         pushMove = function(move){
@@ -176,9 +175,8 @@ MapEditor.Model = (function() {
             if(forwardMoveQueue.length == 0) return null;
             moveQueue.push(getBoardState());
             var boardState = forwardMoveQueue.pop();
-            wits = boardState.wits;
             selectedColor = boardState.selectedColor;
-            $("#" + selectedColor + "Wits").val(wits[getPlayerByColor(selectedColor)]);
+            $("#" + selectedColor + "Wits").val(boardState.wits[getPlayerByColor(selectedColor)]);
             return boardState.hexes;
         };
 
