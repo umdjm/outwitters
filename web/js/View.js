@@ -323,6 +323,8 @@ MapEditor.View = (function() {
                                     if(health2 <= 0){
                                         adjacentHex.unitClass = "";
                                         adjacentHex.health = "";
+                                        var wits = model.getWits();
+                                        model.setWits(wits+1);
                                     }else{
                                         adjacentHex.health = "health" + health2;
                                     }
