@@ -134,10 +134,11 @@ MapEditor.View = (function() {
         e.stopImmediatePropagation();
         var clickedColor = $(this).attr("id");
         if(confirm("Do you want to start a new turn?")) {
+            model.pushMove(model.getBoardState());
             $(".moveModeColor.selected").removeClass("selected");
             $(this).addClass("selected");
             model.setColor(clickedColor);
-            model.setWits(model.getWits() + 5 + grid.getWitBonus(model.getCurrentPlayerColor()));
+            model.setWits(model.getWits() + 5 + grid.getWitBonus(clickedColor));
             grid.restartTurn(ctx);
         }
     });
