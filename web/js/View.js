@@ -335,6 +335,8 @@ MapEditor.View = (function() {
                             model.pushMove(startState);
                             model.setMoveStartHex(null);
                         }
+                    }else{
+                        model.setMoveStartHex(null);
                     }
                 }else if(oldHex != null && (hex.playerNum != oldHex.playerNum) && (hex.playerNum != oldHex.playerNum + 2) && (hex.playerNum != oldHex.playerNum - 2) && !oldHex.hasAttacked){
                     var unitType = oldHex.getUnitType();
